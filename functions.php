@@ -2,7 +2,7 @@
 
 
 
-function NAME_resources() {
+function LMS_resources() {
 
 	wp_enqueue_style('style', get_stylesheet_uri());
 	
@@ -11,8 +11,13 @@ function NAME_resources() {
 
 }
 
-add_action('wp_enqueue_scripts', 'NAME_resources');
+add_action('wp_enqueue_scripts', 'LMS_resources');
 
+// Navigation Menus
+register_nav_menus(array(
+'primary' => __( 'Primary Menu'),
+'secondary' => __( 'Secondary Menu'),
+));
 
 // Featured images
 
@@ -20,34 +25,18 @@ add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'excerpt-thumb', 400, 400 );
 
-// Widgets
-register_sidebar( array(
-'name' => 'Footer Sidebar 1',
-'id' => 'footer-sidebar-1',
-'description' => 'Appears in the footer area',
-'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-'after_widget' => '</aside>',
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
-register_sidebar( array(
-'name' => 'Footer Sidebar 2',
-'id' => 'footer-sidebar-2',
-'description' => 'Appears in the footer area',
-'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-'after_widget' => '</aside>',
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
-register_sidebar( array(
-'name' => 'Footer Sidebar 3',
-'id' => 'footer-sidebar-3',
-'description' => 'Appears in the footer area',
-'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-'after_widget' => '</aside>',
-'before_title' => '<h3 class="widget-title">',
-'after_title' => '</h3>',
-) );
+
+// Categories and Tags for pages
+
+function myplugin_settings() {  
+    // Add tag metabox to page
+    register_taxonomy_for_object_type('post_tag', 'page'); 
+    // Add category metabox to page
+    register_taxonomy_for_object_type('category', 'page');  
+}
+ // Add to the admin_init hook of your theme functions.php file 
+add_action( 'init', 'myplugin_settings' );
+
 
 
 // Excerpts

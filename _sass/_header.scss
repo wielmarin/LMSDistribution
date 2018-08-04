@@ -1,3 +1,213 @@
-.site-header {
+/*
+Theme Name: LMS Distribution
+Author: Marin Wiellersen
+Author URI: https://www.linkedin.com/in/marinwiellersen/
+Version: 1.0
+*/
 
+.site-header {
+	width: 100%;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	background: white;
+	z-index: 1000;
+	padding: 5px;
+	border-bottom: 1px solid #f8f8f8;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.logo {
+margin-left: 20px;
+	width: 20%;
+}
+
+/* navigation */
+
+.site-nav {
+width: 50%;
+}
+
+.site-nav ul {
+	padding: 0;
+	
+}
+
+.site-nav ul:before .frontnav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; } 
+
+.site-nav ul li {
+	list-style: none;
+	padding: 40px 15px 30px 15px;
+}
+
+.site-nav li a {
+	display:inline;
+	color: rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+	font-size: 17px;
+	line-height: 28px;
+}
+
+.site-nav li a:active {
+	color:	#252727;
+}
+
+li { 
+	display:inline-block; 
+	margin:0;
+}
+
+.site-nav li a:hover { 
+	text-decoration: none;
+	color:	#252727;
+	border-bottom: 2px solid $btncolor;
+}
+
+//* Search //
+.header-right {
+	width: 24%;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position:relative;
+}
+
+.site-header i {
+	width: 1px;
+	height:1px;
+	padding: 40px 0px 30px 0px;
+	font-size: 24px;
+}
+
+
+.spin {
+	animation-name: gearSpin;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	transform-origin: 0% 68%;
+}
+
+@keyframes gearSpin {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+  }
+
+.login {
+	margin: 30px 30px 0px 0px;
+	padding: 10px 0px 10px 0px;
+	width: 45%;
+	border: 1px solid #e8ebeb;
+	text-align: center;
+	height: 25px;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 17px;
+	line-height: 28px;
+}
+
+
+#searchform {
+	display: none;
+	position: absolute;
+	top: 152px;
+	right: 180px;
+	z-index: 9999;
+	padding: 8px 5px;
+	& #s {
+		height: 30px;
+		width: 330px;
+	}
+}
+
+input {
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	border: none;
+	padding: 10px;
+	margin-top: -5px;
+}
+
+#searchsubmit {
+	display: none;
+}
+
+#contactbutton {
+	position: fixed;
+	top: 50vh;
+	z-index: 9999;		
+	background: $btncolor;
+	color: #fff;
+	display: flex;
+	cursor: pointer;
+		right: -165px;
+	padding: 30px 0px;
+	&-label {
+	margin-left: -10px;
+		padding: 25px 0px;
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		user-select: none;
+	}
+	&-info {
+		padding: 0px 10px;
+		margin: auto;
+		i {
+			padding-right: 5px;
+			position:relative;
+			top: 1px;
+		}
+	}
+	&-phone {
+		display:block;
+		padding-bottom: 5px;
+		width: 130px;
+	}
+	&-mail {
+		display:block;
+		width: 141px;
+	}
+}
+
+#contactx {
+	display: none;
+	position: absolute!important;
+	top: 10px!important;
+	right: 5px;
+}
+
+/*
+.contact-small {
+	right: -165px;
+	padding: 30px 0px;
+}
+*/
+
+.contact-full {
+	right: 0px!important;
+	padding: 30px 0px!important;
+	
 }

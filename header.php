@@ -9,17 +9,81 @@
 			<?php wp_head(); ?>
 			
 	<!---------- FONTS ---------->	
-		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">		
+
+	<!--- JQUERY UI FOR EXTRA ANIMATION --->
+	<script
+			  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+			  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+			  crossorigin="anonymous"></script
+			  
+	<!-- Cycle2 slideshow controls -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.js"></script>
 		
 	</head>
 
 <body <?php body_class(); ?>> 
-				
+
+<!-- Fixed Objects -->	
+<div id="contactbutton" class="contact-small">
+	<p id="contactbutton-label">
+		Contact
+	</p>
+	<div id="contactbutton-info">
+		<span id="contactbutton-phone">
+			<i class="fas fa-phone"></i> 987 654 321
+		</span>
+		<span id="contactbutton-mail">
+			<i class="far fa-envelope"></i> mail@adres.com
+		</span>
+		<i id="contactx" class="far fa-window-close"></i>
+	</div>
+</div>			
 			
 <!--- SITE HEADER --->
 	<header class="site-header">
-
 	
+	<!--- Logo --->
+	
+	<a class="logo" href="<?php echo get_home_url(); ?>">
+		<img src="/lms/wp-content/uploads/2018/08/SmallLogo.jpg" width="170px" height="true" alt="Liza line">
+	</a>
+	
+	<!--- Logo --->
+
+	<!--- Primary navigation --->
+	<nav class="site-nav">
+
+			<?php
+				$args = array(
+				'theme_location' => 'primary'
+				);
+			?>
+			<?php wp_nav_menu( $args ); ?>	
+				
+	</nav>
+	
+	<!--- Primary navigation --->
+	
+	
+	<div class="header-right">
+	<!--- Search --->
+	
+		<i class="fas fa-search"></i>
+		
+	
+	
+	<!--- Login --->
+	
+		<div class="login">Login portal</div>
+		
+	<!--- Login --->
+	</div>
+	
+	<!--- Search --->
+	
+	<?php get_search_form(); ?>
 	
 	</header>
 <!-- /site-header -->

@@ -1,0 +1,99 @@
+/*
+Theme Name: LMS distribution
+Author: Marin Wiellersen
+Author URI: https://www.linkedin.com/in/marinwiellersen/
+Version: 1.0
+*/
+
+/* Custom Fonts */
+
+/* General Layout */
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #7a7979;
+}
+
+a:link,
+a:visited {
+	color: #7a7979;
+	text-decoration: none;	
+}
+
+a:hover {
+	color:#9b9a9a;
+}
+
+* {
+	margin: 0;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0 0;
+	font-weight: normal;
+	padding: 0;
+	line-height: 1.2em;
+	font-family: inherit;
+}
+
+.btn {
+	padding: 15px 32px;
+	background: $btncolor;
+	color: #fff!important;
+}
+
+.btn:hover {
+	background: #9a2026!important;
+}	
+
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+//* pitch home *//
+
+.itemcont {
+	max-width: 1200px;
+	padding: 70px 0px 0px 0px;
+	margin: auto;	
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.pitch-title-box {
+	max-width: 400px;
+}
+
+#pitch-title {
+	font-weight: bold;
+	font-family: inherit;
+}
+.underline {
+	border-bottom: 2px solid $btncolor;
+	width: 50px;
+	margin-top: 5px;
+}
+
+#pitch-text {
+	max-width: 600px;
+	text-align: left;
+	font-style: light;
+	font-weight: light;
+	font-size: 17px;
+}
+

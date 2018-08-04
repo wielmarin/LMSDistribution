@@ -1,0 +1,77 @@
+#fronttestimonial {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#fronttestimonial-title {
+    margin-bottom: 20px;
+}
+
+#fronttestimonial-slider {
+    height: 300px;
+    background-image: url(/lms/wp-content/uploads/2018/08/Banner-image.jpg);
+    background-color: $maincolor;
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    @media screen and (max-width: $mobilesize) {
+        width: 100%;
+        height: 300px;   
+        overflow: hidden;
+    }
+}
+
+#fronttestimonial-slider-text {
+    font-size: 120%;
+    background: rgba(0,0,0,0.5);
+    width:600px;
+    height: 200px;
+    margin:auto;
+    display:flex;
+    color: white;
+	position: relative;
+    span {
+        height: auto;
+        width: 80%;
+        margin:auto;
+    }
+    p {
+        display: inline;
+        line-height: 2.2rem;
+    }
+}
+
+.slider-left {
+    position: absolute;
+    left: 5px;
+    display: inline;
+    bottom: 50%;
+    z-index: 999;
+}
+
+.slider-right {
+    position: absolute;
+    right: 5px;
+    display: inline;
+    bottom: 50%;
+    z-index: 999;
+}
+
+.testimonialquote {
+    color: $maincolor;
+}
+
+.fronttestimonial-slider--name {
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.slide {
+    padding: 20px 40px;
+    margin: auto;
+}
+
+.cycle-slideshow {
+	width: 100%;
+}

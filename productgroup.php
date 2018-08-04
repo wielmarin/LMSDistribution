@@ -1,4 +1,4 @@
-<?php /* Template Name: NAME HERE 
+<?php /* Template Name: Product Group
 * Template Post Type: post, page
 */ ?>
 

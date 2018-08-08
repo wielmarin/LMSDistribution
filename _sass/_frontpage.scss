@@ -1,3 +1,5 @@
+//* banner //
+
 #hero {
 	height: 80vh;
 	background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url('/lms/wp-content/uploads/2018/08/Banner-image.jpg');
@@ -22,9 +24,43 @@
 			}
 		&-link {
 			position: relative;
-			top: 20px;
+			top: 30px;
 		}
 	}
+}
+
+//* pitch home *//
+
+.itemcont {
+	max-width: 1200px;
+	padding: 70px 0px 20px 0px;
+	margin: auto;	
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.pitch-title-box {
+	max-width: 400px;
+}
+
+#pitch-title {
+	font-weight: bold;
+	font-family: inherit;
+}
+.underline {
+	border-bottom: 2px solid $btncolor;
+	width: 50px;
+	margin-top: 5px;
+}
+
+#pitch-text {
+	max-width: 600px;
+	text-align: left;
+	font-size: 18px;
+	 font-family: 'Open Sans Light';
+	 margin-bottom: 20px;
 }
 
 
@@ -103,6 +139,7 @@
 				position: relative;
 				top:50px;
 				padding: 15px;
+
 			}
 			&-link {
 				position: absolute;
@@ -144,6 +181,24 @@
 #usp-text {
 	width: 50%;
 	margin: auto;
-	padding: 20px;
+	padding-top: 20px;
 	font-size: 120%;
+}
+
+//* slider case studies //
+
+#fronttestimonial-slider-titel {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	height: 30px;
+	padding-top: 60px;
+	font-weight: bold;
+}
+
+.underline-slider {
+	border-bottom: 2px solid white;
+	width: 50px;
+	margin-left:580px;
+	margin-top: 5px;
 }

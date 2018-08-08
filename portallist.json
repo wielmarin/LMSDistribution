@@ -1,0 +1,10 @@
+var portalList = [
+	{
+		"title" : "Products",
+		"image" : "/lms/wp-content/uploads/2018/08/icon_whiteboard_170x170blue.png"
+	},
+	{
+		"title" : "Service",
+		"image" : "/lms/wp-content/uploads/2018/08/icon_share_170x170blue.png"
+	}
+]

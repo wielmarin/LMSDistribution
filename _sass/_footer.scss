@@ -1,0 +1,102 @@
+.site-footer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#connectedrow {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 30px;
+	border-bottom: 1px solid #e8ebeb;
+	Background: #e8ebeb;
+	&-social {
+		width: auto;
+		margin: auto;
+	}
+	&-social h3 {
+	margin-bottom: 10px;
+	}
+	&-news {
+		width: auto;
+		margin: auto;
+	}
+	&-news h3 {
+		margin-bottom: 10px;
+	}
+}
+
+#connectedrow-social-icons img {
+	margin-right: 10px;
+}
+
+#footerlist {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	justify-content: center;
+	padding: 30px;
+	border-bottom: 1px solid #e8ebeb;
+}
+
+.footerlist-item {
+	width: 15%;
+	margin: 0px auto auto auto ;
+	&-title {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	p {
+	line-height: 2.2em;
+	}
+}
+
+#bottomline {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 80%;
+	padding: 4px;
+}
+
+.wpcf7-form {
+margin-top: 4px;
+}
+
+.wpcf7-form-control {
+padding: 10px;
+background-color: #fff;
+border: 1px solid #e8ebeb;
+}
+
+.wpcf7-text, .wpcf7-textarea {
+	font-size: 12px;
+	line-height: 1.4em;
+	vertical-align: bottom;
+	color: black;
+	border: 1px solid #fff;
+}
+
+
+.wpcf7-form p {
+display: inline;
+}
+
+.wpcf7-submit {
+	width: 120px;
+	display: inline;
+	background-color: #2E3D50 ;
+	color: #fff;
+	border: 1px solid #2E3D50;
+	margin-top: 5px;
+	margin-left: -5px;
+	text-transform: uppercase;
+	transition: background-color 0.5s linear;
+}
+
+.wpcf7-submit:hover {
+	cursor: pointer;
+	background-color: #7a7979;
+	color: #fff;
+}

@@ -19,6 +19,17 @@ jQuery('#contactbutton').click(function() {
 jQuery('.frontproduct').hover(function() {
 	jQuery(this).toggleClass('raisebox', 100);
 });
+
+
+// Portal Menu
+jQuery('#portal-content-side-list li').click(function() {
+	jQuery('#portal-content-side-list ul li').removeClass('portalcontentactive');
+	jQuery(this).addClass('portalcontentactive');
+	jQuery(this).children('ul').slideToggle();
+	return false;
+});
+
+
 	
 
 

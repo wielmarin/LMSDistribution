@@ -7,16 +7,34 @@ function LMS_resources() {
 	wp_enqueue_style('style', get_stylesheet_uri());
 	
 	wp_enqueue_script('jquery');
-	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js');
+	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), 1.0, true);
+	wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/ajax-script.js', array('jquery') );
+	
+	
 
 }
 
 add_action('wp_enqueue_scripts', 'LMS_resources');
 
+
+/* Try to add AJAX
+function my_enqueue() {
+      wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/ajax-script.js', array('jquery') );
+
+ }
+ add_action( 'wp_enqueue_scripts', 'my_enqueue' );
+*/
+
+ // Make custom variables
+ 
+ 
+
+
 // Navigation Menus
 register_nav_menus(array(
 'primary' => __( 'Primary Menu'),
 'secondary' => __( 'Secondary Menu'),
+'portal' => __( 'Portal Menu' ),
 ));
 
 // Featured images
@@ -51,6 +69,7 @@ function new_excerpt_more( $more ) {
 	return '';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
 
 
 

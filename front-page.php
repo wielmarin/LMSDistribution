@@ -22,9 +22,12 @@
 		</h2>
 		<div class="underline"></div>
 	</div>
-	<p id="pitch-text" class="center">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-	</p>
+	<div id="pitch-text" class="center">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<a id="hero-text-link" href='#' class="btn2">
+			Adviesgesprek aanvragen >
+		</a>
+	</div>
 	
 </div>
 
@@ -95,6 +98,12 @@
 	</div>
 </div>
 
+<div class="button">
+<a class="btn3">
+			Bekijk alle producten >
+</a>
+</div>
+
 <div id="frontusp">
 		<div id="usp">
 			<div id="usp-img"><img src="/lms/wp-content/uploads/2018/08/icon_whiteboard_170x170blue.png" alt="whiteboard" width="" height="">
@@ -118,6 +127,8 @@
 
 
         <div id="fronttestimonial-slider">
+			<div id="fronttestimonial-slider-titel"><h1>Case studies</h1><div class="underline-slider"></div>
+			</div>
             <div id="fronttestimonial-slider-text">
                     <?php get_template_part('slidebox'); ?>
             </div>

@@ -1,54 +1,73 @@
 jQuery( document ).ready(function() {
 
-console.log('test');
 
+var childTitle;
+var pageID;
+var ourHTMLString;
+var childArray;
 
-/*
-jQuery('#portal-content-side-list li').click(function() {
+jQuery('.portalmenu a').click(function() {
 	
-	var menuItem = jQuery(this).attr('id');
+	// var menuItem = jQuery(this).attr('id');
+	var slug = jQuery(this).attr('href').split('/');
+	slug = slug[slug.length - 2]; // Slug from clicked item retrieved
+	// console.log(slug); 
 	
-	console.log(menuItem);
-	
-	jQuery('#portal-content-right-space').load('/LMS/wp-content/themes/LMS_distribution/portal' + menuItem + '.html');
-});
-
-*/
-
-jQuery('#portal-content-side-list ul:first > li').click(function() {
-	
-		var clickedlink = jQuery(this);
-	
-		var ourRequest = new XMLHttpRequest();
-		ourRequest.open('GET', 'http://localhost/lms/wp-json/wp/v2/pages');
+	var ourRequest = new XMLHttpRequest(); // Get all posts in the portal
+		ourRequest.open('GET', 'http://localhost/lms/wp-json/wp/v2/pages?categories=7'); 
 		ourRequest.onload = function() {
 		  if (ourRequest.status >= 200 && ourRequest.status < 400) {
-			var pagesData = JSON.parse(ourRequest.responseText);
+			var portalPosts = JSON.parse(ourRequest.responseText); // Saved as 'portalPosts'
 			
-			var clickedItem = jQuery("#portal-content-side-list ul:first > li").index(clickedlink);
-			
-			console.log(clickedItem); // Gives Correct Index Value
-			
-			var jsonLink = (pagesData[clickedItem]._links.self[0].href);
-			console.log(jsonLink); // Give incorrect link
+			getPageId(portalPosts); // Run function to get page ID
+			loopAgain(); // Wasn't working
+		//	getParent(portalPosts); // Run function to get page Parent
+			//createHTML(childTitle); // Put title into HTML
 			
 			
-			var linkId = (pagesData[clickedItem].id); // ARE BEING INDEX IN DESCENDING ORDER
-			console.log(linkId);
-			
-			
-			
-			/*
-			/////////////// Second level
-			
-			var secondRequest = new XMLHttpRequest();
-			secondRequest.open('GET', 'http://localhost/' + jsonLink);
+	  } else {
+			console.log("We connected to the server, but it returned an error.");
+		  }
+		};
+
+		ourRequest.onerror = function() {
+		  console.log("Connection error");
+		};
+
+		ourRequest.send();
+
+	// Load Page with specific name fallback
+	// jQuery('#portal-content-right-space').load('/LMS/wp-content/themes/LMS_distribution/portal' + menuItem + '.html');
+	
+// Function to get page ID from Slug	
+function getPageId(portalPosts) { // Get page IDs from pages equal to slug
+	for (i=0; i< portalPosts.length; i++ ) {
+		if	(portalPosts[i].slug == slug) {
+			pageID = portalPosts[i].id;
+			console.log(pageID);
+		}
+	}
+};
+
+
+
+function loopAgain() {
+var secondRequest = new XMLHttpRequest();
+			secondRequest.open('GET', 'http://localhost/lms/wp-json/wp/v2/pages?parent=' + pageID);
+			console.log('http://localhost/lms/wp-json/wp/v2/pages?parent=' + pageID);
 			secondRequest.onload = function() {
+				console.log(secondRequest.status);
 			  if (secondRequest.status >= 200 && secondRequest.status < 400) {
 				var data = JSON.parse(secondRequest.responseText);
 				createPortalBox(data);
+				console.log(data);
+
 			  } else {
-				console.log("We connected to the server, but it returned an error.");
+				
+				 
+				    
+				
+				console.log("Second We connected to the server, but it returned an error.");
 			  }
 			};
 
@@ -57,75 +76,30 @@ jQuery('#portal-content-side-list ul:first > li').click(function() {
 		};
 
 		secondRequest.send();
-		
-			function createPortalBox(pagesData) {
+};
+		// Build HTML for display
+			function createPortalBox(data) {
 				var ourHTMLString = '';
-			for (i=0; i< pagesData.length; i++ ) {
-				ourHTMLString += '<h2>' + pagesData[i].title.rendered + '</h2>';
+				var reversed = data.reverse();
+				for (i=0; i< data.length; i++ ) {
+					ourHTMLString += '<div class=" class="portalmenu">' +
+					'<a href=" ' + data[i].link + ' " class="portalbox">' +
+					'<img src="/lms/wp-content/uploads/2018/08/portal-video-poster.jpg" width=100% />' +
+					'<h2 class="portalbox-title">' + data[i].title.rendered + '</h2>' +
+					
+					'</a>' +
+					'</div>'
+					;
+				}
+					jQuery('#portal-content-right-space').html(ourHTMLString); // Put HTML in div
 			}
-				jQuery('#portal-content-right-space').html(ourHTMLString);
-			}
-			
-			
-			
-			
-			
-			
-			/////////////////
-
-			*/
-			
-			
-		  } else {
-			console.log("We connected to the server, but it returned an error.");
-		  }
-		};
-
-		ourRequest.onerror = function() {
-		  console.log("Connection error");
-		};
-
-		ourRequest.send();
-
-});
-
 
 	
-/*
-jQuery('#portal-content-side-list li').click(function() {
-	
-	var linkhref =  jQuery(this).find('a').attr('href');
-	console.log(linkhref);
-	
-
-		var ourRequest = new XMLHttpRequest();
-		ourRequest.open('GET', 'http://localhost/lms/wp-json/wp/v2/pages?parent=169');
-		ourRequest.onload = function() {
-		  if (ourRequest.status >= 200 && ourRequest.status < 400) {
-			var data = JSON.parse(ourRequest.responseText);
-			createHTML(data);
-		  } else {
-			console.log("We connected to the server, but it returned an error.");
-		  }
-		};
-
-		ourRequest.onerror = function() {
-		  console.log("Connection error");
-		};
-
-		ourRequest.send();
-
-});
+}); // End Click Function
 
 
-function createHTML(pagesData) {
-	var ourHTMLString = '';
-for (i=0; i< pagesData.length; i++ ) {
-	ourHTMLString += '<h2>' + pagesData[i].title.rendered + '</h2>';
-}
-	jQuery('#portal-content-right-space').html(ourHTMLString);
-}
-*/
 
-// Ready Function
+
+
+
 });

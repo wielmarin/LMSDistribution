@@ -29,8 +29,16 @@ jQuery('#portal-content-side-list li').click(function() {
 	return false;
 });
 
+// Tiles menu
+var containerWidth = jQuery('#portal-content-right-space').width();
 
-	
+
+jQuery('#portal-content-right-space ul').css('width', containerWidth);
+
+jQuery('#portal-content-right-space li').click(function() {
+
+	return false;
+});
 
 
 

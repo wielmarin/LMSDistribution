@@ -208,3 +208,89 @@
 		font-size: 1.2rem;
 	}
 }
+
+.portalbox {
+	width: 230px;
+	height: 200px;
+	margin: 20px auto;
+	border: 1px solid black;
+	position: relative;
+	//background-image: url(/lms/wp-content/uploads/2018/08/portal-video-poster.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	&:hover &-title {
+			border-top: 10px solid $btncolor;
+		}
+	&-title {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		border-top: 10px solid $maincolor;
+		
+	}
+}
+
+#menu-portal-1 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#portal-content-right-space {
+	ul {
+		font-size: 1.2rem;
+		padding: 0px 30px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	li {
+		display: inline-block;
+		height: 240px;
+		width: 280px;
+		list-style: none;
+		cursor: pointer;
+		position: relative;
+		border: 1px solid $maincolor;
+		background-image: url(/lms/wp-content/uploads/2018/08/portal-video-poster.jpg);
+		background-size: cover;
+		background-position: center;
+		margin: auto;
+		&:hover a {
+			color: black;
+			border-top: 10px solid $btncolor;
+		}
+		
+		a {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			border-top: 10px solid $maincolor;
+			background: white;
+			padding: 5px 0px;
+			
+		}
+		&:hover {
+			color: black;
+		}
+	}
+}
+
+.sub-menu {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 0!important;
+}
+
+.gone {
+	position: absolute;
+	left: -9999px;
+}
+
+.appear {
+
+}

@@ -4,6 +4,10 @@ get_header();
 
 ?>
 
+
+
+
+
 <div id="portal-hero">
 	<h1 id="portal-hero-heading">
 		Welkom bij het <span>Partner Portal</span>
@@ -34,7 +38,7 @@ get_header();
 		<div id="portal-content-side-title">
 			Portal <span>categories</span>
 		</div>
-		<div id="portal-content-side-list">
+		<div id="portal-content-side-list" class="portalmenu">
 							 <?php
 								$args = array(
 								'theme_location' => 'portal'
@@ -85,8 +89,13 @@ get_header();
 				Filler > Text > Now
 			</div>
 		</div>
-		<div id="portal-content-right-space">
-			
+		<div id="portal-content-right-space"  class="portalmenu">
+			<?php
+				$args = array(
+				'theme_location' => 'portal'
+				);
+			?>
+			<?php wp_nav_menu( $args ); ?>
 		</div>
 	</div>
 	

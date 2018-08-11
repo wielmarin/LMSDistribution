@@ -57,7 +57,7 @@
 				i3PROJECTOR-lamp
 			</h3>
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				De i3PROJECTOR-lamp is verkrijgbaar met een interactieve pen of een vingeraanraaktechnologie. Hierdoor kunt u rechtstreeks de interactie aangaan met uw presentatie.
+				De i3PROJECTOR-lamp is verkrijgbaar met een interactieve pen of een vingeraanraaktechnologie. Zo kunt u de interactie aangaan met uw presentatie.
 			</p>
 			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
 				Bekijk product <i class="fas fa-angle-right"></i>

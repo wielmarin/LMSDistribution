@@ -110,7 +110,7 @@
 	width: 100%;
 	height: auto;
 	display: flex;
-	min-height: 300px;
+	min-height: 320px;
 	position: relative;
 		//&:hover {
 			//bottom: 3px;
@@ -137,9 +137,11 @@
 			}
 			&-descr {
 				position: relative;
-				top:50px;
+				top:30px;
 				padding: 15px;
-
+				font-size: 18px;
+				font-family: 'Open Sans Light';
+				
 			}
 			&-link {
 				position: absolute;
@@ -147,6 +149,7 @@
 				left: 50%;
 				transform: translateX(-50%);
 				font-weight: bold;
+				font-size: 16px;
 			}
 			&-link:hover {
 				text-decoration: underline;
@@ -179,10 +182,11 @@
 }
 
 #usp-text {
-	width: 50%;
+	width: 65%;
 	margin: auto;
 	padding-top: 20px;
-	font-size: 120%;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 //* slider case studies //
@@ -202,3 +206,5 @@
 	margin-left:580px;
 	margin-top: 5px;
 }
+
+

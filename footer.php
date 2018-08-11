@@ -49,7 +49,7 @@
 		</div>
 		<div id="footerlist-4" class="footerlist-item">
 			<h3 id="footerlist-4-title" class="footerlist-item-title">
-				LMS Distributions
+				LMS Distribution
 			</h3>
 			<p>Adress</p>
 			<p>Telefoon</p>

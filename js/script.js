@@ -20,27 +20,38 @@ jQuery('.frontproduct').hover(function() {
 	jQuery(this).toggleClass('raisebox', 100);
 });
 
+//Function to animate Portal side menu
+	function sideMenu() {
+		jQuery('#portal-content-side-list ul li').removeClass('portalcontentactive');
+		jQuery(this).addClass('portalcontentactive');
+		jQuery(this).children('ul').slideDown();
+		return false;
+	}
 
-// Portal Menu
+
+// Portal Menu - deactive links, change bullets, open submenu
 jQuery('#portal-content-side-list li').click(function() {
 	jQuery('#portal-content-side-list ul li').removeClass('portalcontentactive');
 	jQuery(this).addClass('portalcontentactive');
-	jQuery(this).children('ul').slideToggle();
+	jQuery(this).parents('li').addClass('portalcontentactive');
+	jQuery(this).children('ul').toggle();
 	return false;
 });
 
-// Tiles menu
-var containerWidth = jQuery('#portal-content-right-space').width();
-
-
-jQuery('#portal-content-right-space ul').css('width', containerWidth);
-
-jQuery('#portal-content-right-space li').click(function() {
-
+// Deactive links tile menu
+jQuery('#portal-content-right-space').click(function() {
 	return false;
 });
 
-
+// Change side menu when click on tile menu
+jQuery('#portal-content-right-space').on("click", "a", function() {
+	var sharedLink = jQuery(this).attr('href');
+	var matchedLink = jQuery("a[href='" + sharedLink + "'");
+	var matchedItem = matchedLink[0].parentElement;
+	jQuery(matchedItem).addClass('portalcontentactive');
+	jQuery(matchedItem).children('ul').slideDown();
+	return false;
+});
 
 //END
 });

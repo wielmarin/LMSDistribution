@@ -85,20 +85,46 @@ get_header();
 	</div>
 	<div id="portal-content-right">
 		<div id="portal-content-right-banner">
-			<div id="portal-content-right-breadcrumbs">
-				Filler > Text > Now
-			</div>
+			
 		</div>
-		<div id="portal-content-right-space"  class="portalmenu">
+		
+		<!-- Tiles will appear here -->
+		<div id="portal-content-right-space" class="ajaxspace">
+			<div id="breadcrumbtrail">
 			<?php
-				$args = array(
-				'theme_location' => 'portal'
-				);
+			breadcrumb_trail();
 			?>
-			<?php wp_nav_menu( $args ); ?>
+			</div>
+			<!----- Get Tiles automatically ----->
+			<?php
+
+			$args = array(
+				'post_type'      => 'page',
+				'posts_per_page' => -1,
+				'post_parent'    => $post->ID,
+				'order'          => 'ASC',
+				'orderby'        => 'menu_order'
+			 );
+
+
+			$parent = new WP_Query( $args );
+
+			if ( $parent->have_posts() ) : ?>
+				
+					<?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
+					
+					<a id="parent-<?php the_ID(); ?>" class="portalbox" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+
+								<p class="portalbox-title"><?php the_title(); ?></p>
+
+					</a>
+					
+					<?php endwhile;	?>
+				
+			<?php endif; wp_reset_postdata(); ?>
+			
 		</div>
 	</div>
-	
 </div>
 
 <div id="advised">

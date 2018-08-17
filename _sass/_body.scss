@@ -78,12 +78,23 @@ h1, h2, h3, h4, h5, h6 {
 	color: black!important;
 }
 
+
 .button {
 	width: 100%;
 	text-align: center;
 	margin-top:40px;
 }
+ 
+#content-home-twitter .button {
+	text-align: left;
+	margin-top: 30px;
+}
 
+#content-home-nieuws .button {
+	text-align: left;
+	margin-top: 45px;
+} 
+ 
 .btn3 {
 	padding: 15px 32px;
 	background: $btncolor;

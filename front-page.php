@@ -126,13 +126,107 @@
 </div>
 
 
-        <div id="fronttestimonial-slider">
-			<div id="fronttestimonial-slider-titel"><h1>Case studies</h1><div class="underline-slider"></div>
+<div id="fronttestimonial-slider">
+	<div id="fronttestimonial-slider-titel"><h1>Case studies</h1><div class="underline-slider"></div>
+	</div>
+    <div id="fronttestimonial-slider-text">
+        <?php get_template_part('slidebox'); ?>
+    </div>
+</div>
+
+<!----------
+
+<div id="content-home">
+	<div id="content-home-flex">
+		<div id="content-home-nieuws">
+			<h3>Nieuws</h3>
+			<div id="content-home-border"></div>
+				<div id="content-home-nieuws-item">
+					<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+					<div id="content-home-nieuws-info">
+						<h4>Titel nieuwsbericht</h4>
+						<span>dd/mm/jjjj</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+				</div>
+				<div id="content-home-nieuws-item">
+					<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+					<div id="content-home-nieuws-info">
+						<h4>Titel nieuwsbericht		</h4>
+						<span>dd/mm/jjjj</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+				</div>
+				<div id="content-home-nieuws-item">
+					<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+					<div id="content-home-nieuws-info">
+						<h4>Titel nieuwsbericht		</h4>
+						<span>dd/mm/jjjj</span>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+				</div>
+				<div class="button">
+				<a class="btn2">
+					Lees meer nieuws >
+				</a>
+				</div>
+		</div>
+	</div>
+
+	<div id="content-home-flex">
+		<div id="content-home-twitter">
+		<h3>Twitter</h3>
+		<div id="content-home-border"></div>
+			<div class="twitter-block">
+			<a class="twitter-timeline" data-lang="nl" data-width="
+			500" data-height="520" data-theme="light" data-link-color="#94A2A2" href="https://twitter.com/Marinwiellersen?ref_src=twsrc%5Etfw"  data-tweet-limit="3"  data-chrome="noheader nofooter  noborders">Tweets by Marinwiellersen</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+				<div class="button">
+					<a class="btn2">
+						Bekijk Twitter >
+					</a>
+				</div>
 			</div>
-            <div id="fronttestimonial-slider-text">
-                    <?php get_template_part('slidebox'); ?>
-            </div>
-        </div>
+		</div> 
+		
+	</div>
+	
+</div>
+
+---------------->
+<div id="nieuws">
+	<h3>Nieuws</h3>
+	<div id="content-home-border"></div>
+	<div id="nieuws-container">
+		<div id="nieuws-container-flex">
+			<div id="nieuws-container-flex-item">
+				<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+					<div id="nieuws-data">
+					<h4>Titel nieuwsbericht</h4>
+					<span>dd/mm/jjjj</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+			</div>
+			<div id="nieuws-container-flex-item">
+				<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+					<div id="nieuws-data">
+					<h4>Titel nieuwsbericht</h4>
+					<span>dd/mm/jjjj</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					</div>
+			</div>
+		</div>
+		<div id="nieuws-container-flex">
+			<div id="nieuws-container-flex-item">
+				<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+				<div id="nieuws-data">
+				<h4>Titel nieuwsbericht</h4>
+				<span>dd/mm/jjjj</span>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 <?php get_footer(); ?>

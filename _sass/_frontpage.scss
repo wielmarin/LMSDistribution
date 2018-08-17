@@ -207,4 +207,83 @@
 	margin-top: 5px;
 }
 
+//* Nieuws en Twitter //
+
+#content-home {
+	width: 98%;
+	padding: 70px 0px 70px 0px;
+	margin: auto;	
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#content-home-flex {
+	width: 500px;
+	h3 {
+		font-weight: bold;
+		font-family: inherit;
+	}
+}
+
+#content-home-border {
+	border-bottom: 2px solid $btncolor;
+	width: 50px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+#content-home-nieuws {
+	&-info {
+		width: 330px;
+	}
+	&-item {
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-top: 45px;
+	}
+	img {
+		margin-right: 30px;
+	}
+	span {
+		font-size: 80%;
+	}
+	h3 {
+	margin-top: 5px;
+	}
+	h4 {
+	font-weight: bold;
+	}
+}
+
+#nieuws {
+	padding: 50px;
+	&-container {
+		max-width: 1200px;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: auto;
+	}
+}
+
+#nieuws-container-flex {
+	width: 550px;
+}
+
+
+#nieuws-container-flex-item {
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+#nieuws-data {
+	width: 350px;
+}
+
+
 

@@ -9,7 +9,7 @@ function LMS_resources() {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), 1.0, true);
 	wp_enqueue_script( 'ajax-script',get_template_directory_uri() . '/js/ajax-script.js', array('jquery') );
-	
+	wp_enqueue_script( 'backstretch',get_template_directory_uri() . '/js/backstretch.js', array('jquery') );
 	
 
 }
@@ -42,6 +42,7 @@ register_nav_menus(array(
 add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'excerpt-thumb', 400, 400 );
+add_image_size( 'portalbox-image', 277, 205, true );
 
 
 // Categories and Tags for pages
@@ -69,6 +70,21 @@ function new_excerpt_more( $more ) {
 	return '';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+/// Allow exe file uploads
+function enable_extended_upload ( $mime_types =array() ) {
+
+   // The MIME types listed here will be allowed in the media library.
+   // You can add as many MIME types as you want.
+   $mime_types['exe']  = 'application/vnd.microsoft.portable-executable'; 
+
+   return $mime_types;
+} 
+
+add_filter('upload_mimes', 'enable_extended_upload');
+
+// For CMB2
+require_once ( get_template_directory() . '/fields-functions.php' );
 
 
 

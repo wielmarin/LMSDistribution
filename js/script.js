@@ -54,6 +54,31 @@ jQuery('#portal-content-right-space').on("click", "a", function() {
 });
 
 
+// Load External File in new window
+jQuery('#portal-content-right-space').on("click", ".externalfile", function(event) {
+	var fileurl = jQuery(this).attr('url');
+	console.log(fileurl);
+	window.open(fileurl);
+	return false;
+});
+
+// Action Portal breadcrumb
+jQuery('.breadcrumbportal').click(function() {
+	location.reload();
+});
+
+
+
+//////// Slideshow homepage header with Backstretch
+
+jQuery("#hero").backstretch([
+	"/lms/wp-content/uploads/2018/08/Banner-image.jpg",
+	"/lms/wp-content/uploads/2018/08/hero-snap.jpg",
+	"/lms/wp-content/uploads/2018/08/man_lidner_huddle_-1.jpg",
+	],
+	{transitionDuration: 800},
+	);
+
 
 //CUSTOM TWITTER 
 /*

@@ -50,7 +50,6 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0 0;
-	font-weight: normal;
 	padding: 0;
 	line-height: 1.2em;
 	font-family: inherit;
@@ -59,12 +58,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
 	padding: 15px 32px;
-	background: $btncolor;
+	border: 1px white solid;
 	color: #fff!important;
+	font-weight: bold;
 }
 
 .btn:hover {
-	background: #9a2026!important;
+	border: 1px #e8ebeb solid;
+	color: #e8ebeb!important;
 }	
 
 .btn2 {

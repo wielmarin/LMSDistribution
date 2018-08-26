@@ -7,9 +7,10 @@
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 30px;
+	padding: 40px;
 	border-bottom: 1px solid #e8ebeb;
 	Background: #e8ebeb;
+	align-content: start;
 	&-social {
 		width: auto;
 		margin: auto;
@@ -54,7 +55,7 @@
 	}
 }
 
-.footerlist-item p:hover { 
+.footerlist-item a:hover { 
 	text-decoration: none;
 	color:	#252727;
 	border-bottom: 1.5px solid $btncolor;

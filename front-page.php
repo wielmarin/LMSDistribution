@@ -8,7 +8,7 @@
 		<h2 id="hero-text-subheading" class="center">
 			Laat teams altijd en overal samenwerken
 		</h2>
-		<a id="hero-text-link" href='#' class="btn">
+		<a id="hero-text-link" href='http://localhost/lms/producten/' class="btn">
 			Bekijk producten
 		</a>
 	</div>
@@ -99,7 +99,7 @@
 </div>
 
 <div class="button">
-<a class="btn3">
+<a class="btn3" href="http://localhost/lms/producten/">
 			Bekijk alle producten >
 </a>
 </div>
@@ -127,7 +127,7 @@
 
 
 <div id="fronttestimonial-slider">
-	<div id="fronttestimonial-slider-titel"><h1>Case studies</h1><div class="underline-slider"></div>
+	<div id="fronttestimonial-slider-titel"><h2>Case studies</h2><div class="underline-slider"></div>
 	</div>
     <div id="fronttestimonial-slider-text">
         <?php get_template_part('slidebox'); ?>
@@ -194,39 +194,58 @@
 
 ---------------->
 <div id="nieuws">
-	<h3>Nieuws</h3>
+	<h2>Nieuws</h2>
 	<div id="content-home-border"></div>
 	<div id="nieuws-container">
 		<div id="nieuws-container-flex">
 			<div id="nieuws-container-flex-item">
-				<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+				<img src="/lms/wp-content/uploads/2018/08/portal-banner-1-e1534773518828.jpg" alt="whiteboard" width="140px" height="140px">
 					<div id="nieuws-data">
-					<h4>Titel nieuwsbericht</h4>
 					<span>dd/mm/jjjj</span>
+					<h4>Titel nieuwsbericht</h4>
+					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					
+					<a href="">Lees artikel</a>
 					</div>
 			</div>
+			<div id="nieuws-border"></div>
 			<div id="nieuws-container-flex-item">
-				<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+				<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="140px" height="140px">
 					<div id="nieuws-data">
-					<h4>Titel nieuwsbericht</h4>
 					<span>dd/mm/jjjj</span>
+					<h4>Titel nieuwsbericht</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					<a href="">Lees artikel</a>
 					</div>
 			</div>
+			<div id="nieuws-border"></div>
 		</div>
 		<div id="nieuws-container-flex">
 			<div id="nieuws-container-flex-item">
-				<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
+				<img src="/lms/wp-content/uploads/2018/08/man_lidner_huddle_-e1534773688109.jpg" alt="whiteboard" width="140px" height="140px">
 				<div id="nieuws-data">
-				<h4>Titel nieuwsbericht</h4>
 				<span>dd/mm/jjjj</span>
+				<h4>Titel nieuwsbericht</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				<a href="">Lees artikel</a>
 				</div>
 			</div>
+			<div id="nieuws-border"></div>
+			<div id="nieuws-container-flex-item">
+				<img src="/lms/wp-content/uploads/2018/08/hans-office-shoot-060-e1534773802913.jpg" alt="whiteboard" width="140px" height="140px">
+				<div id="nieuws-data">
+				<span>dd/mm/jjjj</span>
+				<h4>Titel nieuwsbericht</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+				<a href="">Lees artikel</a>
+				</div>
+			</div>
+			<div id="nieuws-border"></div>
 		</div>
 	</div>
 </div>
+
 
 
 <?php get_footer(); ?>

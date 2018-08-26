@@ -1,0 +1,168 @@
+.page-id-18 #hero {
+	height: 60vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url('/lms/wp-content/uploads/2018/08/man_lidner_huddle_-1.jpg');
+	background-size: cover;
+	background-repeat: none;
+	position: relative;
+	background-position: center;
+	&-text {
+		position: absolute;
+		color: #fff;
+		top: 42%;
+		left: 50%;
+		transform: translateX(-50%);
+			&-heading {
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: 30px;
+			font-size: 230%;
+			}
+	}
+}
+
+.page-id-18 #frontproducts {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 4rem;
+	grid-row-gap: 3rem;
+	margin: auto;
+	position:relative;
+	
+	&-1 {
+		display: block;
+		&-text {
+			background: #94A2A2;
+		}
+		&-img {
+			background-image: url('/lms/wp-content/uploads/2018/08/Interactive-whiteboard-e1533314114274.jpg');
+		}
+	}
+	&-2 {
+	display: block;
+		&-text {
+			background: #94A2A2;
+		}
+		&-img {
+			background-image: url('/lms/wp-content/uploads/2018/08/I3PROJECTOR-lamp-e1533314065963.png');
+		}
+	}
+	&-3 {
+		display: block;
+		&-text {
+		
+			background: #94A2A2;
+		}
+		&-img {
+			background-image: url('/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg');
+			order: 0;
+		}
+	}
+	&-4 {
+		display: block;
+		&-text {
+			background: #94A2A2;
+		}
+		&-img {
+			background-image: url('/lms/wp-content/uploads/2018/08/i3computer-1-e1533314235213.png');
+			order: 0;
+		}
+	}
+}
+
+.page-id-18 .frontproduct {
+	width: 100%;
+	height: auto;
+	min-height: 320px;
+	position: relative;
+		//&:hover {
+			//bottom: 3px;
+		//}
+		&-img {
+			width: 100%;
+			height: 70%;
+			padding:0;
+			margin: auto;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		&-text {
+			width: 100%;
+			height: 30%;
+			color: white;
+			&-title {
+				font-weight: bold;
+				font-size: 100%;
+				top: 20px;
+			}
+			&-link {				
+				font-weight: bold;
+				font-size: 16px;
+				top: 50px;
+			}
+			&-link:hover {
+				text-decoration: underline;
+			}
+		}
+	a {
+		color: white;
+	}
+}
+
+#advies {
+	background: #f8f9f9;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	margin-top: 40px;
+	&-border {
+		width: 50px;
+		border-bottom: 2px solid $btncolor;
+		margin-top: 5px;
+	}
+	h2 {
+		margin-left: 80px;
+		padding: 40px 80px 0px 100px;
+		font-weight: bold;
+		font-family: inherit;
+	}
+	p {
+		max-width: 420px;
+		text-align: left;
+		font-size: 18px;
+		font-family: 'Open Sans Light';
+		padding: 40px 100px 0px 80px;
+	}
+}
+
+#advies-contact{
+	background: #f8f8f8;
+	width: 100%;
+	margin: auto;
+}
+
+#wpcf7-f104-o1 {
+	margin: auto;
+	padding: 20px 0px 50px 0px;
+	width: 750px;
+}
+
+#wpcf7-f104-o1 .wpcf7-textarea {
+	width: 628px;
+	border: 1px solid #dddcdc;
+	margin-top: 4px;
+	font-family: 'Open Sans', sans-serif!important;
+	font-size: 70%;
+}
+
+#wpcf7-f104-o1 input {
+width: 300px;
+border: 1px solid #dddcdc;
+font-family: 'Open Sans', sans-serif!important;
+	font-size: 70%;
+}
+
+#wpcf7-f104-o1 .wpcf7-submit {
+	margin: auto;
+	margin-top: 10px;
+}

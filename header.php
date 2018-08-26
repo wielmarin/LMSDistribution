@@ -46,10 +46,23 @@
 <!--- SITE HEADER --->
 	<header class="site-header">
 	
+	<div class="header-right">	
+		
+		<div class="partner">Dealer worden </div>
+	
+	<!--- Login --->
+	
+		<div class="login"><a href="http://localhost/lms/portal/">Login portal</a>
+		</div>
+		
+	<!--- Login --->
+	</div>
+	
+	<div class="header-bottom">	
 	<!--- Logo --->
 	
 	<a class="logo" href="<?php echo get_home_url(); ?>">
-		<img src="/lms/wp-content/uploads/2018/08/SmallLogo.jpg" width="170px" height="true" alt="Liza line">
+		<img src="/lms/wp-content/uploads/2018/08/SmallLogo.jpg" width="150px" height="true" alt="LMS Distribution">
 	</a>
 	
 	<!--- Logo --->
@@ -66,26 +79,12 @@
 				
 	</nav>
 	
-	<!--- Primary navigation --->
-	
-	
-	<div class="header-right">
 	<!--- Search --->
-	
-		<i class="fas fa-search"></i>
-		
-	
-	
-	<!--- Login --->
-	
-		<div class="login">Login portal</div>
-		
-	<!--- Login --->
-	</div>
-	
-	<!--- Search --->
-	
+	<i class="fas fa-search"></i>
 	<?php get_search_form(); ?>
+	
+	</div>	
+	
 	
 	</header>
 <!-- /site-header -->

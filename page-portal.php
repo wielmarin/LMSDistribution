@@ -4,34 +4,35 @@ get_header();
 
 ?>
 
-
-
-
-
 <div id="portal-hero">
 	<h1 id="portal-hero-heading">
-		Welkom bij het <span>Partner Portal</span>
+		Partner Portal
+		<div id="border-subpage"></div>
 	</h1>
+	
 </div>
 
-<div id="portal-welcome">
-	<div id="portal-welcome-text">
-		<h2 id="portal-welcome-text-title">
-			Welkom bij het Partner Portal
+<div id="pitch" class="itemcont center">
+
+	<div class="pitch-title-box">
+		<h2 id="pitch-title" class="center">
+		Welkom bij de partner portal
 		</h2>
-		<p id="portal-welcome-text-descr">
-			Hier vind je de dingen wat partners krijgen. Want jij bent special.
-		</p>
+		<div class="underline"></div>
 	</div>
-	<div id="portal-welcome-video">
-		<img src="/lms/wp-content/uploads/2018/08/portal-video-poster.jpg" width=100%>
-	</div>	
+	<div id="pitch-text" class="center">
+		<p>Welkom bij de partner portal van LMS Distribution. In de onderstaande sectie kunt u de content zien die voor u beschikbaar is. Kunt u iets niet vinden, of heeft u vragen? Neem dan contact met ons op. We helpen u graag verder.</p>
+		<a id="hero-text-link" href='#' class="btn2">
+			Contact opnemen >
+		</a>
+	</div>
+	
 </div>
 
 <div id="portal-content">
 	<div id="portal-content-banner">
 		<h2>
-			Portal
+			Partner Portal
 		</h2>
 	</div>
 	<div id="portal-content-side">
@@ -90,6 +91,7 @@ get_header();
 		
 		<!-- Tiles will appear here -->
 		<div id="portal-content-right-space" class="ajaxspace">
+
 			<div id="breadcrumbtrail">
 			<?php
 			breadcrumb_trail();
@@ -114,10 +116,17 @@ get_header();
 					<?php while ( $parent->have_posts() ) : $parent->the_post(); ?>
 					
 					<a id="parent-<?php the_ID(); ?>" class="portalbox" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+					
+			<div class="portalbox-image"
+				<?php if (has_post_thumbnail() ) { ?> 
+					style="background-image: url(<?php the_post_thumbnail_url('portalbox-image'); ?>)" 
+				<?php } else { ?>
+					style="background-image: url(/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg)"
+				<?php } ?>>
+			</div>
+			<p class="portalbox-title"><?php the_title(); ?></p>
 
-								<p class="portalbox-title"><?php the_title(); ?></p>
-
-					</a>
+		</a>
 					
 					<?php endwhile;	?>
 				
@@ -130,7 +139,7 @@ get_header();
 <div id="advised">
 	<div id="advised-banner">
 		<h2>
-			Advised Contacts
+			Contact
 		</h2>
 	</div>
 	<div id="advised-contact">
@@ -141,10 +150,10 @@ get_header();
 					Marketing
 				</h3>
 				<p>
-					Mail: marketing@i3-technologies.com
+					Mail: info@lmsdistribution.nl
 				</p>
 				<p>
-					Tel: +32 492 580 160
+					Tel: 085-0703058
 				</p>
 			</div>
 		</div>
@@ -155,10 +164,10 @@ get_header();
 					Branding
 				</h3>
 				<p>
-					Mail: marketing@i3-technologies.com
+					Mail: info@lmsdistribution.nl
 				</p>
 				<p>
-					Tel: +32 492 580 160
+					Tel: 085-0703058
 				</p>
 			</div>
 		</div>

@@ -38,13 +38,15 @@
 			</h3>
 			<p>Contact</p>
 			<p>Support</p>
+			<p>Waar te koop?</p>
 		</div> 
 		<div id="footerlist-3" class="footerlist-item">
 			<h3 id="footerlist-3-title" class="footerlist-item-title">
 			Partners
 			</h3>
 			<p>Partner portal</p>
-			<p>Partner worden</p>
+			<p>Dealer worden</p>
+			<p>Demo aanvragen</p>
 			
 		</div>
 		<div id="footerlist-4" class="footerlist-item">

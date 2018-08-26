@@ -2,22 +2,24 @@
 
 #hero {
 	height: 80vh;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url('/lms/wp-content/uploads/2018/08/Banner-image.jpg');
+	background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url('/lms/wp-content/uploads/2018/08/Banner-image.jpg'); // Backup static image if no javascript/Backstretch
 	background-size: cover;
 	background-repeat: none;
 	position: relative;
-	
+	&:before {content: ""; width: 100%; height: 100%; background: rgba(0, 0, 5, 0.3); position: absolute;}
 	&-text {
 		position: absolute;
 		color: #fff;
-		top: 40%;
+		top: 35%;
 		left: 50%;
+	
 		transform: translateX(-50%);
 			&-heading {
 			text-transform: uppercase;
 			font-weight: bold;
 			margin-bottom: 30px;
 			font-size: 230%;
+			font-family: 'Open Sans', sans-serif;
 			}
 			&-subheading {
 			margin-bottom: 30px;
@@ -41,14 +43,20 @@
 	justify-content: space-around;
 }
 
+#pitch {
+	width: 85%;
+}
 .pitch-title-box {
-	max-width: 400px;
+	max-width: 450px;
+	text-align: right;
 }
 
 #pitch-title {
 	font-weight: bold;
 	font-family: inherit;
+	text-align: left;
 }
+
 .underline {
 	border-bottom: 2px solid $btncolor;
 	width: 50px;
@@ -56,7 +64,7 @@
 }
 
 #pitch-text {
-	max-width: 600px;
+	max-width: 500px;
 	text-align: left;
 	font-size: 18px;
 	 font-family: 'Open Sans Light';
@@ -68,8 +76,8 @@
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-columns: repeat(2, 1fr);
-	grid-column-gap: 1rem;
-	grid-row-gap: 1rem;
+	grid-column-gap: 3rem;
+	grid-row-gap: 3rem;
 	margin: auto;
 	position:relative;
 	&-1 {
@@ -94,6 +102,7 @@
 		}
 		&-img {
 			background-image: url('/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg');
+			order: 2;
 		}
 	}
 	&-4 {
@@ -102,6 +111,7 @@
 		}
 		&-img {
 			background-image: url('/lms/wp-content/uploads/2018/08/i3computer-1-e1533314235213.png');
+			order: 2;
 		}
 	}
 }
@@ -161,7 +171,7 @@
 }
 
 .raisebox {
-	bottom: 2px;
+	bottom: 5px;
 }
 
 #frontusp {
@@ -197,13 +207,13 @@
 	text-align: center;
 	height: 30px;
 	padding-top: 60px;
-	font-weight: bold;
+	font-weight: bold!important;
 }
 
 .underline-slider {
 	border-bottom: 2px solid white;
 	width: 50px;
-	margin-left:580px;
+	margin-left:587px;
 	margin-top: 5px;
 }
 
@@ -255,13 +265,14 @@
 	}
 	h4 {
 	font-weight: bold;
+	font-family: inherit;
 	}
 }
 
 #nieuws {
 	padding: 50px;
 	&-container {
-		max-width: 1200px;
+		max-width: 1300px;
 		display: flex;
 		-webkit-flex-wrap: wrap;
 		flex-wrap: wrap;
@@ -271,7 +282,7 @@
 }
 
 #nieuws-container-flex {
-	width: 550px;
+	width: 600px;
 }
 
 
@@ -279,11 +290,39 @@
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
+	padding: 30px 0px;
+	img {
+	margin-right: 15px;
+	}
 }
 
 #nieuws-data {
-	width: 350px;
+	width: 400px;
+	h4 {
+		font-weight: bold;
+		font-family: inherit;
+		font-size: 110%;
+		margin: 5px 0px;
+	}
+	span {
+		font-size: 90%;
+	}
+	p {
+	margin: 10px 0px 20px 0px; 
+	}
+	a {
+	Color:#AF242B;
+	font-weight: bold;
+	}
 }
 
+#nieuws-border {
+	width: 50%;
+	border-bottom: 1px solid #AF242B;
+	transition: width 1.2s;
 
+}
 
+#nieuws-container-flex-item:hover + #nieuws-border {
+	width: 100%!important;
+}

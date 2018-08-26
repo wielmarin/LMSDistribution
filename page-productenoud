@@ -1,0 +1,346 @@
+<?php get_header(); ?>
+
+<div id="hero">
+	<div id="hero-text" class="center">
+		<h1 id="hero-text-heading" class="center">
+			Onze producten
+		</h1>
+		<div id="border-subpage"></div>
+	</div>
+</div>
+
+<div id="frontproducts" class="itemcont">
+	<div id="frontproducts-1" class="frontproduct">
+		<div id="frontproducts-1-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-1-text" class="frontproduct-text center">
+			<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
+				Interactive Flatpanels - V-serie
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-2" class="frontproduct">
+		<div id="frontproducts-2-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-2-text" class="frontproduct-text center">
+			<h3 id="frontproducts-2-text-title" class="frontproduct-text-title">
+				Interactive Flatpanels - E-serie
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-3" class="frontproduct">
+		<div id="frontproducts-3-img" class="frontproduct-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-3-text" class="frontproduct-text center">
+			<h3 id="frontproducts-3-text-title" class="frontproduct-text-title">
+				Interactive Flatpanels - P-serie
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-4" class="frontproduct">
+		<div id="frontproducts-4-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-4-text" class="frontproduct-text center">
+			<h3 id="frontproducts-4-text-title" class="frontproduct-text-title">
+				Interactive Flatpanels - Huddle
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>		
+		</div>
+	</div>
+	<div id="frontproducts-1" class="frontproduct">
+		<div id="frontproducts-1-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-1-text" class="frontproduct-text center">
+			<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
+				Interactive Whiteboards
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-2" class="frontproduct">
+		<div id="frontproducts-2-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-2-text" class="frontproduct-text center">
+			<h3 id="frontproducts-2-text-title" class="frontproduct-text-title">
+				PROJECTOR-lamp
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-3" class="frontproduct">
+		<div id="frontproducts-3-img" class="frontproduct-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-3-text" class="frontproduct-text center">
+			<h3 id="frontproducts-3-text-title" class="frontproduct-text-title">
+				PROJECTOR-laser Non-interactive
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-4" class="frontproduct">
+		<div id="frontproducts-4-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-4-text" class="frontproduct-text center">
+			<h3 id="frontproducts-4-text-title" class="frontproduct-text-title">
+				PROJECTOR-laser Inter Active
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>		
+		</div>
+	</div>
+	<div id="frontproducts-1" class="frontproduct">
+		<div id="frontproducts-1-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-1-text" class="frontproduct-text center">
+			<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
+				Computer OPS
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-2" class="frontproduct">
+		<div id="frontproducts-2-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-2-text" class="frontproduct-text center">
+			<h3 id="frontproducts-2-text-title" class="frontproduct-text-title">
+				Computer NON-OPS
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-3" class="frontproduct">
+		<div id="frontproducts-3-img" class="frontproduct-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-3-text" class="frontproduct-text center">
+			<h3 id="frontproducts-3-text-title" class="frontproduct-text-title">
+				Snap
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-4" class="frontproduct">
+		<div id="frontproducts-4-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-4-text" class="frontproduct-text center">
+			<h3 id="frontproducts-4-text-title" class="frontproduct-text-title">
+				Draadloos Sync - Touch
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>		
+		</div>
+	</div>
+	<div id="frontproducts-1" class="frontproduct">
+		<div id="frontproducts-1-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-1-text" class="frontproduct-text center">
+			<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
+				Draadloos Sync - Zonder touch
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-2" class="frontproduct">
+		<div id="frontproducts-2-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-2-text" class="frontproduct-text center">
+			<h3 id="frontproducts-2-text-title" class="frontproduct-text-title">
+				Software 
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-3" class="frontproduct">
+		<div id="frontproducts-3-img" class="frontproduct-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-3-text" class="frontproduct-text center">
+			<h3 id="frontproducts-3-text-title" class="frontproduct-text-title">
+				IMO learn
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-4" class="frontproduct">
+		<div id="frontproducts-4-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-4-text" class="frontproduct-text center">
+			<h3 id="frontproducts-4-text-title" class="frontproduct-text-title">
+				Add ons
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>		
+		</div>
+	</div>
+	<div id="frontproducts-1" class="frontproduct">
+		<div id="frontproducts-1-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-1-text" class="frontproduct-text center">
+			<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
+				White boards
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-2" class="frontproduct">
+		<div id="frontproducts-2-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-2-text" class="frontproduct-text center">
+			<h3 id="frontproducts-2-text-title" class="frontproduct-text-title">
+				HAWMS
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-3" class="frontproduct">
+		<div id="frontproducts-3-img" class="frontproduct-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-3-text" class="frontproduct-text center">
+			<h3 id="frontproducts-3-text-title" class="frontproduct-text-title">
+				Floor stands
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>
+		</div>
+	</div>
+	<div id="frontproducts-4" class="frontproduct">
+		<div id="frontproducts-4-img" class="frontproduct-img">
+		
+		</div>
+		<div id="frontproducts-4-text" class="frontproduct-text center">
+			<h3 id="frontproducts-4-text-title" class="frontproduct-text-title">
+				Product x
+			</h3>
+			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
+				Hier komt een korte inleiding over het product (teaser).
+			</p>
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+				Bekijk product <i class="fas fa-angle-right"></i>
+			</a>		
+		</div>
+	</div>
+</div>
+
+<div id="advies">
+	<h2>Advies en demo ontvangen?
+	<div id="advies-border"></div>
+	</h2>
+	<p>Laat uw gegevens achter en wij nemen zo spoedig mogelijk contact met u op</p>
+</div>
+<div id="advies-contact">
+	<?php echo do_shortcode('[contact-form-7 id="104" title="Contactformulier 1"]'); ?>
+</div>
+
+
+<?php get_footer(); ?>

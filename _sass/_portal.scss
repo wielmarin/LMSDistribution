@@ -1,17 +1,25 @@
 #portal-hero {
-	height: 50vh;
-	background: linear-gradient(transparent, black), url("/lms/wp-content/uploads/2018/08/portal-banner.jpg");
+	height: 60vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url('/lms/wp-content/uploads/2018/08/portal-banner.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
 	&-heading {
 		margin: auto;
 		color: white;
-		span {
-			padding: 0.25rem 0.5rem;
-			background: #AF242B;
-		}
+		font-family: 'Open Sans', sans-serif;
+		font-size: 240%;
 	}
+}
+
+.page-id-106 .itemcont {
+	max-width: 1000px;
+	padding: 50px 20px 70px 20px;
+	margin: auto;	
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 #portal-welcome {
@@ -42,16 +50,16 @@
 		background: rgba(0,0,0,0.85);
 		h2 {
 			padding: 25px 0px;
-			margin-left: 12rem;
+			margin-left: 6rem;
 			color: white;
 			text-transform: none;
-			font-size: 2rem;
+			font-size: 34px;
 			font-weight: 300;
 		}
 	}
 	&-side {
-		width: 25%;
-		border-right: 1px solid $maincolor;
+		width: 30%;
+		border-right: 1px solid rgba(0, 0, 0, 0.125);
 		user-select: none;
 		box-sizing: border-box;
 		&-title {
@@ -59,26 +67,32 @@
 			border-bottom: 1px solid $maincolor;
 			font-size: 1.5rem;
 			text-transform: uppercase;
-			padding: 1rem 0 1rem 2rem;
+			padding: 20px 20px;
+			font-family: 'Open Sans', sans-serif;
 			span {
 				color: $btncolor;
-				font-weight: 700;
+				font-weight: bold;
+				font-family: 'Open Sans', sans-serif;
 			}
 		}
 		&-list {
 			ul {
 				font-size: 1.2rem;
-				padding: 0px 10px;
+				padding: 25px 20px;
+				
 			}
 			ul li {
 				display: block;
-				padding: 5px 25px;
+				padding: 10px 27px;
 				list-style: none;
-				background: url(/lms/wp-content/uploads/2018/08/bulletgrey.png) no-repeat left 9px;
+				background: url(/lms/wp-content/uploads/2018/08/bulletgrey.png) no-repeat left 14px;
 				cursor: pointer;
 				&:hover {
-					background-image: url(/lms/wp-content/uploads/2018/08/bulletred.png);
+					background-image: url(/lms/wp-content/uploads/2018/08/bulletblue.png);
 					color: black;
+				}
+				a {
+				color: rgba(0,0,0,0.5);
 				}
 				a:hover {
 					color: black;
@@ -87,10 +101,22 @@
 			ul li ul {
 				display:none;
 			}
+			// Changing side menu links
+			
+.portalcontentactive {
+	background-image: url(/lms/wp-content/uploads/2018/08/bulletblue.png)!important;
+	a {
+		color: #2e3d50;
+	}
+				ul {
+				font-size: 1.2rem;
+				padding: 5px 15px;
+			}
+}
 		}
 	}
 	&-right { // Banner/Breadcrumbs/Tile menu
-		width: 75%;
+		width: 70%;
 		display: flex;
 		flex-wrap: wrap;
 		position: relative;
@@ -98,13 +124,13 @@
 		&-banner {
 			height: 200px;
 			width: 100%;
-			background: linear-gradient(transparent, black), url(/lms/wp-content/uploads/2018/08/Banner-image.jpg) no-repeat;
+			background: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url(/lms/wp-content/uploads/2018/08/Partner-Portal.jpg) no-repeat;
 			background-size: cover;
 			position:relative;
 		}
 		&-space {
 			position:relative;
-			margin-top: 0px;
+			margin: 40px 0px;
 			width: 100%;
 			height: auto;
 			min-height: 240px;
@@ -119,21 +145,39 @@
 #breadcrumbtrail {
 	position: absolute;
 	left: 10px;
-	top: -40px;
+	top: -80px;
 	color: white;
+	display: inline;
+	p {
+		display: inline;
+	}
+	a {
+	color: white;
+	}
 	h2 {
+		display: none;
+	}
+	ul li:first-of-type, ul li:nth-of-type(2) {
 		display: none;
 	}
 }
 
+.breadcrumbs {
+	display: inline;
+}
+
+.breadcrumbportal {
+	display: inline;
+	cursor: pointer;
+}
+
 // Display content loaded on menu click
 .portalbox {
-	width: 275px;
+	width: 277px;
 	height: 265px;
 	margin: 10px auto;
-	border: 1px solid black;
+	border: 1px solid rgba(0, 0, 0, 0.125);
 	position: relative;
-	background-image: url(/lms/wp-content/uploads/2018/08/portal-video-poster.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -152,15 +196,16 @@
 		height: 50px;
 		line-height: 50px;
 	}
-}
-
-// Changing side menu links
-.portalcontentactive {
-	background-image: url(/lms/wp-content/uploads/2018/08/bulletred.png)!important;
-	a {
-		color: black;
+	&-image {
+		width: 100%;
+		height: calc(100% - 60px);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 }
+
+
 
 #advised {
 	display: flex;
@@ -171,10 +216,10 @@
 		color: white;
 		h2 {
 			padding: 25px 0px;
-			margin-left: 12rem;
+			margin-left: 6rem;
 			color: white;
 			text-transform: none;
-			font-size: 2rem;
+			font-size: 34px;
 			font-weight: 300;
 		}
 	}
@@ -194,27 +239,29 @@
 	max-width: 500px;
 	min-width: 250px;
 	height: 200px;
-	margin: auto;
-	border: 1px solid $maincolor;
-
+	margin: 30px auto;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	padding:10px;
 	align-items: start;
 	&-text {
-		width: calc(100% - 120px);
+		width: calc(100% - 150px);
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
 	}
 	img {
-		width: 120px;
-		height: 120px;
+		width: 80px;
+		height: 80px;
+		margin: auto;
 	}
 	h3 {
 		line-height: 5rem;
 		width: 100%;
 		font-size: 1.2rem;
-		border-bottom: 1px solid $maincolor;
-		padding-left: 15px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 		font-weight: 700;
+		font-family: 'Open Sans', sans-serif;
+	
 	}
 	p {
 		width: 100%;
@@ -223,7 +270,39 @@
 	}
 }
 
+#pdflist {
+	width: 100%;
+}
 
+#filelink {
+	width: 100%;
+	height: 60px;
+	border-top: 1px solid $maincolor;
+	align-content: center;
+	line-height: 60px;
+	cursor: pointer;
+	&:hover {
+		background: rgba(0, 0, 0, 0.125);
+	}
+	p {
+		max-width: 350px;
+		overflow: hidden;
+		display: inline;
+		float: left;
+		line-height: 60px;
+		margin-left: 50px;
+		color: $fontcolor;
+	}
+}
 
+.filetype {
+	text-transform: uppercase;
+	margin-right: 80px;
+	float: right;
+	color: $fontcolor;
+}
 
-
+.filesize {
+	float: right;
+	margin-right: 50px;
+}

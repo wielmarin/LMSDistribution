@@ -17,19 +17,6 @@ function LMS_resources() {
 add_action('wp_enqueue_scripts', 'LMS_resources');
 
 
-/* Try to add AJAX
-function my_enqueue() {
-      wp_enqueue_script( 'ajax-script', get_template_directory_uri() . '/js/ajax-script.js', array('jquery') );
-
- }
- add_action( 'wp_enqueue_scripts', 'my_enqueue' );
-*/
-
- // Make custom variables
- 
- 
-
-
 // Navigation Menus
 register_nav_menus(array(
 'primary' => __( 'Primary Menu'),

@@ -3,7 +3,7 @@
 <div id="hero-sub">
 	<div id="hero-sub-text" class="center">
 		<h1 id="hero-sub-text-heading" class="center">
-			Producten
+			<?php the_title(); ?>
 		</h1>
 		<div id="border-subpage"></div>
 	</div>

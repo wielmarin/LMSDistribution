@@ -36,7 +36,7 @@
 			<h3 id="footerlist-2-title" class="footerlist-item-title">
 				Advies Nodig?
 			</h3>
-			<p>Contact</p>
+			<a href="http://localhost/lms/contact/"><p>Contact</p></a>
 			<p>Support</p>
 			<p>Waar te koop?</p>
 		</div> 
@@ -53,10 +53,12 @@
 			<h3 id="footerlist-4-title" class="footerlist-item-title">
 				LMS Distribution
 			</h3>
-			<p>Adress</p>
-			<p>Telefoon</p>
-			<p>E-mail</p>
-			<p>Over Ons</p>
+			<p>Toepadweg 10
+			5301KA Zaltbommel
+			</p>
+			<p>T: <a href="tel:085-0703058">085-0703058</a></p>
+			<p>E: <a href="mailto:Info@lmsdistribution.nl">Info@lmsdistribution.nl</a></p>
+			<a href="http://localhost/lms/over-ons/"><p>Over Ons</p></a>
 			
 		</div>
 	</div>

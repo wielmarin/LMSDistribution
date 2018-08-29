@@ -28,7 +28,8 @@ gulp.task('browser-sync', function() {
     
     browserSync.init(files, {
    	 injectChanges: true,
-   	 proxy: 'http://localhost/lms/'
+   	 proxy: 'http://localhost/lms/',
+	 tunnel: "test-lmswebstef",
     });
 });
 

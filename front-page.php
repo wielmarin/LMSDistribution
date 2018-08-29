@@ -24,7 +24,7 @@
 	</div>
 	<div id="pitch-text" class="center">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<a id="hero-text-link" href='#' class="btn2">
+		<a id="hero-text-link" href='http://localhost/lms/contact/' class="btn2">
 			Adviesgesprek aanvragen >
 		</a>
 	</div>
@@ -199,46 +199,46 @@
 	<div id="nieuws-container">
 		<div id="nieuws-container-flex">
 			<div id="nieuws-container-flex-item">
-				<img src="/lms/wp-content/uploads/2018/08/portal-banner-1-e1534773518828.jpg" alt="whiteboard" width="140px" height="140px">
+					<a href=""><img src="/lms/wp-content/uploads/2018/08/portal-banner-1-e1534773518828.jpg" alt="whiteboard" width="140px" height="140px">
 					<div id="nieuws-data">
 					<span>dd/mm/jjjj</span>
 					<h4>Titel nieuwsbericht</h4>
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 					
-					<a href="">Lees artikel</a>
+					<div class="nieuws-actie">Lees artikel</div></a>
 					</div>
 			</div>
 			<div id="nieuws-border"></div>
 			<div id="nieuws-container-flex-item">
-				<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="140px" height="140px">
+					<a href=""><img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="140px" height="140px">
 					<div id="nieuws-data">
 					<span>dd/mm/jjjj</span>
 					<h4>Titel nieuwsbericht</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-					<a href="">Lees artikel</a>
+					<div class="nieuws-actie">Lees artikel</div></a>
 					</div>
 			</div>
 			<div id="nieuws-border"></div>
 		</div>
 		<div id="nieuws-container-flex">
 			<div id="nieuws-container-flex-item">
-				<img src="/lms/wp-content/uploads/2018/08/man_lidner_huddle_-e1534773688109.jpg" alt="whiteboard" width="140px" height="140px">
+				<a href=""><img src="/lms/wp-content/uploads/2018/08/man_lidner_huddle_-e1534773688109.jpg" alt="whiteboard" width="140px" height="140px">
 				<div id="nieuws-data">
 				<span>dd/mm/jjjj</span>
 				<h4>Titel nieuwsbericht</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-				<a href="">Lees artikel</a>
+				<div class="nieuws-actie">Lees artikel</div></a>
 				</div>
 			</div>
 			<div id="nieuws-border"></div>
 			<div id="nieuws-container-flex-item">
-				<img src="/lms/wp-content/uploads/2018/08/hans-office-shoot-060-e1534773802913.jpg" alt="whiteboard" width="140px" height="140px">
+				<a href="">	<img src="/lms/wp-content/uploads/2018/08/hans-office-shoot-060-e1534773802913.jpg" alt="whiteboard" width="140px" height="140px">
 				<div id="nieuws-data">
 				<span>dd/mm/jjjj</span>
 				<h4>Titel nieuwsbericht</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-				<a href="">Lees artikel</a>
+				<div class="nieuws-actie">Lees artikel</div></a>
 				</div>
 			</div>
 			<div id="nieuws-border"></div>

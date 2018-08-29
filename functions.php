@@ -30,6 +30,7 @@ add_theme_support( 'post-thumbnails' );
 
 add_image_size( 'excerpt-thumb', 400, 400 );
 add_image_size( 'portalbox-image', 277, 205, true );
+add_image_size( 'nieuws-banner', 625, 330, true );
 
 
 // Categories and Tags for pages
@@ -48,7 +49,7 @@ add_action( 'init', 'myplugin_settings' );
 // Excerpts
 // Length
 function custom_excerpt_length() {
-	return 90;
+	return 18;
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
 

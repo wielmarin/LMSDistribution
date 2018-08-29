@@ -1,47 +1,51 @@
-<?php get_header(); ?>
+<?php
 
-<!--- Blogs page ---->
-
-<!----------------- THE CONTENT --------------->
-<div id="excerptcontainer">
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-	?>
-	
-	<div id="excerptblock">
-		<div id="thumbnail">
-		<?php 
-			if (has_post_thumbnail() ) {
-			the_post_thumbnail('excerpt-thumb'); }
-		?>
-		</div>
-		<div id="posttitle">
-		<h2>
-		<a href="<?php the_permalink(); ?>">
-		<?php the_title(); ?>
-		</a>
-		</h2>
-		
-		<p class="postinfo"><?php the_time('d/m/y'); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"> <?php the_author();?></a> </p>
-		
-		</div>
-		<div id="excerpts"><p>
-		<?php echo get_the_excerpt(''); ?>
-		<a href="<?php the_permalink(); ?>">Read more &raquo;</a>
-		</p></div>
+get_header();
+ ?>
+ 
+<div id="hero-sub">
+	<div id="hero-sub-text" class="center">
+		<h1 id="hero-sub-text-heading" class="center">
+			Nieuws
+		</h1>
+		<div id="border-subpage"></div>
 	</div>
-	
-	<?php
-	endwhile; else: ?>
-	<p>Sorry, no posts matched your criteria.</p>
-	<?php endif; ?>
+</div>
+ 
+
+<!-- body -->
+<div id="blogpagecontainer">   
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+    ?>
+
+    <div id="excerptcontainer">
+       
+        <?php  $post_thumbnail_id = get_post_thumbnail_id();
+        $post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id ); ?>
+        <div id="excerptimage" style="background-image:url(<?php echo $post_thumbnail_url; ?>)">
+        </div>   
+		
+		<div id="excerptcontainer-content">
+			<div id="flex1" class="excerpttext">
+				<div class="flex1text"><span><?php the_time('j/m/Y'); ?></span></div>
+				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+			</div>
+		   
+			<div id="flex3" class="excerpttext">
+				<div id="aboutomschrijving1" class="flexomschrijving"><p><?php echo get_the_excerpt(); ?> ...</p></div><a href="<?php the_permalink(); ?>" class="readmorelink">Lees artikel</a>
+			</div>
+		</div>
+		<div id="nieuws-border"></div>
+    </div>
+
+<?php
+    endwhile; else: ?>
+    <p>Sorry, no posts matched your criteria.</p>
+<?php endif; ?>
 </div>
 
-<div id="mainimage">
-		<?php	
-			if ( has_post_thumbnail() ) {
-			the_post_thumbnail('thumbnail');
-			} 
-		?>
-</div>
+<?php
 
-<?php get_footer(); ?>
+get_footer();
+
+?>

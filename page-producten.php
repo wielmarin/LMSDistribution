@@ -10,6 +10,38 @@
 </div>
 
 <div id="frontproducts" class="itemcont">
+<!-------- Loop ------------>
+<?php
+	$args = array(
+		'cat' => 3,
+		'order' => 'ASC',
+		'nopaging' => true,
+		'post_type' =>'page'
+	);
+	
+ $query = new WP_Query($args); ?>
+	<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+	   <div id="frontproducts-1" class="frontproduct">
+			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
+					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
+				<?php } else { ?>
+					style="background-image: url(/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg)"
+				<?php } ?>>
+			</div>
+			<div id="frontproducts-1-text" class="frontproduct-text center">
+				<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
+					<?php the_title(); ?>
+				</h3>
+				<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_permalink(); ?>">
+					Take a look <i class="fas fa-angle-right"></i>
+				</a>
+			</div>
+		</div>
+	<?php endwhile; endif; ?>
+<?php wp_reset_query(); ?>
+
+
+<!-------- Voorbeelden
 	<div id="frontproducts-1" class="frontproduct">
 		<div id="frontproducts-1-img" class="frontproduct-img">
 		
@@ -270,6 +302,8 @@
 			</a>		
 		</div>
 	</div>
+ ------->	
+	
 </div>
 
 <div id="advies-background">

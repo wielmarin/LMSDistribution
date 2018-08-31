@@ -14,6 +14,15 @@ jQuery('#contactbutton').click(function() {
 //	jQuery('#contactbutton').toggleClass('contact-small', 400);
 });
 
+// Main menu products dropdown 
+	
+	// Deactivate Links
+	jQuery('.menunolink > a').click(function() {
+		return false;
+	});
+	
+	// Append arrow
+	jQuery('.menunolink > a').append(' <i class="fas fa-caret-right"></i>');
 
 //  Animate front box reaction
 jQuery('.frontproduct').hover(function() {

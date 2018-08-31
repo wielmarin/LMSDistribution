@@ -32,6 +32,7 @@
 </div>
 
 <div id="frontproducts" class="itemcont">
+
 	<div id="frontproducts-1" class="frontproduct">
 		<div id="frontproducts-1-img" class="frontproduct-img">
 		

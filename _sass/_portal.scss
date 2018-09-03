@@ -306,3 +306,14 @@
 	float: right;
 	margin-right: 50px;
 }
+
+#maintext {
+	width:50%;
+	min-width: 400px;
+	margin: auto;
+	input {
+		background: white;
+		border: 1px solid black;
+		color: black;
+	}
+}

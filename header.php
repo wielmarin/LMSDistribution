@@ -52,7 +52,8 @@
 	
 	<!--- Login --->
 	
-		<div class="login"><a href="http://localhost/lms/portal/">Login portal</a>
+		<div class="login"><a href="http://localhost/lms/portal/">Portal -</a>
+			<?php echo do_shortcode('[swpm_mini_login]'); ?>
 		</div>
 		
 	<!--- Login --->

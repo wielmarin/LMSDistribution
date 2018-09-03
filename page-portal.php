@@ -13,7 +13,7 @@ get_header();
 </div>
 
 <div id="pitch" class="itemcont center">
-
+<?php if(SwpmMemberUtils::is_member_logged_in()) { ?>
 	<div class="pitch-title-box">
 		<h2 id="pitch-title" class="center">
 		Welkom bij de partner portal
@@ -173,7 +173,11 @@ get_header();
 		</div>
 	</div>
 </div>
+<?php } else { ?>
+<p>You must be a member to view Portal Content. Click <a href="#">here</a> to sign up or <a href="#">here</a> to log in.</p>
 
+<?php } ?>
+</div>
 
 <?php
 

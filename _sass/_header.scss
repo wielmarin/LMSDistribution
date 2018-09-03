@@ -188,7 +188,13 @@ a {
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	position: relative;
-	justify-content: right;
+	justify-content: flex-end;
+	a {
+		display: inline;
+	}
+	.swpm_mini_login_wrapper {
+		display: inline;
+	}
 }
 
 .site-header i {

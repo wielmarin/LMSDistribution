@@ -118,7 +118,7 @@
 
 .frontproduct {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: flex;
 	min-height: 320px;
 	position: relative;
@@ -154,10 +154,12 @@
 				
 			}
 			&-link {
-				position: absolute;
-				bottom: 30px;
-				left: 50%;
-				transform: translateX(-50%);
+		//		position: absolute;
+		//		bottom: 30px;
+		//		left: 50%;
+		//		transform: translateX(-50%);
+				position: relative;
+				top: 40px;
 				font-weight: bold;
 				font-size: 16px;
 			}

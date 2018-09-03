@@ -107,8 +107,15 @@ jQuery('#individual-downloads-drivers-button').click( function() {
 	jQuery('.driverfile').toggle();	
 });
 
+////// Text Membership Plugin aanpassen
 
+jQuery('.swpm_mini_login_login_here a').html('Inloggen - ');
 
+jQuery('.swpm_mini_login_no_membership').html('Nog steeds geen lid? ');
+
+jQuery('.swpm_mini_login_join_now a').html('Schrijf je nu in');
+
+jQuery('.swpm_mini_login_label').html('Ingelogd als: ');
 
 //END
 });

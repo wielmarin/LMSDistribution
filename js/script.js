@@ -87,6 +87,25 @@ jQuery("#hero").backstretch([
 	],
 	{transitionDuration: 800},
 	);
+	
+
+	
+///////// Individual product page
+
+jQuery('.individualdownload').hide();
+
+jQuery('#individual-downloads-manuals-button').click( function() {
+	jQuery('.manualfile').toggle();	
+});
+
+jQuery('#individual-downloads-technical-button').click( function() {
+	jQuery('.techfile').toggle();	
+});
+
+
+jQuery('#individual-downloads-drivers-button').click( function() {
+	jQuery('.driverfile').toggle();	
+});
 
 
 

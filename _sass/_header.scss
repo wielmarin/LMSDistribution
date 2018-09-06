@@ -32,7 +32,7 @@ Version: 1.0
 /* navigation */
 
 .site-nav {
-width: 75%;
+width: 80%;
 margin: auto;
 }
 
@@ -58,7 +58,7 @@ margin: auto;
 	display:inline;
 	color: rgba(0, 0, 0, 0.5);
 	text-transform: uppercase;
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 28px;
 	font-family: 'Open Sans';
 }
@@ -69,21 +69,34 @@ margin: auto;
 
 .site-nav ul li ul {
 	position: absolute;
-	padding-top: 30px;
+	left: -100px;
+	padding-top: 38px;
 	display:none;
-	width: 280px;
-	background: white;
+	width: 310px;
+	
 	box-sizing: border-box;
 	li {
-		padding: 10px 0px;
 		display: block;
-		a {
-			margin-left: 10px;
+		color: black!important;
+		padding: 0.5rem 1.5rem;
+		background: white;
+		&:first-of-type {
+			border-top:  1px solid #e8ebeb;
+			padding-top: 15px;
 		}
+		&:last-of-type {
+			padding-bottom: 12px;
+		}
+	}
+	a {
+		color: #212529;
+	}
+	a:hover {
+	border-bottom: none;
 	}
 }
 
-.site-nav ul li ul li:hover i {
+.site-nav ul li ul li a:hover {
 	color: #AF242B;
 }
 
@@ -93,19 +106,27 @@ margin: auto;
 	top: 0px;
 	padding-top: 0px;
 	display:none;
-	left: 280px;
+	left: 310px;
 	background: white;
 	li {
-		border: 1px solid $fontcolor;
+		border: 1px solid #e8ebeb;
 		border-bottom: none;
 		&:last-of-type {
-			border-bottom: 1px solid $fontcolor;
+			border-bottom: 1px solid #e8ebeb;
 		}
 	}
 }
 
-.site-nav ul li:hover > ul {
+.site-nav ul li:hover > ul  {
 	display:block;
+}
+
+.nav-arrow {
+	position: absolute;
+	margin-left: 170px;
+	margin-top: 20px;
+	display: none;
+	color: #AF242B;
 }
 
 li { 
@@ -122,24 +143,28 @@ li {
 ///// Submenus 
 
 .flatpanelsmenu > ul {
-	width: 330px!important;
+	width: 370px!important;
 }
 
 .computersmenu > ul {
-	width: 220px!important;
+	width: 270px!important;
 }
 
 .draadloossyncmenu > ul {
-	width: 320px!important;
+	width: 380px!important;
 }
 
 .projectorsmenu > ul {
-	width: 190px!important;
+	width: 230px!important;
+}
+
+.accessoiresmenu > ul {
+	width: 320px!important;
 }
 
 .lasermenu > ul {
-	left: 188px!important;
-	width: 350px!important;
+	left: 228px!important;
+	width: 400px!important;
 }
 
 /////// Correct icon size in menu
@@ -156,7 +181,7 @@ li {
 a {
 	border: 1px solid black;
 	padding: 8px;
-	font-size: 80%;
+	font-size: 13px;
 	color: black;
 	margin-right: 5px;
 }
@@ -171,7 +196,7 @@ a {
 #menu-item-233 a {
 	border: 1px solid #AF242B;
 	padding: 8px;
-	font-size: 80%;
+	font-size: 13px;
 	color: white;
 	background: #AF242B;
 }
@@ -338,9 +363,13 @@ input {
 	padding: 0px 30px;
 	margin: 3px 0px;
 	border-left: 1px solid #e8ebeb;
+	font-size: 12px;
+	color: black;
 }
 
 .partner {
 	padding: 0px 30px;
-	margin: 3px 0px;
+	margin: auto 0px;
+	font-size: 12px;
+	color: black;
 }

@@ -76,8 +76,10 @@
 				'theme_location' => 'primary'
 				);
 			?>
+			
 			<?php wp_nav_menu( $args ); ?>	
 				
+			<div class="nav-arrow"><i class="fas fa-caret-up"></i></div>
 	</nav>
 	
 	<!--- Search --->

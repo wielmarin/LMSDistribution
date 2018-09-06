@@ -1,49 +1,60 @@
-<?php /* Template Name: Individual Product
+<?php /* Template Name: Individual Product OUD
 * Template Post Type: post, page
 */ ?>
 
 <?php get_header(); ?>
 
 <!----------------- Banner --------------->
-
+<div id="hero-sub">
+	<div id="hero-sub-text" class="center">
+		<h1 id="hero-sub-text-heading" class="center">
+			<?php the_title(); ?>
+		</h1>
+		<div id="border-subpage"></div>
+	</div>
+</div>
 
 <!---- Product Info en Foto ----->
 
-
+<div id="individual">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div id="individual">	
-	<span id="individual-breadcrumb">
-		<?php
-			breadcrumb_trail();
-		?>
-	</span>
-	<div id="individual-left" style="background-image: url(<?php the_post_thumbnail_url(); ?>);"></div>
-	
+	<div id="individual-left">
+		<img src="<?php the_post_thumbnail_url(); ?>" width=100% height=true alt="Product Voorbeeld">
+	</div>
 	<div id="individual-right">
 		<div id="individual-right-text">
 			<h2><?php the_title(); ?></h2>
-			<h3><?php the_field('individual_product_subtitle'); ?></h3>
-			<p><?php the_field('individual_product_samenvatting'); ?></p>
-			<a href="/lms/contact"><?php the_field('individual_product_cta'); ?></a>
+			<?php the_content(); ?>
 		</div>
 	</div>
+<?php endwhile; else: ?>
+	<p>Informatie over deze product komt binnenkort</p>
+<?php endif; ?>
 </div>
 
-<!-- Photo choices --->
-<div id="product-image-container">
-	<div id="product-image-1" class="product-image-block" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-	</div>
-	<div id="product-image-2" class="product-image-block" style="background-image: url('<?php the_field('individual_product_secondair_foto'); ?>');">
-	</div>
-	<div id="product-image-3" class="product-image-block" style="background-image: url('<?php the_field('individual_product_derde_foto'); ?>');">
+<!--- Functie Overzicht ---->
+<div id="functieoverzicht">
+	<h2>Functie Overzicht<span id="functieoverzicht-underline"></span></h2>
+	<div id="functieoverzicht-container">
+		
+			<?php if( have_rows('functieoverzicht') ): ?>
+				<?php while( have_rows('functieoverzicht') ): the_row(); ?>
+					<div id="functieoverzicht-item">
+						<img id="functieoverzicht-icon" src="<?php the_sub_field('functie_icon'); ?>">
+						<div id="functieoverzicht-info">
+							<h3><?php the_sub_field('functie_titel'); ?></h3>
+							<p><?php the_sub_field('functie_tekst'); ?></p>
+						</div>
+					</div>
+				<?php endwhile; ?>
+			<?php endif; ?>
+		
 	</div>
 </div>
 
-
-<div id="individual-content">
-	<div id="individual-content-text">
-		<?php the_content(); ?>
-	</div>
+<!--- Downloads en Similar ---->
+<div id="individual-extras">
+	
 	<div id="individual-downloads">
 		<h2>Downloads</h2>
 		
@@ -176,36 +187,6 @@
 			</div> <!-- End Block -->
 		<?php endif; ?>
 	</div>
-</div>
-
-<?php endwhile; else: ?>
-	<p>Informatie over deze product komt binnenkort</p>
-<?php endif; ?>
-
-<!--- Functie Overzicht ---->
-<div id="functieoverzicht">
-	<h2>Functie Overzicht<span id="functieoverzicht-underline"></span></h2>
-	<div id="functieoverzicht-container">
-		
-			<?php if( have_rows('functieoverzicht') ): ?>
-				<?php while( have_rows('functieoverzicht') ): the_row(); ?>
-					<div id="functieoverzicht-item">
-						<img id="functieoverzicht-icon" src="<?php the_sub_field('functie_icon'); ?>">
-						<div id="functieoverzicht-info">
-							<h3><?php the_sub_field('functie_titel'); ?></h3>
-							<p><?php the_sub_field('functie_tekst'); ?></p>
-						</div>
-					</div>
-				<?php endwhile; ?>
-			<?php endif; ?>
-		
-	</div>
-</div>
-
-<!--- Downloads en Similar ---->
-<div id="individual-extras">
-	
-	
 	
 	<!------ Related Products Block ----->
 	<div id="individual-related">

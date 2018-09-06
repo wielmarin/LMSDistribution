@@ -15,7 +15,7 @@ get_header();
 	<div id="container-nieuwsbericht-left">
 		<h1><?php the_title(); ?></h1>
 		<span><?php the_time('j/m/Y'); ?></span>
-		<img src="<?php the_post_thumbnail_url('nieuws-banner'); ?>" alt="whiteboard" width="100%" height="300px">
+		<div id="container-nieuwsbericht-left-image" style="background-image: url(<?php the_post_thumbnail_url('nieuws-banner') ?>);"></div>
 		<?php the_content(); ?>
 	</div>
 	
@@ -54,7 +54,6 @@ get_header();
 			</div>
 		</div>
 		<div id="nieuws-border"></div>
-		
 
 
   <?php endwhile; ?>
@@ -67,7 +66,16 @@ get_header();
 
 	
 			
-			 
+<div id="container-nieuwsbericht-right-titelcontact">
+		<h2>Contact</h2>
+</div>
+		<div id="nieuws-sidebar">
+		Wilt u meer weten over de producten van LMS Distribution?
+		<a id="hero-text-link" href='#' class="btn3">
+			Neem contact met ons op >
+		</a>
+		</div>
+	 
 			
 		
 	</div>	

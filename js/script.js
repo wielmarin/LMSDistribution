@@ -23,6 +23,11 @@ jQuery('#contactbutton').click(function() {
 	
 	// Append arrow
 	jQuery('.menunolink > a').append(' <i class="fas fa-caret-right"></i>');
+	
+	// Show up arrow
+	jQuery('#menu-item-141').hover(function() {
+		jQuery('.nav-arrow').toggle();
+	});
 
 //  Animate front box reaction
 jQuery('.frontproduct').hover(function() {
@@ -106,6 +111,14 @@ jQuery('#individual-downloads-technical-button').click( function() {
 jQuery('#individual-downloads-drivers-button').click( function() {
 	jQuery('.driverfile').toggle();	
 });
+
+	////// Change image on click
+	jQuery('.product-image-block').click(function() {
+		var image = jQuery(this).css('background-image');
+		console.log(image);
+		jQuery('#individual-left').css('background-image', image);
+		
+	});
 
 ////// Text Membership Plugin aanpassen
 

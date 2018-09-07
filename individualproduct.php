@@ -24,7 +24,10 @@
 			<h2><?php the_title(); ?></h2>
 			<h3><?php the_field('individual_product_subtitle'); ?></h3>
 			<p><?php the_field('individual_product_samenvatting'); ?></p>
-			<a href="/lms/contact"><?php the_field('individual_product_cta'); ?></a>
+			<div class="buttonsp">
+				<div class="buttonp1"><a href="/lms/contact"><?php the_field('individual_product_cta'); ?></a></div>
+				<div class="buttonp2"><a href="/lms/contact">Vind dealer</a></div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -39,13 +42,13 @@
 	</div>
 </div>
 
-
+<div id="individual-content-background">
 <div id="individual-content">
 	<div id="individual-content-text">
 		<?php the_content(); ?>
 	</div>
 	<div id="individual-downloads">
-		<h2>Downloads</h2>
+		<h3>Downloads</h3>
 		
 		<!-- Only show if there are uploads -->
 		<?php if( have_rows('individual_product_manuals') ): ?>
@@ -182,7 +185,11 @@
 	<p>Informatie over deze product komt binnenkort</p>
 <?php endif; ?>
 
+</div>
+
 <!--- Functie Overzicht ---->
+
+<div id="functieoverzicht-background">
 <div id="functieoverzicht">
 	<h2>Functie Overzicht<span id="functieoverzicht-underline"></span></h2>
 	<div id="functieoverzicht-container">
@@ -201,6 +208,7 @@
 		
 	</div>
 </div>
+</div>
 
 <!--- Downloads en Similar ---->
 <div id="individual-extras">
@@ -209,8 +217,9 @@
 	
 	<!------ Related Products Block ----->
 	<div id="individual-related">
-		<h2>Gerelateerde Producten</h2>
-	
+		<h2>Gerelateerde Producten
+		<div id="individual-related-border"></div>
+	</h2>
 	
 	<!-- Only show if there are uploads -->
 	<?php if( have_rows('gerelateerd_producten') ): ?>
@@ -225,7 +234,7 @@
 				<div id="individual-related-block-img" <?php if (has_post_thumbnail() ) { ?> 
 						style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
 					<?php } else { ?>
-						style="background-image: url(/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg)"
+						style="background-image: url(/lms/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: contain;"
 					<?php } ?>>
 				</div>
 				<div id="individual-related-block-text" class="center">

@@ -87,7 +87,7 @@ if ( $parent->have_posts() ) : ?>
 				<?php if (has_post_thumbnail() ) { ?> 
 					style="background-image: url(<?php the_post_thumbnail_url('portalbox-image'); ?>)" 
 				<?php } else { ?>
-					style="background-image: url(/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg)"
+					style="background-image: url(/lms/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: 95%;"
 				<?php } ?>>
 			</div>
 					<p class="portalbox-title"><?php the_title(); ?></p>

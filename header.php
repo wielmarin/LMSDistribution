@@ -47,13 +47,21 @@
 	<header class="site-header">
 	
 	<div class="header-right">	
-		
 		<div class="partner">Dealer worden </div>
+		
+		<?php if(SwpmMemberUtils::is_member_logged_in()) { ?>
+		<div class="partner"><a href="/lms/portal/">Portal</a></div>
+		<?php } ?>
 	
 	<!--- Login --->
 	
-		<div class="login"><a href="http://localhost/lms/portal/">Portal -</a>
-			<?php echo do_shortcode('[swpm_mini_login]'); ?>
+		<div class="login">
+			<?php if(!SwpmMemberUtils::is_member_logged_in()) { ?>
+			<a href="/lms/membership-login/">Inloggen Portal</a>
+			<?php } ?>
+			<?php if(SwpmMemberUtils::is_member_logged_in()) { ?>
+			<a href="/lms?swpm-logout=true">Uitloggen</a>
+			<?php } ?>
 		</div>
 		
 	<!--- Login --->

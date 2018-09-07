@@ -2,7 +2,7 @@
 	width: calc(100% - 90px);
 	display: flex;
 	flex-wrap: wrap;
-	margin: 20px auto;
+	margin: 20px auto 60px auto;
 	justify-content: space-between;
 	&-left {
 		width: 38%;
@@ -17,7 +17,7 @@
 		}
 	}
 	&-right {
-		width: 60%;
+		width: 50%;
 		height: auto;
 		h2 {
 			font-size: 36px;
@@ -33,14 +33,33 @@
 		p {
 			margin-bottom: 10px;
 		}
-		a {
-			color: $fontcolor;
-		}
 	}
 }
 
+.buttonsp {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.buttonp1 a {
+		background: #AF242B;
+		color: white;
+		padding: 10px 10px;
+		display: inline;
+		border: 1px solid #AF242B;
+		margin-right: 20px;
+	}
+	
+.buttonp2 a {
+		border: 1px solid #AF242B;
+		color: #AF242B;
+		padding: 10px 20px;
+		display: inline;
+	}
+
 #individual-breadcrumb {
-	margin: 20px 0px 40px;
+	margin: 10px 0px 40px;
 	width: 100%;
 	h2 {
 		display: none;
@@ -52,9 +71,9 @@
 	flex-wrap: wrap;
 	width: calc(100% - 90px);
 	justify-content: space-between;
-	margin: 15px auto 30px;
-	border-top: 2px solid $maincolor;
-	border-bottom: 2px solid $maincolor;
+	margin: 15px auto 50px;
+	border-top: 1px solid  #f8f8f8;
+	border-bottom: 1px solid  #f8f8f8;
 }
 
 .product-image-block {
@@ -77,27 +96,54 @@
 	}
 }
 
+#individual-content-background {
+	background-color: #e8ebeb;
+}
+
 #individual-content {
 	display: flex;
 	flex-wrap: wrap;
-	width: calc(100% - 90px);
+	width: calc(100% - 200px);
 	justify-content: space-between;
-	margin: 20px auto 30px;
+	margin: 30px auto 0px auto;
+	padding: 40px 0px;
 	&-text {
 		width: calc(100% - 500px);
-		h3 {
-			margin: 20px 0px 10px;
+		h2 {
+			font-weight: bold;
+			font-family: inherit;
+			margin-bottom: 20px;
+			position:relative;
+			&:after {
+				content: "";
+				width: 50px;
+				border-bottom: 2px solid $btncolor;
+				position: absolute;
+				left: 0;
+				display: block;
+				margin-top: 5px;
+			}
 		}
 	}
 }
 
+
+#functieoverzicht-background {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.6) 0%, rgba(0, 0, 5, 0.6) 20%, rgba(0, 0, 5, 0.6) 40%, rgba(0, 0, 5, 0.6) 100%), url('/lms/wp-content/uploads/2018/08/Banner-image.jpg'); // Backup static image if no javascript/Backstretch
+	background-size: cover;
+	background-repeat: none;
+}
+	
+
 #functieoverzicht {
+	padding: 40px 0px;
 	h2 {
 		width: 100%;
 		text-align: center;
 		position: relative;
+		color: white;
 		span {
-			border-bottom: 2px solid #AF242B;
+			border-bottom: 2px solid white;
 			width: 50px;
 			display: block;
 			position: absolute;
@@ -106,9 +152,14 @@
 			bottom: -10px;
 		}
 	}
+	h3 {
+	color: white;
+	margin-bottom: 10px;
+	text-align: left;
+	}
 	&-container {
 		width: calc(100% - 90px);
-		margin: 20px auto;
+		margin: 20px auto 0px auto;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -118,7 +169,10 @@
 		margin: 20px auto;
 		display: flex;
 		p {
-			font-size: 80%;
+			font-size: 90%;
+			color: white;
+			text-align: left;
+			padding: 20px;
 		}
 	}
 	&-icon {
@@ -145,12 +199,15 @@
 }
 
 #individual-downloads {
-	width: 460px;
+	width: 360px;
 	margin: 0px;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-content: flex-start;
+	h3 {
+		text-align: left!important;
+		}
 	#filelink {
 		display: block;
 		border-bottom: 1px solid $fontcolor;
@@ -161,6 +218,7 @@
 		p {
 			margin-left: 5px;
 		}
+
 	}
 	.filetype {
 		float: left;
@@ -190,8 +248,8 @@
 }
 
 #individual-related {
-	width: 60%;
-	margin: 0px auto;
+	width: 90%;
+	margin: 40px auto;
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -199,31 +257,45 @@
 	h2 {
 		width: 100%;
 		text-align: center;
+		position: relative;
 	}
-	&-block {
-		width: 220px;
-		height: 230px;
-		margin: 10px auto;
-		border: 1px solid black;
-		&:hover #individual-related-block-text {
-			border-top: 5px solid $btncolor;
+	&-border { 
+			border-bottom: 2px solid #AF242B;
+			width: 50px;
+			display: block;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -10px;
 		}
+	&-block {
+		width: 360px;
+		height: 320px;
+		margin: 40px auto 0px auto;
+		position: relative;
+	}
+	&-block:hover {
+		bottom: 3px;
 	}
 	&-block-img {
 		width: 100%;
-		height: 150px;
+		height: 70%;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	&-block-text {
-		border-top: 5px solid $maincolor;
 		position: relative;
 		height: 80px;
+		background: #94A2A2;
+		color: white;
+		text-align: center;
 	}
 	&-block-text-title {
 		font-size: 16px;
 		position: absolute;
-		top: 5px;
+		top: 10px;
+		text-align: center;
+		width: 100%;
 	}
 	&-block-text-link {
 		font-size: 16px;
@@ -232,5 +304,10 @@
 		text-align: center;
 		bottom: 5px;
 		left:0;
+		color: white;
+		font-weight: bold;
+	}
+	&-block-text-link:hover {
+		text-decoration: underline;
 	}
 }

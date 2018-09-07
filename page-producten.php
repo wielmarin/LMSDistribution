@@ -25,7 +25,7 @@
 			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
 					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
 				<?php } else { ?>
-					style="background-image: url(/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg)"
+					style="background-image: url(/lms/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: contain;"
 				<?php } ?>>
 			</div>
 			<div id="frontproducts-1-text" class="frontproduct-text center">

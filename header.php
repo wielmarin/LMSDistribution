@@ -90,11 +90,17 @@
 			<div class="nav-arrow"><i class="fas fa-caret-up"></i></div>
 	</nav>
 	
+	
+	
 	<!--- Search --->
 	<i class="fas fa-search"></i>
 	<?php get_search_form(); ?>
 	
 	</div>	
+	
+	<div id="mobile-menu-open">
+		<p>Menu</p>
+	</div>
 	
 	
 	</header>

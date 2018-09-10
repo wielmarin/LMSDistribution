@@ -14,6 +14,25 @@ jQuery('#contactbutton').click(function() {
 //	jQuery('#contactbutton').toggleClass('contact-small', 400);
 });
 
+// Mobile Menu
+jQuery('#mobile-menu-open').click(function() {
+	jQuery('.site-nav').toggle();
+});
+	
+	//Submenus
+	function checkPosition() {
+    if (window.matchMedia('(max-width: 1020px)').matches) {
+		jQuery(".site-nav a").filter(function(){
+			return ( jQuery(this).siblings('ul').length > 0 );
+		}).on("click", function(e) {
+			e.preventDefault();
+			// hide sibling ul element (if it exists)
+			jQuery(this).siblings("ul").toggle();
+		});
+	}
+	};
+	checkPosition();
+	
 // Main menu products dropdown 
 	
 	// Deactivate Links

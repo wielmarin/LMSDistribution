@@ -3,19 +3,19 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	h3 {
 		width: calc(100% - 5px);
 		margin: auto;
 		text-align: center;
 	}
 	.frontproduct {
-		width: 28%;
+		width: 370px;
 		height: 320px;
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 20px;
+		margin: 10px 5px;
 			//&:hover {
 				//bottom: 3px;
 			//}
@@ -26,6 +26,7 @@
 				margin: auto;
 				background-size: cover;
 				background-repeat: no-repeat;
+				background-position: center;
 			}
 			&-text {
 				width: 100%;

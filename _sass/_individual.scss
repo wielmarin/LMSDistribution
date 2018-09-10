@@ -40,6 +40,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 40px;
+	.buttonp1 {
+		margin-bottom: 40px;
+	}
 }
 
 .buttonp1 a {
@@ -78,6 +81,7 @@
 
 .product-image-block {
 	width: 28%;
+	min-width: 200px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -109,6 +113,8 @@
 	padding: 40px 0px;
 	&-text {
 		width: calc(100% - 500px);
+		min-width: 380px;
+		margin-right: 20px;
 		h2 {
 			font-weight: bold;
 			font-family: inherit;
@@ -282,6 +288,7 @@
 		height: 70%;
 		background-size: cover;
 		background-repeat: no-repeat;
+		background-position: center;
 	}
 	&-block-text {
 		position: relative;

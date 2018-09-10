@@ -21,6 +21,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	max-width: 1300px;
+	width: 100%;
 	h2 {
 	margin-bottom: 20px;
 	}
@@ -30,8 +31,11 @@
 }
 
 #over-tekst {
-		width: 500px;
-	}
+	width: 500px;
+	max-width:95%;
+}
 #over-foto {
-		width: 500px;
+	width: 500px;
+	max-width:100%;
+	overflow: hidden;
 }

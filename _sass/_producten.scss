@@ -125,6 +125,7 @@
 	width: 80%;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 		&-border {
 		width: 50px;
@@ -154,6 +155,7 @@
 	margin: auto;
 	padding: 40px 0px;
 	width: 500px;
+	max-width: 100%;
 }
 
 #wpcf7-f104-o1 {

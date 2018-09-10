@@ -58,7 +58,7 @@
 		}
 	}
 	&-side {
-		width: 30%;
+		width: 330px;
 		border-right: 1px solid rgba(0, 0, 0, 0.125);
 		user-select: none;
 		box-sizing: border-box;
@@ -116,7 +116,7 @@
 		}
 	}
 	&-right { // Banner/Breadcrumbs/Tile menu
-		width: 70%;
+		width: calc(100% - 330px);
 		display: flex;
 		flex-wrap: wrap;
 		position: relative;
@@ -225,6 +225,7 @@
 	}
 	&-contact {
 		display: flex;
+		flex-wrap: wrap;
 		width: 100%;
 		max-width: 1200px;
 		margin: auto;

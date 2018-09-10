@@ -15,7 +15,8 @@
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 20px 0px;
-	width: 600px;
+	width: calc(50% - 30px);
+	min-width: 420px;
 }
 
 #excerptimage {
@@ -27,7 +28,8 @@
 }
 
 #excerptcontainer-content {
-	width: 400px;
+	width: calc(100% - 160px);
+	min-width: 280px;
 	padding-bottom: 30px;
 	h4 {
 		font-weight: bold;

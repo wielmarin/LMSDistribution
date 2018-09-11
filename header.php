@@ -47,7 +47,7 @@
 	<header class="site-header">
 	
 	<div class="header-right">	
-		<div class="partner">Dealer worden </div>
+		<div class="partner"><a href="/dealer-worden">Dealer worden</a> </div>
 		
 		<?php if(SwpmMemberUtils::is_member_logged_in()) { ?>
 		<div class="partner"><a href="/lms/portal/">Portal</a></div>
@@ -90,17 +90,17 @@
 			<div class="nav-arrow"><i class="fas fa-caret-up"></i></div>
 	</nav>
 	
-	
-	
 	<!--- Search --->
 	<i class="fas fa-search"></i>
 	<?php get_search_form(); ?>
 	
-	</div>	
-	
 	<div id="mobile-menu-open">
 		<p>Menu</p>
 	</div>
+	
+	</div>	
+	
+	
 	
 	
 	</header>

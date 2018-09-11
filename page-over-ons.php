@@ -36,7 +36,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 		</div>
 		<div id="over-foto">
-			<img src="/lms/wp-content/uploads/2018/08/Over-LMS-Distribution.jpg" alt="whiteboard" width="450px" height="true">
+			<img src="/wp-content/uploads/2018/08/Over-LMS-Distribution.jpg" alt="whiteboard" width="450px" height="true">
 		</div>
 	</div>
 </div>

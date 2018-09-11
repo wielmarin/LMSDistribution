@@ -33,13 +33,13 @@
 			.site-nav {
 				display: none;
 				position: absolute;
-				top: 150px;
+				top: 170px;
 				background: white;
 				z-index: 9999;
 				width: 100%;
 				box-sizing: border-box;
 				i {
-					display: none;
+					
 				}
 				ul {
 					display: block;
@@ -102,15 +102,15 @@
 			#mobile-menu-open {
 				display: block;
 				order: 8;
+				margin: auto 10px auto 5px;
 			}
 			
 			.site-header i {
-				position: absolute;
-				right: 20px;
+				margin: auto 15px auto auto;
 			}
 			
 			.logo {
-				margin: auto;
+				margin-left: 10px;
 			}
 			
 			.login, .partner {

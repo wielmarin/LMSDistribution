@@ -6,9 +6,9 @@
 				Volg LMS Distribution via:
 			</h3><br>
 			<span id="connectedrow-social-icons">
-				<img src="/lms/wp-content/uploads/2018/08/if_linkedin_square_color_107091.png" alt="linkedin" width="40px" height="true">
-				<img src="/lms/wp-content/uploads/2018/08/if_twitter_square_107066.png" alt="twitter" width="40px" height="true">
-				<img src="/lms/wp-content/uploads/2018/08/if_facebook_square_107117.png" alt="Facebook" width="40px" height="true">
+				<img src="/wp-content/uploads/2018/08/if_linkedin_square_color_107091.png" alt="linkedin" width="40px" height="true">
+				<img src="/wp-content/uploads/2018/08/if_twitter_square_107066.png" alt="twitter" width="40px" height="true">
+				<img src="/wp-content/uploads/2018/08/if_facebook_square_107117.png" alt="Facebook" width="40px" height="true">
 				
 			</span>
 		</div>
@@ -27,38 +27,35 @@
 			<h3 id="footerlist-1-title" class="footerlist-item-title">
 				Producten
 			</h3>
-				<p>Hardware</p>
-				<p>Software</p>
-				<p>Accesoires</p>
-				
+				<a href="/producten">Hardware</a><br>
+				<a href="/producten">Software</a><br>
+				<a href="/producten">Accesoires</a>
 		</div>
 		<div id="footerlist-2" class="footerlist-item">
 			<h3 id="footerlist-2-title" class="footerlist-item-title">
 				Advies Nodig?
 			</h3>
-			<a href="http://localhost/lms/contact/"><p>Contact</p></a>
-			<p>Support</p>
-			<p>Waar te koop?</p>
+			<a href="/contact">Contact</a><br>
+			<a href="/waar-te-koop">Waar te koop?</a>
 		</div> 
 		<div id="footerlist-3" class="footerlist-item">
 			<h3 id="footerlist-3-title" class="footerlist-item-title">
 			Partners
 			</h3>
-			<p>Partner portal</p>
-			<p>Dealer worden</p>
-			<p>Demo aanvragen</p>
+			<a href="/portal">Partner portal</a><br>
+			<a href="/dealer-worden">Dealer worden</a><br>
+			<a href="/demo-aanvragen">Demo aanvragen</a>
 			
 		</div>
 		<div id="footerlist-4" class="footerlist-item">
 			<h3 id="footerlist-4-title" class="footerlist-item-title">
 				LMS Distribution
 			</h3>
-			<p>Toepadweg 10
-			5301KA Zaltbommel
-			</p>
-			<p>T: <a href="tel:085-0703058">085-0703058</a></p>
-			<p>E: <a href="mailto:Info@lmsdistribution.nl">Info@lmsdistribution.nl</a></p>
-			<a href="http://localhost/lms/over-ons/"><p>Over Ons</p></a>
+			T: <a href="tel:085-0703058">085-0703058</a><br>
+			E: <a href="mailto:Info@lmsdistribution.nl">Info@lmsdistribution.nl</a><br>
+			<a href="https://www.google.com/maps/place/Toepadweg+10,+5301+KA+Zaltbommel,+Nederland/@51.8093832,5.2660447,17z/data=!4m5!3m4!1s0x47c6f3f2b1420c0b:0x5d4d2ef48537dec3!8m2!3d51.8093832!4d5.2682334"><p>Toepadweg 10<br>
+			5301 KA Zaltbommel</a><br>
+			<a href="/over-ons">Over Ons</a>
 			
 		</div>
 	</div>

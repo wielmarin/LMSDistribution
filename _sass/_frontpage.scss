@@ -27,6 +27,7 @@
 		&-link {
 			position: relative;
 			top: 30px;
+			text-align: center;
 		}
 	}
 }
@@ -297,44 +298,7 @@
 }
 
 
-#nieuws-container-flex-item {
-	display: flex;
-	-webkit-flex-wrap: wrap;
-	flex-wrap: wrap;
-	padding: 30px 0px;
-	img {
-	margin-right: 15px;
-	}
-}
 
-#nieuws-data {
-	width: calc(100% - 160px);
-	min-width: 300px;
-	h4 {
-		font-weight: bold;
-		font-family: inherit;
-		font-size: 110%;
-		margin: 5px 0px;
-	}
-	span {
-		font-size: 90%;
-	}
-	p {
-		margin: 10px 0px 20px 0px; 
-	}
-}
-
-.nieuws-actie {
-	Color:#AF242B;
-	font-weight: bold;
-}
-	
-#nieuws-border {
-	width: 50%;
-	border-bottom: 1px solid #AF242B;
-	transition: width 1.2s;
-
-}
 
 #nieuws-container-flex-item:hover + #nieuws-border {
 	width: 100%!important;

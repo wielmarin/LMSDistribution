@@ -33,24 +33,26 @@
 			.site-nav {
 				display: none;
 				position: absolute;
-				top: 170px;
+				top: 125px;
 				background: white;
 				z-index: 9999;
 				width: 100%;
 				box-sizing: border-box;
-				i {
-					
+				.fa-caret-right {
+					display: none;
 				}
 				ul {
 					display: block;
 					padding-left: 30px;
 					li {
 						display: block;
-						padding:0px;
+						padding:5px 0px;
+						
 						ul {
 							position: static;
 							width: 100%;
 							padding-top: 0;
+							margin-left: 20px;
 							li:first-of-type {	
 								border: none;
 							}
@@ -59,7 +61,10 @@
 				}
 			}
 			.site-nav ul li ul li {
-				padding: 0;
+				padding:5px 0px;
+				a {
+					color: rgba(0,0,0,0.5);
+				}		
 			}
 			
 			.site-nav ul li ul li:last-of-type {
@@ -67,11 +72,12 @@
 			}
 			
 			.site-nav ul li ul li ul li {
-				padding: 0;
+				padding:5px 0px;
 			}
 			
 			.site-nav ul li ul li ul {
 				padding: 0;
+				margin-left: 20px;
 			}
 			
 			.site-nav ul li ul li:first-of-type {
@@ -99,6 +105,14 @@
 				margin: 15px 0px;
 			}
 			
+			#menu-item-485 {
+				display: block;
+			}
+			
+			.partner:first-of-type {
+				display: none;
+			}
+			
 			#mobile-menu-open {
 				display: block;
 				order: 8;
@@ -106,7 +120,7 @@
 			}
 			
 			.site-header i {
-				margin: auto 15px auto auto;
+				margin: auto 10px auto auto;
 			}
 			
 			.logo {
@@ -115,6 +129,16 @@
 			
 			.login, .partner {
 				padding: 0px 15px;
+			}
+			
+			#searchform {
+				right:50%;
+				transform: translateX(50%);
+				top: 120px;
+				width: 95%;
+				& #s {
+					width: 95%;
+				}
 			}
 			
 			#hero-text {
@@ -183,6 +207,15 @@
 				#portal-content-right {
 					width: 100%;
 				}
+				
+				.page-id-106 .itemcont { 
+					padding-bottom: 10px;
+				}
+				
+				#pitch {
+					width: calc(100% - 90px);
+					padding: 10px 0;
+				}
 
 			/////////////////////////////////////
 			}
@@ -206,6 +239,8 @@
 	
 	@media screen and (max-width: 720px) {
 	/////////////////////////////////////
+
+		
 		#individual {
 			margin: 20px auto;
 			&-breadcrumb {
@@ -235,6 +270,50 @@
 		#functieoverzicht-icon {
 			align-self: start;
 		}
+		
+		#advised {
+				h2 {
+					padding: 20px 0px;
+					margin: auto;
+					width: 100%;
+					text-align: center;
+					font-size: 28px;
+				}
+			&-contact {
+				display: flex;
+				flex-wrap: wrap;
+				width: 95%;
+				max-width: 1200px;
+				margin: auto;
+				padding: 20px 0px;
+			}
+		}
+
+		.advised-contact-box {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			min-width: 0;
+			height: auto;
+			margin: 10px auto;
+			&-text {
+				width: calc(100% - 70px);
+			}
+			img {
+				width: 50px;
+				height: 50px;
+			}
+			h3 {
+				line-height: 3rem;
+				width: 100%;
+				font-size: 1.1rem;			
+			}
+			p {
+				width: 100%;
+				line-height: 2.5rem;
+				font-size: 1.1rem;
+			}
+		}
 	/////////////////////////////////////
 	}
 	
@@ -257,14 +336,14 @@
 	}
 }
 
-#frontproducts {
+#frontproducts, .page-id-12 #frontproducts {
 	display: flex;
 	flex-wrap: wrap;
 	width: 95%;
 	padding: 0;
 }
 
-.frontproduct {
+.frontproduct, .page-id-12 .frontproduct  {
 	height: auto;
 	margin-bottom: 30px;
 	&-img {
@@ -291,6 +370,38 @@
 		}
 	}
 }
+
+.waar-item-img {
+	width: 100%;
+	height: 40%;
+	background-size: contain;
+}
+
+.waar-item-content {
+	width: 100%;
+	height: 60%;
+}
+
+.waar-item-content-cont {
+	padding: 5px;
+}
+
+.waar-item-content {
+	&-naam {
+		padding: 5px 0px;
+	}
+	&-telefoon {
+		padding-bottom: 0;
+	}
+	&-mail {
+		padding-bottom: 0;
+	}
+}
+
+.filetype, .filesize {
+	margin-right: 5px;
+}
+
 /////////////////////////////////////
 }
 
@@ -355,6 +466,14 @@
 	font-size: 12px;
 }
 
+#advies-tekst {
+	margin-bottom: 0;
+}
+
+#advies-contact {
+	padding-top: 0;
+}
+
 #advies-contact input {
 	display: block;
 	max-width: 90%;
@@ -394,5 +513,77 @@
 #productgroup-container {
 	width: 100%;
 }
+
+#portal-hero {
+	height: 200px;
+	&-heading {
+		font-size: 180%;
+	}
+}
+
+#portal-content {
+	&-banner {
+		text-align: center;
+		h2 {
+			padding: 15px 0px;
+			margin: auto;
+		}
+	}
+}
+
+#portal-content-right-space {
+	#breadcrumbtrail {
+		top: -150px;
+	}
+	#filelink p {
+		margin: 0 5px;
+	}
+}
+
+	/////Member login
+	.swpm-login-widget-form {
+		transform: translateX(0);
+		width: 200px;
+		max-width: 100%;
+		margin: auto;
+		box-sizing: border-box;
+	}
+	
+	#maintext {
+		width: calc(100% - 90px);
+		min-width: 0;
+	}
+/////////////////////////////////////
+}
+
+@media screen and (max-width: 340px) {
+/////////////////////////////////////
+.logo {
+	margin-left: 5px;
+}
+
+#mobile-menu-open {
+	margin-right: 5px;
+	font-size: 18px;
+	width: 80px;
+	text-align: center;
+	p {
+		margin-left: auto;
+	}
+}
+
+.site-header i {
+	margin-right: 2px;
+	font-size: 18px;
+}
+
+.footerlist-item {
+	width: 90%;
+	min-width: 100px;
+}
+
+
+
+
 /////////////////////////////////////
 }

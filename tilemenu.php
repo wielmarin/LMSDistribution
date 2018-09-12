@@ -7,9 +7,18 @@ Template Post Type: page
 ?>
 
 <div id="breadcrumbtrail">
+							<!-- BACK BUTTON, PROBLEM WITH PORTAL LINK
+							<?php global $post;
+							   if ( $post->post_parent ) { ?>
+								<a href="<?php echo get_permalink( $post->post_parent ); ?>" >
+								Terug
+								</a>
+							<?php } 
+							wp_reset_query();?> --->
+							
 <span class="breadcrumbportal" onClick="window.location.reload()">Portal</span><p> / </p><?php
 breadcrumb_trail();
-?>
+?> 
 </div>
 
 <div id="pdflist">
@@ -77,11 +86,9 @@ if ( $parent->have_posts() ) : ?>
 	<a 
 		id="parent-<?php the_ID(); ?>" 
 		class="portalbox" 
-		
-		
-		
 		href="<?php the_permalink(); ?>" 
 		title="<?php the_title(); ?>"
+
 	>
 			<div class="portalbox-image"
 				<?php if (has_post_thumbnail() ) { ?> 

@@ -8,7 +8,7 @@
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 40px;
+	padding: 40px 0px;
 	border-bottom: 1px solid #e8ebeb;
 	Background: #e8ebeb;
 	align-content: start;
@@ -16,18 +16,26 @@
 	&-social {
 		width: auto;
 		margin: auto;
+		max-width: 100%;
+		padding: 0px 40px;
+		box-sizing: border-box;
 	}
 	&-social h3 {
 	margin-bottom: 10px;
 	}
 	&-news {
 		margin: auto;
+		box-sizing: border-box;
+		padding: 0px 40px;
+		max-width: 100%;
 	}
 	&-news h3 {
 		margin-bottom: 10px;
+		width: 100%;
 	}
 	.wpcf7-text {
 		max-width: 100%;
+		box-sizing: border-box;
 	}
 }
 
@@ -35,8 +43,13 @@
 	margin-right: 10px;
 }
 
+#connectedrow-news-aanmelden {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
 #footerlist {
-	width: 100%;
+	width: calc(100% - 10px);
 	display: flex;
 	flex-wrap: wrap;
 	align-items: start;
@@ -44,12 +57,13 @@
 	padding: 20px;
 	border-bottom: 1px solid #e8ebeb;
 	overflow: hidden;
+	margin: auto;
 }
 
 .footerlist-item {
 	width: 16%;
 	min-width: 300px;
-	margin: 0px auto auto auto ;
+	margin: 0px auto 10px auto ;
 	&-title {
 		width: 100%;
 		margin-bottom: 5px;

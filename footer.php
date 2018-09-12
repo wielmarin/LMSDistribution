@@ -73,5 +73,11 @@
 
 <?php wp_footer(); ?>  
 
+<script>
+  window.FontAwesomeConfig = {
+    searchPseudoElements: true
+  }
+</script>
+</div>
 </body>
 </html>

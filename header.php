@@ -26,6 +26,7 @@
 	</head>
 
 <body <?php body_class(); ?>> 
+	<div id="body-inner"><!-- Hide overflow mobile -->
 
 <!-- Fixed Objects -->	
 <div id="contactbutton" class="contact-small">

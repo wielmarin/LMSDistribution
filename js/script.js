@@ -19,6 +19,7 @@ jQuery('#mobile-menu-open').click(function() {
 	jQuery('.site-nav').toggle();
 });
 	
+	
 	//Submenus
 	function checkPosition() {
     if (window.matchMedia('(max-width: 1020px)').matches) {
@@ -27,11 +28,30 @@ jQuery('#mobile-menu-open').click(function() {
 		}).on("click", function(e) {
 			e.preventDefault();
 			// hide sibling ul element (if it exists)
-			jQuery(this).siblings("ul").toggle();
+			jQuery(this).siblings("ul").slideToggle(800);
+			
 		});
+		
+		
+		// Append Arrows
+		jQuery('.menu-item-has-children > a').append('<i class="fas fa-angle-down fa-change"></i><i class="fas fa-angle-up fa-change"></i>');
+		
+		// Give space
+		jQuery('.fa-change').css('margin-left', '10px');
+		//Hide close arrow
+		jQuery('.fa-angle-up').hide();
+		
+		// Change arrow on click
+		jQuery('.site-nav a').click( function() {
+			jQuery(this).find('.fa-change').toggle();
+		});
+
+	//// End media command
 	}
 	};
 	checkPosition();
+	
+	
 	
 // Main menu products dropdown 
 	
@@ -72,9 +92,18 @@ jQuery('#portal-content-side-list li').click(function() {
 });
 
 // Deactive links tile menu
-jQuery('#portal-content-right-space').click(function() {
+jQuery('#portal-content-right-space').click(function(e) {
 	return false;
 });
+
+// Deactive links breadcrumb
+jQuery('#portal-content-right-space').touchstart(function(e) {
+	return false;
+});
+
+
+
+
 
 // Change side menu when click on tile menu
 jQuery('#portal-content-right-space').on("click", "a", function() {
@@ -90,7 +119,6 @@ jQuery('#portal-content-right-space').on("click", "a", function() {
 // Load External File in new window
 jQuery('#portal-content-right-space').on("click", ".externalfile", function(event) {
 	var fileurl = jQuery(this).attr('url');
-	console.log(fileurl);
 	window.open(fileurl);
 	return false;
 });
@@ -105,9 +133,9 @@ jQuery('.breadcrumbportal').click(function() {
 //////// Slideshow homepage header with Backstretch
 
 jQuery("#hero").backstretch([
-	"/lms/wp-content/uploads/2018/08/Banner-image.jpg",
-	"/lms/wp-content/uploads/2018/08/hero-snap.jpg",
-	"/lms/wp-content/uploads/2018/08/man_lidner_huddle_-1.jpg",
+	"/wp-content/uploads/2018/08/Banner-image.jpg",
+	"/wp-content/uploads/2018/08/hero-snap.jpg",
+	"/wp-content/uploads/2018/08/man_lidner_huddle_-1.jpg",
 	],
 	{transitionDuration: 800},
 	);
@@ -134,10 +162,10 @@ jQuery('#individual-downloads-drivers-button').click( function() {
 	////// Change image on click
 	jQuery('.product-image-block').click(function() {
 		var image = jQuery(this).css('background-image');
-		console.log(image);
 		jQuery('#individual-left').css('background-image', image);
 		
 	});
+
 
 ////// Text Membership Plugin aanpassen
 

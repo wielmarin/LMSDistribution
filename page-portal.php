@@ -47,41 +47,6 @@ get_header();
 							?>
 							<?php wp_nav_menu( $args ); ?>
 							
-							
-			<!--				
-			<ul>
-				<li id="list-producten">
-					Producten
-					<ul>
-						<li>
-							Hardware
-						</li>
-						<li>
-							Software
-						</li>
-						<li>
-							Accessories
-						</li>
-					</ul>
-				</li>
-				<li id="list-service">
-					Service
-				</li>
-				<li id="list-marketing">
-					Marketing Materials
-				</li>
-				<li id="list-sales">
-					Sales Tools
-				</li>
-				<li id="list-price">
-					Pricelists
-				</li>
-				<li id="list-tender">
-					Tender Specs
-				</li>
-			</ul>
-			
-			-->
 		</div>
 	</div>
 	<div id="portal-content-right">

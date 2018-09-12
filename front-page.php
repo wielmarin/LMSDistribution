@@ -135,115 +135,38 @@
     </div>
 </div>
 
-<!----------
-
-<div id="content-home">
-	<div id="content-home-flex">
-		<div id="content-home-nieuws">
-			<h3>Nieuws</h3>
-			<div id="content-home-border"></div>
-				<div id="content-home-nieuws-item">
-					<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
-					<div id="content-home-nieuws-info">
-						<h4>Titel nieuwsbericht</h4>
-						<span>dd/mm/jjjj</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-					</div>
-				</div>
-				<div id="content-home-nieuws-item">
-					<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
-					<div id="content-home-nieuws-info">
-						<h4>Titel nieuwsbericht		</h4>
-						<span>dd/mm/jjjj</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-					</div>
-				</div>
-				<div id="content-home-nieuws-item">
-					<img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="130px" height="130px">
-					<div id="content-home-nieuws-info">
-						<h4>Titel nieuwsbericht		</h4>
-						<span>dd/mm/jjjj</span>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-					</div>
-				</div>
-				<div class="button">
-				<a class="btn2">
-					Lees meer nieuws >
-				</a>
-				</div>
-		</div>
-	</div>
-
-	<div id="content-home-flex">
-		<div id="content-home-twitter">
-		<h3>Twitter</h3>
-		<div id="content-home-border"></div>
-			<div class="twitter-block">
-			<a class="twitter-timeline" data-lang="nl" data-width="
-			500" data-height="520" data-theme="light" data-link-color="#94A2A2" href="https://twitter.com/Marinwiellersen?ref_src=twsrc%5Etfw"  data-tweet-limit="3"  data-chrome="noheader nofooter  noborders">Tweets by Marinwiellersen</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
-				<div class="button">
-					<a class="btn2">
-						Bekijk Twitter >
-					</a>
-				</div>
-			</div>
-		</div> 
-		
-	</div>
-	
-</div>
-
----------------->
 <div id="nieuws">
 	<h2>Nieuws</h2>
 	<div id="content-home-border"></div>
 	<div id="nieuws-container">
-		<div id="nieuws-container-flex">
-			<div id="nieuws-container-flex-item">
-					<a href=""><img src="/lms/wp-content/uploads/2018/08/portal-banner-1-e1534773518828.jpg" alt="whiteboard" width="140px" height="140px">
-					<div id="nieuws-data">
-					<span>dd/mm/jjjj</span>
-					<h4>Titel nieuwsbericht</h4>
-					
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-					
-					<div class="nieuws-actie">Lees artikel</div></a>
-					</div>
+
+		
+<?php
+$my_query = new WP_Query( array('showposts' => '4'));
+while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+			 <div id="excerptcontainer">
+       
+        
+        <div id="excerptimage" style="background-image:url(<?php the_post_thumbnail_url(); ?>)">
+        </div>   
+		
+		<div id="excerptcontainer-content">
+			<div id="flex1" class="excerpttext">
+				<div class="flex1text"><span><?php the_time('j/m/Y'); ?></span></div>
+				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 			</div>
-			<div id="nieuws-border"></div>
-			<div id="nieuws-container-flex-item">
-					<a href=""><img src="/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg" alt="whiteboard" width="140px" height="140px">
-					<div id="nieuws-data">
-					<span>dd/mm/jjjj</span>
-					<h4>Titel nieuwsbericht</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-					<div class="nieuws-actie">Lees artikel</div></a>
-					</div>
+		   
+			<div id="flex3" class="excerpttext">
+				<div id="aboutomschrijving1" class="flexomschrijving"><p><?php echo get_the_excerpt(); ?> ...</p></div><a href="<?php the_permalink(); ?>" class="readmorelink">Lees artikel</a>
 			</div>
-			<div id="nieuws-border"></div>
 		</div>
-		<div id="nieuws-container-flex">
-			<div id="nieuws-container-flex-item">
-				<a href=""><img src="/lms/wp-content/uploads/2018/08/man_lidner_huddle_-e1534773688109.jpg" alt="whiteboard" width="140px" height="140px">
-				<div id="nieuws-data">
-				<span>dd/mm/jjjj</span>
-				<h4>Titel nieuwsbericht</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-				<div class="nieuws-actie">Lees artikel</div></a>
-				</div>
-			</div>
-			<div id="nieuws-border"></div>
-			<div id="nieuws-container-flex-item">
-				<a href="">	<img src="/lms/wp-content/uploads/2018/08/hans-office-shoot-060-e1534773802913.jpg" alt="whiteboard" width="140px" height="140px">
-				<div id="nieuws-data">
-				<span>dd/mm/jjjj</span>
-				<h4>Titel nieuwsbericht</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-				<div class="nieuws-actie">Lees artikel</div></a>
-				</div>
-			</div>
-			<div id="nieuws-border"></div>
-		</div>
+		<div id="nieuws-border"></div>
+    </div>
+			
+<?php endwhile; ?>
+				
+			
+
 	</div>
 </div>
 

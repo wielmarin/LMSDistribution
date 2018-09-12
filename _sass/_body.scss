@@ -31,6 +31,11 @@ body {
 	overflow-x: hidden;
 }
 
+#body-inner {
+overflow-x: hidden;
+position:relative;
+}
+
 a:link,
 a:visited {
 	color: #7a7979;

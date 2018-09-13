@@ -96,7 +96,7 @@
 	<?php get_search_form(); ?>
 	
 	<div id="mobile-menu-open">
-		<p>Menu</p>
+		<i class="fas fa-bars fa-lg"></i><p>Menu</p>
 	</div>
 	
 	</div>	

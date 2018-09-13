@@ -8,7 +8,7 @@
 		<h2 id="hero-text-subheading" class="center">
 			Laat teams altijd en overal samenwerken
 		</h2>
-		<a id="hero-text-link" href='http://localhost/lms/producten/' class="btn">
+		<a id="hero-text-link" href='/producten/' class="btn">
 			Bekijk producten
 		</a>
 	</div>

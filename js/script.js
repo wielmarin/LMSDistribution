@@ -51,7 +51,26 @@ jQuery('#mobile-menu-open').click(function() {
 	};
 	checkPosition();
 	
-	
+// Nav Menu Up arrow
+var resizeTimer;
+jQuery(window).on('resize', function(e) {
+
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+	  
+var homeWidth = jQuery('#menu-item-137').outerWidth(true);
+console.log(homeWidth);
+var productWidth = jQuery('#menu-item-141').outerWidth(true);
+console.log(productWidth);
+var productHalf = productWidth / 2;
+console.log(productHalf);
+var arrowPosition = homeWidth + productHalf - 10 + 'px';
+console.log(arrowPosition);
+jQuery('.nav-arrow').css('margin-left', arrowPosition);	
+
+  }, 250);
+
+});	
 	
 // Main menu products dropdown 
 	
@@ -62,6 +81,7 @@ jQuery('#mobile-menu-open').click(function() {
 	
 	// Append arrow
 	jQuery('.menunolink > a').append(' <i class="fas fa-caret-right"></i>');
+	jQuery('.menu-item-object-category').append(' <i class="fas fa-caret-right"></i>');
 	
 	// Show up arrow
 	jQuery('#menu-item-141').hover(function() {
@@ -176,6 +196,7 @@ jQuery('.swpm_mini_login_no_membership').html('Nog steeds geen lid? ');
 jQuery('.swpm_mini_login_join_now a').html('Schrijf je nu in');
 
 jQuery('.swpm_mini_login_label').html('Ingelogd als: ');
+
 
 //END
 });

@@ -69,6 +69,7 @@ margin: auto;
 	margin: auto;
 	position:relative;
 	z-index: 9999;
+	white-space: nowrap;
 }
 
 .site-nav li a {
@@ -114,7 +115,7 @@ margin: auto;
 }
 
 .site-nav ul li ul li a:hover {
-	color: #AF242B;
+	color: #488e7f;
 }
 
 .site-nav ul li ul li ul {
@@ -146,7 +147,7 @@ margin: auto;
 	margin-left: 14%;
 	margin-top: 18px;
 	display: none;
-	color: #AF242B;
+	color: #488e7f;
 }
 
 li { 
@@ -163,28 +164,28 @@ li {
 ///// Submenus 
 
 .flatpanelsmenu > ul {
-	width: 370px!important;
+	width: auto!important;
 }
 
 .computersmenu > ul {
-	width: 270px!important;
+	width: auto!important;
 }
 
 .draadloossyncmenu > ul {
-	width: 380px!important;
+	width: auto!important;
 }
 
 .projectorsmenu > ul {
-	width: 230px!important;
+	width: auto!important;
 }
 
 .accessoiresmenu > ul {
-	width: 320px!important;
+	width: auto!important;
 }
 
 .lasermenu > ul {
-	left: 228px!important;
-	width: 400px!important;
+	left: 100%!important;
+	width: auto!important;
 }
 
 #menu-item-485 {
@@ -212,22 +213,22 @@ a {
 }
 
 #menu-item-232 a:hover {
-	color: #AF242B;
-	border: 1px solid #AF242B;
+	color: #488e7f;
+	border: 1px solid #488e7f;
 }
 
 
 #menu-item-233 a {
-	border: 1px solid #AF242B;
+	border: 1px solid #488e7f;
 	padding: 8px;
 	font-size: 13px;
 	color: white;
-	background: #AF242B;
+	background: #488e7f;
 }
 
 
 #menu-item-233 a:hover {
-	background: #9a2026!important;
+	background:#61af9e!important;
 }	
 
 //* Search //
@@ -294,7 +295,7 @@ a {
 #searchform {
 	display: none;
 	position: absolute;
-	top: 152px;
+	top: 122px;
 	right: 20px;
 	z-index: 9999;
 	padding: 8px 5px;
@@ -393,6 +394,9 @@ input {
 	a {
 		color: black;
 	}
+	a:hover {
+		color: rgba(0,0,0,0.5);
+	}
 }
 
 .partner {
@@ -405,6 +409,9 @@ input {
 	}
 	a {
 		color: black;
+	}
+	a:hover {
+		color: rgba(0,0,0,0.5);
 	}
 }
 

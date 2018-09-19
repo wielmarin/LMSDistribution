@@ -39,13 +39,13 @@
 		</div>
 		<div id="frontproducts-1-text" class="frontproduct-text center">
 			<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
-				Interactive Whiteboard
+				I3-technologies
 			</h3>
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				De i3BOARD heeft een multi-touch-technologie die tot 20 gelijktijdige aanraakpunten herkent, zodat mensen kunnen samenwerken op hetzelfde oppervlak.
+				I3-technologies is een van de toonaangevende fabrikanten ter wereld van interactieve technologieën voor groepssamenwerking.
 			</p>
 			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
-				Bekijk product <i class="fas fa-angle-right"></i>
+				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>
 		</div>
 	</div>
@@ -55,13 +55,13 @@
 		</div>
 		<div id="frontproducts-2-text" class="frontproduct-text center">
 			<h3 id="frontproducts-2-text-title" class="frontproduct-text-title">
-				i3PROJECTOR-lamp
+				LeftClick
 			</h3>
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				De i3PROJECTOR-lamp is verkrijgbaar met een interactieve pen of een vingeraanraaktechnologie. Zo kunt u de interactie aangaan met uw presentatie.
+				LeftClick biedt hard- en software voor narrowcasting die het fundament vormen van uw bedrijfscommunicatie. Plug & play of volledig op maat.
 			</p>
 			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
-				Bekijk product <i class="fas fa-angle-right"></i>
+				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>
 		</div>
 	</div>
@@ -71,13 +71,13 @@
 		</div>
 		<div id="frontproducts-3-text" class="frontproduct-text center">
 			<h3 id="frontproducts-3-text-title" class="frontproduct-text-title">
-				i3HUDDLE
+				Smart Metals 
 			</h3>
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				De multi-touch technologie herkent tot 40 gelijktijdige aanrakingen zodat meerdere gebruikers kunnen samenwerken op hetzelfde oppervlak.
+				SmartMetals biedt een compleet assortiment aan slimme vloer-, wand- en plafondmontage oplossingen, standaard en op maat, voor flat panels en projectoren.
 			</p>
 			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
-				Bekijk product <i class="fas fa-angle-right"></i>
+				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>
 		</div>
 	</div>
@@ -87,13 +87,13 @@
 		</div>
 		<div id="frontproducts-4-text" class="frontproduct-text center">
 			<h3 id="frontproducts-4-text-title" class="frontproduct-text-title">
-				i3COMPUTER
+				Turning Technologies
 			</h3>
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				De i3COMPUTER is van hoge kwaliteit en zeer stabiel, wat hem ideaal maakt voor permanent gebruik met verschillende toepassingen.
+				Improve presentations, enhance learning and get instant feedback with our easy-to-use interactive technology.
 			</p>
 			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
-				Bekijk product <i class="fas fa-angle-right"></i>
+				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>		
 		</div>
 	</div>

@@ -31,7 +31,7 @@
 	&-1 {
 		display: block;
 		&-text {
-			background: #94A2A2;
+			background-color: white;
 		}
 		&-img {
 			background-image: url('/lms/wp-content/uploads/2018/08/Interactive-whiteboard-e1533314114274.jpg');
@@ -40,7 +40,7 @@
 	&-2 {
 	display: block;
 		&-text {
-			background: #94A2A2;
+			background: #fff;
 		}
 		&-img {
 			background-image: url('/lms/wp-content/uploads/2018/08/I3PROJECTOR-lamp-e1533314065963.png');
@@ -50,7 +50,7 @@
 		display: block;
 		&-text {
 		
-			background: #94A2A2;
+			background: #fff;
 		}
 		&-img {
 			background-image: url('/lms/wp-content/uploads/2018/08/i3HUDDLE-1-e1533314188873.jpg');
@@ -60,7 +60,7 @@
 	&-4 {
 		display: block;
 		&-text {
-			background: #94A2A2;
+			background: #fff;
 		}
 		&-img {
 			background-image: url('/lms/wp-content/uploads/2018/08/i3computer-1-e1533314235213.png');
@@ -95,16 +95,18 @@
 		}
 		&-text {
 			width: 100%;
-			height: 30%;
+			height: 27%;
 			color: white;
 			&-title {
 				font-weight: bold;
 				font-size: 100%;
 				top: 20px;
+				color: #7a7979;
 			}
 			&-link {				
 				font-weight: bold;
 				font-size: 16px;
+				
 			
 			}
 			&-link:hover {
@@ -112,7 +114,7 @@
 			}
 		}
 	a {
-		color: white;
+		color: #7a7979!important;
 	}
 }
 

@@ -49,8 +49,8 @@ get_header();
 			</div> 
 			<div id="flex1" class="excerpttext">
 				<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4> 
+				<span><?php the_time('j/m/Y'); ?></span>
 			
-				<a href="<?php the_permalink(); ?>" class="readmorelink">Lees artikel</a>
 			</div>
 		</div>
 		<div id="nieuws-border"></div>
@@ -76,9 +76,14 @@ get_header();
 		</a>
 		</div>
 	 
-			
-		
-	</div>	
+<div id="container-nieuwsbericht-right-titelcontact">
+		<h2>Deel dit artikel</h2>
+</div>	
+
+<div id="nieuws-sidebar">
+<?php echo do_shortcode('[TheChamp-Sharing]'); ?>
+</div>	
+</div>	
 	
 
 	

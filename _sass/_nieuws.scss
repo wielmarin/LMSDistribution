@@ -45,13 +45,14 @@
 }
 
 .readmorelink {
-	Color:#AF242B!important;
-	font-weight: bold;
+	background-color:#488e7f;
+	color: white!important;
+	padding: 5px 15px;
 }
 	
 #nieuws-border {
 	width: 50%;
-	border-bottom: 1px solid #AF242B;
+	border-bottom: 1px solid #488e7f;
 	transition: width 1.2s;
 }
 
@@ -137,7 +138,7 @@
 
 #nieuws-border {
 	width: 60%;
-	border-bottom: 1px solid #AF242B;
+	border-bottom: 1px solid #488e7f;
 	transition: width 1.2s;
 }
 

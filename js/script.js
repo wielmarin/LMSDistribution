@@ -93,6 +93,8 @@ jQuery('.frontproduct').hover(function() {
 	jQuery(this).toggleClass('raisebox', 100);
 });
 
+
+
 //Function to animate Portal side menu
 	function sideMenu() {
 		jQuery('#portal-content-side-list ul li').removeClass('portalcontentactive');
@@ -100,29 +102,7 @@ jQuery('.frontproduct').hover(function() {
 		jQuery(this).children('ul').slideDown();
 		return false;
 	}
-
-
-// Portal Menu - deactive links, change bullets, open submenu
-jQuery('#portal-content-side-list li').click(function() {
-	jQuery('#portal-content-side-list ul li').removeClass('portalcontentactive');
-	jQuery(this).addClass('portalcontentactive');
-	jQuery(this).parents('li').addClass('portalcontentactive');
-	jQuery(this).children('ul').toggle();
-	return false;
-});
-
-// Deactive links tile menu
-jQuery('#portal-content-right-space').click(function(e) {
-	return false;
-});
-
-// Deactive links breadcrumb
-jQuery('#portal-content-right-space').touchstart(function(e) {
-	return false;
-});
-
-
-
+	
 
 
 // Change side menu when click on tile menu
@@ -185,6 +165,8 @@ jQuery('#individual-downloads-drivers-button').click( function() {
 		jQuery('#individual-left').css('background-image', image);
 		
 	});
+	
+
 
 
 ////// Text Membership Plugin aanpassen
@@ -197,6 +179,24 @@ jQuery('.swpm_mini_login_join_now a').html('Schrijf je nu in');
 
 jQuery('.swpm_mini_login_label').html('Ingelogd als: ');
 
+// Portal Menu - deactive links, change bullets, open submenu
+jQuery('#portal-content-side-list li').click(function() {
+	jQuery('#portal-content-side-list ul li').removeClass('portalcontentactive');
+	jQuery(this).addClass('portalcontentactive');
+	jQuery(this).parents('li').addClass('portalcontentactive');
+	jQuery(this).children('ul').toggle();
+	return false;
+});
+
+// Deactive links tile menu
+jQuery('#portal-content-right-space').click(function(e) {
+	return false;
+});
+
+// Deactive links breadcrumb - CAREFUL WITH THIS!
+jQuery('#portal-content-right-space').touchstart(function(e) {
+	return false;
+});
 
 //END
 });

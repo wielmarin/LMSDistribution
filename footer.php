@@ -25,11 +25,12 @@
 	<div id="footerlist">
 		<div id="footerlist-1" class="footerlist-item">
 			<h3 id="footerlist-1-title" class="footerlist-item-title">
-				Producten
+				Merken
 			</h3>
-				<a href="/producten">Hardware</a><br>
-				<a href="/producten">Software</a><br>
-				<a href="/producten">Accesoires</a>
+				<a href="/producten/i3-technologies">i3-Technologies</a><br>
+				<a href="/producten/leftclick">Leftclick</a><br>
+				<a href="/producten/smart-metals">Smart metals</a><br>
+				<a href="/producten/turning-technologies">Turning Technologies</a>
 		</div>
 		<div id="footerlist-2" class="footerlist-item">
 			<h3 id="footerlist-2-title" class="footerlist-item-title">

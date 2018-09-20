@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+    <!--
+
+        Deze website is ontwikkeld door:
+        CreativeCreation
+        (Online) Marketing & Applicaties
+
+        T: 073 851 8660
+        E: info@creativecreation.nl
+        I: www.creativecreation.nl
+
+    -->
+<html class="home" ng-app="frontend">
+<head>
+    <title>
+        Assortiment
+        - SmartMetals Mounting Solutions B.V.
+    </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="SmartMetals biedt een compleet assortiment aan slimme vloer-, wand- en plafondmontage oplossingen, standaard en op maat, voor flat panels en projectoren." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="//cdn.jsdelivr.net/g/foundation@5(css/normalize.css),jquery.slick@1(slick.css)"/>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/lightgallery/css/lightgallery.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/assets/compiled/all.css?1453122216" type="text/css" media="screen"/>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+
+    <script src="//cdn.jsdelivr.net/modernizr/2.8.3/modernizr.min.js"></script> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63723601-1"></script>
+
+
+
+    <script>
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag(){dataLayer.push(arguments);}
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63723601-1', { 'anonymize_ip': true });
+
+    </script>
+
+
+
+
+</head>
+<body ng-controller="CartCtrl" class="home-page
+">
+<div class="fixed-header">
+    <div class="container gray-bg search-bar">
+        <div class="row">
+            <div class="medium-4 columns follow-us">
+                <label>
+                    follow us:
+                </label>
+                <a href="http://www.facebook.com/#!/smartmetals" target="_blank">
+                    <img src="/assets/images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com/SmartMetals" target="_BLANK">
+                    <img src="/assets/images/twitter.png" alt="Twitter">
+                </a>
+                <a href="http://www.linkedin.com/company/1848876" target="_BLANK">
+                    <img src="/assets/images/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+            
+            <div class="medium-8 columns search-bar-right">
+
+<a href="/offerte" class="quote-cart button">
+    Uw<span class="secondary-color">offertemandje</span>
+    <span class="product-count" ng-cloak ng-hide="empty()" ng-bind="count()"></span>
+</a>
+
+        <a href="http://www.smartmetals.eu/?set-language" class="language-switch">
+            <img src="/assets/images/en.jpg">
+    </a>
+
+<form action="/zoeken" method="get" class="search-form">
+    <input id="input-search" name="search" placeholder="ZOEK PRODUCT...">
+    <div id="search-results"></div>
+</form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="row" id="menu-ov">
+    <div class="small-12 columns">
+        <div class="sticky">
+            <nav class="top-bar" data-topbar>
+                <ul class="title-area">
+                    <li class="name"><a href="/" title=""><img src="/assets/images/logo.svg"></a></li>
+                    <li class="toggle-topbar menu-icon"><a href="#"><span><img class="close-img" src="/assets/images/menu-close-nl.svg"><img class="open-img" src="/assets/images/menu.svg"></span></a></li>
+                </ul>
+                <section class="top-bar-section">
+                    <ul class="right">
+                                            <li class=" active ">
+                            <a href="/home" class="home">
+                                <span class="menu-overline"></span>
+                                Home
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/over" class="over">
+                                <span class="menu-overline"></span>
+                                Over
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/smart-selector" class="smart-selector">
+                                <span class="menu-overline"></span>
+                                Smart Selector
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/producten" class="producten">
+                                <span class="menu-overline"></span>
+                                Producten
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/nieuws" class="nieuws">
+                                <span class="menu-overline"></span>
+                                Nieuws
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/projecten" class="projecten">
+                                <span class="menu-overline"></span>
+                                Projecten
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/downloads" class="downloads">
+                                <span class="menu-overline"></span>
+                                Downloads
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/support" class="support">
+                                <span class="menu-overline"></span>
+                                Support
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/contact" class="contact">
+                                <span class="menu-overline"></span>
+                                Contact
+                            </a>
+                        </li>
+                                            <li class="">
+                            <a href="/vacatures" class="vacatures">
+                                <span class="menu-overline"></span>
+                                Vacatures
+                            </a>
+                        </li>
+                                        </ul>
+                </section>
+            </nav>
+        </div>
+    </div>
+</div>
+
+        </header>
+        
+
+<div class="webshop-hover-menu row">
+    <div class="columns">
+        <div class="row webshop-category-tree">
+<div class="columns level-1">
+                <div class="webshop-category ">
+            Vaste Installatie
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - WANDOPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/51/vaste-installatie/flat-panel-wandoplossingen/vesa-wandbeugels/">
+        VESA wandbeugels
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/50/vaste-installatie/flat-panel-wandoplossingen/universele-wandbeugels/">
+        Universele wandbeugels
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/70/vaste-installatie/flat-panel-wandoplossingen/panasonic-wandbeugels/">
+        Panasonic wandbeugels
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - PLAFONDOPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/45/vaste-installatie/flat-panel-plafondoplossingen/plafondbeugels-light-serie/">
+        Plafondbeugels light serie
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/71/vaste-installatie/flat-panel-plafondoplossingen/plafondbeugels-heavy-duty-max-80-kg/">
+        Plafondbeugels Heavy Duty max. 80 kg
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/44/vaste-installatie/flat-panel-plafondoplossingen/plafondbeugels-heavy-duty-max-150-kg/">
+        Plafondbeugels Heavy Duty max. 150 kg
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - STATIEVEN & TROLLEYS
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/41/vaste-installatie/flat-panel-statieven-trolleys/baliestatief/">
+        Baliestatief
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/72/vaste-installatie/flat-panel-statieven-trolleys/lichtgewicht-design-statief/">
+        Lichtgewicht design statief
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/40/vaste-installatie/flat-panel-statieven-trolleys/statieven-light-serie/">
+        Statieven light serie
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/38/vaste-installatie/flat-panel-statieven-trolleys/heavy-duty-vloerstatieven-trolleys/">
+        Heavy Duty vloerstatieven & trolleys
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/39/vaste-installatie/flat-panel-statieven-trolleys/statieven-trolleys-back-to-back/">
+        Statieven & trolleys back to back
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/59/vaste-installatie/flat-panel-statieven-trolleys/heavy-duty-podiumstatieven-trolleys/">
+        Heavy Duty podiumstatieven & trolleys
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - MULTI PURPOSE BUSINESS TROLLEYS & STATIEVEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/79/vaste-installatie/flat-panel-multi-purpose-business-trolleys-statieven/statische-trolleys-statieven/">
+        Statische trolleys & statieven
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/80/vaste-installatie/flat-panel-multi-purpose-business-trolleys-statieven/trolleys-statieven-met-elektrische-hoogteverstelling-max-86-inch/">
+        Trolleys & Statieven met elektrische hoogteverstelling max. 86 inch
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/81/vaste-installatie/flat-panel-multi-purpose-business-trolleys-statieven/statief-trolley-met-elektrische-hoogteverstelling-max-98-inch/">
+        Statief & trolley met elektrische hoogteverstelling max. 98 inch
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/82/vaste-installatie/flat-panel-multi-purpose-business-trolleys-statieven/mobiele-vrijstaande-videowall-met-elektrische-hoogteverstelling/">
+        Mobiele & vrijstaande VideoWall met elektrische hoogteverstelling
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            LIFTSYSTEMEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/56/vaste-installatie/liftsystemen/handmatig-elektrisch/">
+        Handmatig & elektrisch
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/58/vaste-installatie/liftsystemen/accessoires-voor-liftsystemen/">
+        Accessoires voor liftsystemen
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/73/vaste-installatie/liftsystemen/in-cabinet-gemonteerde-elektrische-lift-systemen/">
+        In cabinet gemonteerde elektrische lift systemen
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - VLOERKOLOMMEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/61/vaste-installatie/flat-panel-vloerkolommen/vloer-plafond-wandkolommen/">
+        Vloer,-/ plafond & -/ wandkolommen
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - VIDEOCONFERENCING
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/37/vaste-installatie/flat-panel-videoconferencing/videoconference-statieven-en-meubelen/">
+        VideoConference statieven en meubelen
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            VIDEOWALL OPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/31/vaste-installatie/videowall-oplossingen/videowall-wandoplossingen/">
+        VideoWall - Wandoplossingen
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/30/vaste-installatie/videowall-oplossingen/videowall-vloeroplossingen/">
+        VideoWall - Vloeroplossingen
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - KIOSKEN & BEHUIZINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/75/vaste-installatie/flat-panel-kiosken-behuizingen/ipad-statieven-behuizingen-en-flat-panel-omlijstingen/">
+        iPad statieven & behuizingen en flat panel omlijstingen
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/65/vaste-installatie/flat-panel-kiosken-behuizingen/in-outdoor-behuizingen/">
+        In- & Outdoor behuizingen
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/66/vaste-installatie/flat-panel-kiosken-behuizingen/kiosken-1/">
+        Kiosken
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            PROJECTOR - WANDOPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/27/vaste-installatie/projector-wandoplossingen/wandbeugels/">
+        Wandbeugels
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/26/vaste-installatie/projector-wandoplossingen/haakse-buizensets-exclusief-bracket/">
+        Haakse buizensets exclusief bracket
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            PROJECTOR - PLAFONDOPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/24/vaste-installatie/projector-plafondoplossingen/lichtgewicht-plafondbeugels-inclusief-bracket/">
+        Lichtgewicht plafondbeugels inclusief bracket
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/23/vaste-installatie/projector-plafondoplossingen/lichtgewicht-plafondbeugels-exclusief-bracket/">
+        Lichtgewicht plafondbeugels exclusief bracket
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/22/vaste-installatie/projector-plafondoplossingen/lichtgewicht-plafondbeugels-inclusief-fijnafstelling/">
+        Lichtgewicht plafondbeugels inclusief fijnafstelling
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            WHITEBOARD MONTAGE VOORZIENINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/68/vaste-installatie/whiteboard-montage-voorzieningen/interactive-whiteboard-liftsystemen/">
+        (Interactive) Whiteboard - Liftsystemen
+    </a>
+    </div>
+</div>
+
+            </div>
+</div>
+
+            </div>
+<div class="columns level-1">
+                <div class="webshop-category ">
+            Verhuur
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - WAND / TRUSS OPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/19/verhuur/flat-panel-wand-truss-oplossingen/voor-tijdelijke-installatie-van-1-panel/">
+        Voor tijdelijke installatie van 1 panel
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            FLAT PANEL - VLOEROPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/17/verhuur/flat-panel-vloeroplossingen/light-serie-deelbare-statieven-trolleys/">
+        Light Serie deelbare statieven & trolleys
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/16/verhuur/flat-panel-vloeroplossingen/heavy-duty-deelbare-statieven-trolleys/">
+        Heavy Duty deelbare statieven & trolleys
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/83/verhuur/flat-panel-vloeroplossingen/monitor-podium-statieven/">
+        Monitor/Podium statieven
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/14/verhuur/flat-panel-vloeroplossingen/deelbare-statieven-met-liftsysteem/">
+        Deelbare statieven met liftsysteem
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/15/verhuur/flat-panel-vloeroplossingen/brackets-met-driepuntskoppeling/">
+        Brackets met driepuntskoppeling
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/78/verhuur/flat-panel-vloeroplossingen/direct-gemonteerde-flat-panel-bracket/">
+        Direct gemonteerde flat panel bracket
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            VIDEOWALL - VLOEROPLOSSING
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/69/verhuur/videowall-vloeroplossing/videowall-van-statieven/">
+        VideoWall van statieven
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            SMART RENTAL FRAME - WAND, VLOER & TRUSS
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/11/verhuur/smart-rental-frame-wand-vloer-truss/smart-rental-frame-onderdelen/">
+        Smart Rental Frame - Onderdelen
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/10/verhuur/smart-rental-frame-wand-vloer-truss/smart-rental-frame-onderdelen-voor-truss/">
+        Smart Rental Frame - Onderdelen voor truss
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/9/verhuur/smart-rental-frame-wand-vloer-truss/smart-rental-frame-onderdelen-voor-truss-en-vloer/">
+        Smart Rental Frame - Onderdelen voor truss en vloer
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/8/verhuur/smart-rental-frame-wand-vloer-truss/videowall-voorbeeld-configuraties/">
+        VideoWall - Voorbeeld configuraties
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            PROJECTOR - TRUSSOPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/6/verhuur/projector-trussoplossingen/lightgewicht-verhuurbeugels-met-kogelgewricht/">
+        Lightgewicht verhuurbeugels met kogelgewricht
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/5/verhuur/projector-trussoplossingen/lichtgewicht-verhuurbeugels-met-fijnafstelling/">
+        Lichtgewicht verhuurbeugels met fijnafstelling
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/4/verhuur/projector-trussoplossingen/stackframes/">
+        Stackframes
+    </a>
+    </div>
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/84/verhuur/projector-trussoplossingen/heavy-duty-verhuurbeugel-met-fijnafstelling/">
+        Heavy Duty verhuurbeugel met fijnafstelling
+    </a>
+    </div>
+</div>
+
+            </div>
+<div class="columns level-2">
+                <div class="webshop-category ">
+            PROJECTOR - VLOEROPLOSSINGEN
+        </div>
+                    <div class="row webshop-category-tree">
+<div class="columns level-3">
+            <a class="webshop-category "
+        href="/smart-selector/53/verhuur/projector-vloeroplossingen/projector-statief/">
+        Projector statief
+    </a>
+    </div>
+</div>
+
+            </div>
+</div>
+
+            </div>
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+    <div class="container gray-bg header">
+        <div class="slick header row">
+            <a class="header-slide small-12 columns" href="">
+        <img src="/u/header/smartmetals_2018_2-header-2.png">
+        <div class="header-text gray-bg">
+            <div class="header-text-scroll">
+            <h1>
+                <span style="color:#F09B00">SMARTMETALS<BR />MOUNTING SOLUTIONS</span>
+            </h1>
+
+            <p>VOOR IEDERE SITUATIE<br />
+DE JUISTE KEUZE<br />
+AUDIOVISUELE MONTAGEOPLOSSINGEN</p>
+
+<p>HEEFT U VRAGEN?<br />
+BEL 088 70 60 100</p>
+
+            </div>
+        </div>
+    </a>
+                <a class="header-slide small-12 columns" href="http://smartmetals.nl/smart-selector/052.7400-65/swing-wandlift-voor-touch-display-incl-draaifunctie-180-max-100-kg-max-65-inch/">
+        <img src="/u/header/nieuw_swing_vs3_zonder_new-header.jpg">
+        <div class="header-text gray-bg">
+            <div class="header-text-scroll">
+            <h1>
+                MULTIFUNCTIONELE<br />WANDLIFT
+            </h1>
+
+            <p>&bull;&nbsp;ADAPTIEF ONDERWIJS<br />
+&bull;&nbsp;ARBO VERANTWOORD GEBRUIK<br />
+&bull;&nbsp;EENVOUDIG TE INSTALLEREN<br />
+&bull;&nbsp;UNIVERSEEL VOOR ALLE<br />
+&nbsp;&nbsp;&nbsp;(TOUCH) DISPLAYS<br />
+&bull;&nbsp;2 MODELLEN TOT 65&rdquo; EN 84&rdquo;<br />
+&bull;&nbsp;MAX. BELASTING 100 KG<br />
+<br />
+LEES MEER...</p>
+
+            </div>
+        </div>
+    </a>
+                <a class="header-slide small-12 columns" href="#">
+        <img src="/u/header/educatie_whiteboard-header.jpg">
+        <div class="header-text gray-bg">
+            <div class="header-text-scroll">
+            <h1>
+                EDUCATIE OPLOSSINGEN
+            </h1>
+
+            <p>OPLOSSINGEN SPECIAAL GESCHIKT VOOR TOUCH DISPLAYS IN DE EDUCATIEMARKT:</p>
+
+<p>&bull;&nbsp;SYSTEMEN VOOR WAND EN<br />&nbsp;&nbsp;&nbsp;VLOER<br />
+&bull;&nbsp;MET ELEKTRISCHE/<br />&nbsp;&nbsp;&nbsp;MANUELE HOOGTEVERSTELLING<br />
+&bull;&nbsp;OOK VERKRIJGBAAR:<br />&nbsp;&nbsp;&nbsp;EEN WHITEBOARD KIT<br />&nbsp;&nbsp;&nbsp;VOOR HET TOUCH DISPLAY</p>
+            </div>
+        </div>
+    </a>
+                <a class="header-slide small-12 columns" href="http://smartmetals.nl/smart-selector?eigenschappen=videowall-oplossingen">
+        <img src="/u/header/videowall_voet-header.jpg">
+        <div class="header-text gray-bg">
+            <div class="header-text-scroll">
+            <h1>
+                VIDEOWALL OPLOSSINGEN
+            </h1>
+
+            <p>KENMERKEN:<br />
+&bull;&nbsp;BUDGET VRIENDELIJK<br />
+&bull;&nbsp;EENVOUDIG TE INSTALLEREN<br />
+&bull;&nbsp;EENVOUDIG TE SERVICEN</p>
+
+<p>VERKRIJGBAAR VOOR:<br />
+&bull;&nbsp;WAND<br />
+&bull;&nbsp;WAND-VLOER<br />
+&bull;&nbsp;VLOER-PLAFOND<br />
+&bull;&nbsp;VRIJSTAANDE TOEPASSING</p>
+
+            </div>
+        </div>
+    </a>
+                <a class="header-slide small-12 columns" href="http://smartmetals.nl/smart-selector/40/vaste-installatie/flatscreen-vloeroplossingen/statieven-light-serie/">
+        <img src="/u/header/lightseriestands-header.jpg">
+        <div class="header-text gray-bg">
+            <div class="header-text-scroll">
+            <h1>
+                LIGHT SERIE STATIEVEN
+            </h1>
+
+            <p>&bull;&nbsp;SPECIAAL VOOR LICHTE<br />&nbsp;&nbsp;&nbsp;MONITOREN T/M 55 INCH<br />
+&bull;&nbsp;VERKRIJGBAAR VOOR<br />&nbsp;&nbsp;&nbsp;VASTE INSTALLATIE<br />&nbsp;&nbsp;&nbsp;EN VERHUUR<br />
+&bull;&nbsp;OPTIONEEL VERKRIJGBAAR:<br />&nbsp;&nbsp;&nbsp;LAPTOP PLATEAU</p>
+            </div>
+        </div>
+    </a>
+                <a class="header-slide small-12 columns" href="http://smartmetals.nl/smart-selector/35/vaste-installatie/flatscreen-vloeroplossingen/tip-touch-statieven/">
+        <img src="/u/header/banner-tiptouch-header.jpg">
+        <div class="header-text gray-bg">
+            <div class="header-text-scroll">
+            <h1>
+                TIP & TOUCH STATIEF
+            </h1>
+
+            <p>&bull;&nbsp;RECHTOP TE GEBRUIKEN<br />
+&bull;&nbsp;IN TAFELSTAND TE GEBRUIKEN<br />
+&bull;&nbsp;EENVOUDIG TE SWITCHEN<br />&nbsp;&nbsp;&nbsp;TUSSEN BEIDE POSITIES</p>
+            </div>
+        </div>
+    </a>
+                <a class="header-slide small-12 columns" href="http://smartmetals.nl/smart-selector?basiskeuze=plafondoplossing&wat-ga-ik-installeren=projector">
+        <img src="/u/header/projectorwit-header-1.jpg">
+        <div class="header-text gray-bg">
+            <div class="header-text-scroll">
+            <h1>
+                PLAFONDBEVESTIGINGEN
+            </h1>
+
+            <p>&bull;&nbsp;VERKRIJGBAAR IN DIVERSE<br />&nbsp;&nbsp;&nbsp;LENGTES<br />
+&bull;&nbsp;TRAPLOOS IN HOOGTE<br />&nbsp;&nbsp;&nbsp;VERSTELBAAR<br />
+&bull;&nbsp;MET PLAFOND KANTELFUNCTIE<br />
+&bull;&nbsp;MET GEINTEGREERDE<br />&nbsp;&nbsp;&nbsp;VALBEVEILIGING<br />
+&bull;&nbsp;IN DE KLEUR WIT RAL9010</p>
+            </div>
+        </div>
+    </a>
+                <a class="header-slide small-12 columns" href="https://smartmetals.nl/smart-selector/BBW.0400-65/balancebox-400-70-voor-touch-screen-37-65-kg">
+        <img src="/u/header/bbw_header-header.jpg">
+        <div class="header-text gray-bg">
+            <div class="header-text-scroll">
+            <h1>
+                HANDMATIGE HOOGTEVERSTELLINGEN
+            </h1>
+
+            <p>BRENG UW&nbsp;TOUCHSCREEN<br />
+SNEL EN MOEITELOOS<br />
+IN DE JUISTE POSITIE<br />
+MET SLECHTS EEN HANDBEWEGING</p>
+
+<p>BALANCEBOX<br />
+VERKRIJGBAAR TOT 98&quot;/80KG<br />
+<br />
+LEES MEER...</p>
+
+            </div>
+        </div>
+    </a>
+    </div>
+
+    </div>
+
+                <div class="container blue-bg page-header has-submenu">
+        <div class="row">
+            <div class="columns">
+                <a href="/home">
+                <h1>
+                                    Assortiment
+                                </h1>
+                </a>
+
+                                    <p>SmartMetals biedt een compleet assortiment aan slimme vloer-, wand- en plafondmontage oplossingen, standaard en op maat, voor flat panels en projectoren.</p>
+                            </div>
+                        <div class="submenu">
+                
+                                <a class="submenu-item" href="/smart-selector-occassions-123">
+                    Occasions
+                </a>
+                            </div>
+                    </div>
+    </div>
+
+        <div class="container container-content">
+        <div class="row content">
+            <div class="columns">
+                <div id="template-1-1">
+    <div id="template-1-1-top">
+        <div class="row links-home">
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?basiskeuze=wandoplossing&wat-ga-ik-installeren=flatscreen">
+            <span class="title">
+                Flat panel - Wand<span class="secondary-color">oplossingen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/links/0521000-03-fullscreen.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector/56/vaste-installatie/liftsystemen/handmatig-elektrisch/">
+            <span class="title">
+                Flat panel - Lift<span class="secondary-color">systemen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/0527115-04.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?basiskeuze=plafondoplossing&wat-ga-ik-installeren=flatscreen">
+            <span class="title">
+                Flat panel - Plafond<span class="secondary-color">Oplossingen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/0723150W-03.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?basiskeuze=vloeroplossing&wat-ga-ik-installeren=flatscreen">
+            <span class="title">
+                Flat panel - Vloer<span class="secondary-color">oplossingen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/links/0623220_assortiment-fullscreen.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector/61/vaste-installatie/flatscreen-vloerkolommen/vloer-plafond-wandkolommen/">
+            <span class="title">
+                Flat panel - Vloer<span class="secondary-color">kolommen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/links/0630800_assortiment-fullscreen.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector/37/vaste-installatie/flatscreen-videoconferencing/videoconference-statieven-en-meubelen/">
+            <span class="title">
+                Flat panel - Video<span class="secondary-color">conferencing</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/links/0622850-03-fullscreen.png')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector/73/vaste-installatie/liftsystemen/in-cabinet-gemonteerde-elektrische-lift-systemen/">
+            <span class="title">
+                Flat panel - Cabinet<span class="secondary-color">liften</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/1827020-07.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?wat-ga-ik-installeren=flatscreen&eigenschappen=kiosk">
+            <span class="title">
+                Flat panel - Kiosken
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/links/kiosk-fullscreen.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?wat-ga-ik-installeren=flatscreen&eigenschappen=behuizing">
+            <span class="title">
+                Flat panel - Behuizingen
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/0921600xxL-01.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?eigenschappen=videowall-oplossingen">
+            <span class="title">
+                VideoWall<span class="secondary-color"> oplossingen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/VW6x33__-03.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?wat-ga-ik-installeren=flatscreen&installatietype=verhuur-installatie">
+            <span class="title">
+                Flat panel - Deelbare<span class="secondary-color">statieven</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/0621040-01.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?installatieoppervlak=truss">
+            <span class="title">
+                Truss<span class="secondary-color">oplossingen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/0024600-04.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?basiskeuze=plafondoplossing&wat-ga-ik-installeren=projector">
+            <span class="title">
+                Projector - Plafond<span class="secondary-color">oplossingen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/0023420W-03.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector?basiskeuze=wandoplossing&wat-ga-ik-installeren=projector">
+            <span class="title">
+                Projector - Wand<span class="secondary-color">oplossingen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/links/projector-wand-fullscreen.png')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item ">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/smart-selector/68/vaste-installatie/whiteboard-montage-voorzieningen/interactive-whiteboard-liftsystemen/">
+            <span class="title">
+                Whiteboard - Montage<span class="secondary-color">voorzieningen</span>
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/product/152200077-03.jpg')">
+            </span>
+                    </a>
+    </div>
+    <div class="small-6 medium-4 large-3 columns links-item end">
+        <img src="/assets/images/assortment-bg.png">
+        <a href="/projecten">
+            <span class="title">
+                Projecten
+            </span>
+                        <span class="image"
+                style="background-image: url('/u/links/special_meubel_verkleind-fullscreen.jpg')">
+            </span>
+                    </a>
+    </div>
+</div>
+
+    </div>
+    <div id="template-1-1-bottom">
+        <h1 class="news-header-home">Nieuws</h1>
+
+<div class="row">
+    <div class="medium-4 xlarge-3 columns item-home ">
+        <div class="item-date">
+            Woensdag 23 Mei 2018
+        </div>
+
+        <h1 class="item-title">
+            Nieuw moederbedrijf voor SmartMetals
+        </h1>
+
+        <div class="item-text">
+             Met trots kondigen wij aan dat SmartMetals Mounting Solutions een nieuw moederbedrijf heeft. Vogel&#39;s Holding BV heeft een meerderheidsbelang gekocht en is daarmee mede-eigenaar geworden van SmartMetals. Vogel&#39;s produceert bevestigings- en ondersteuningssystemen voor audiovisuele &amp;...
+
+            <a class="read-more" href="/nieuws/i202/nieuw-moederbedrijf-voor-smartmetals">
+                Lees meer
+            </a>
+        </div>
+
+        <div class="light-gallery">
+
+
+    <div class="item-image-square">
+        <div class="item-image"
+                style="background-image: url('/u/news/toost-fullscreen.png');"
+        data-src="/u/news/toost-fullscreen.png"
+                >
+        </div>
+    </div>
+        <div class="row item-images-nav">
+            <div class="small-3 medium-4 columns end">
+            <div class="item-image-square">
+                <div class="item-image" style="background-image: url('/u/files/header%20image%202-fullscreen.jpg');"
+                    data-src="/u/files/header%20image%202-fullscreen.jpg">
+                </div>
+            </div>
+        </div>
+        </div>
+    
+</div>
+
+    </div>
+    <div class="medium-4 xlarge-3 columns item-home ">
+        <div class="item-date">
+            Woensdag 14 Maart 2018
+        </div>
+
+        <h1 class="item-title">
+            Montage LED & (Curved) OLED
+        </h1>
+
+        <div class="item-text">
+             SmartMetals speelt in op de opkomende markt van LED walls en (curved) OLED monitoren. De oplossingen die wij hiervoor bieden zijn gebaseerd op ons standaard VideoWall concept dat zich in de afgelopen jaren ruimschoots heeft bewezen. Het voordeel hiervan is dat niet alleen een standaard LED wall...
+
+            <a class="read-more" href="/nieuws/i201/montage-led-curved-oled">
+                Lees meer
+            </a>
+        </div>
+
+        <div class="light-gallery">
+
+
+    <div class="item-image-square">
+        <div class="item-image"
+                style="background-image: url('/u/news/led%20wall%20controlroom_1000x666-fullscreen.jpg');"
+        data-src="/u/news/led%20wall%20controlroom_1000x666-fullscreen.jpg"
+                >
+        </div>
+    </div>
+        <div class="row item-images-nav">
+            <div class="small-3 medium-4 columns ">
+            <div class="item-image-square">
+                <div class="item-image" style="background-image: url('/u/news/curved%20oled_ceiling%20mounted__1001x890-fullscreen.jpg');"
+                    data-src="/u/news/curved%20oled_ceiling%20mounted__1001x890-fullscreen.jpg">
+                </div>
+            </div>
+        </div>
+            <div class="small-3 medium-4 columns ">
+            <div class="item-image-square">
+                <div class="item-image" style="background-image: url('/u/news/curved%20oled_floor%20mounted_1001x890-fullscreen.jpg');"
+                    data-src="/u/news/curved%20oled_floor%20mounted_1001x890-fullscreen.jpg">
+                </div>
+            </div>
+        </div>
+            <div class="small-3 medium-4 columns end">
+            <div class="item-image-square">
+                <div class="item-image" style="background-image: url('/u/news/curved%20oled_wall%20mounted_1001x890-fullscreen.jpg');"
+                    data-src="/u/news/curved%20oled_wall%20mounted_1001x890-fullscreen.jpg">
+                </div>
+            </div>
+        </div>
+        </div>
+    
+</div>
+
+    </div>
+    <div class="medium-4 xlarge-3 columns item-home ">
+        <div class="item-date">
+            Woensdag 14 Maart 2018
+        </div>
+
+        <h1 class="item-title">
+            BalanceBox 400, versie 2.0
+        </h1>
+
+        <div class="item-text">
+              Binnenkort uit voorraad leverbaar: &nbsp;de nieuwe en verbeterde versie van de BalanceBox 400. Het product zal de huidige BalanceBox 400 volledig vervangen. 
+
+ Wijzigingen en functies in &eacute;&eacute;n oogopslag: 
+
+ &bull; Stijlvol zwarte&nbsp;structuur&nbsp;poedercoating die ongevoelig is...
+
+            <a class="read-more" href="/nieuws/i200/balancebox-400-versie-2-0">
+                Lees meer
+            </a>
+        </div>
+
+        <div class="light-gallery">
+
+
+    <div class="item-image-square">
+        <div class="item-image"
+                style="background-image: url('/u/news/bbw0400-01nieuw-fullscreen.jpg');"
+        data-src="/u/news/bbw0400-01nieuw-fullscreen.jpg"
+                >
+        </div>
+    </div>
+        <div class="row item-images-nav">
+            <div class="small-3 medium-4 columns ">
+            <div class="item-image-square">
+                <div class="item-image" style="background-image: url('/u/news/bbw0400-03nieuw-fullscreen.jpg');"
+                    data-src="/u/news/bbw0400-03nieuw-fullscreen.jpg">
+                </div>
+            </div>
+        </div>
+            <div class="small-3 medium-4 columns end">
+            <div class="item-image-square">
+                <div class="item-image" style="background-image: url('/u/images/balancebox_400_impression_new2-groot.png');"
+                    data-src="/u/images/balancebox_400_impression_new2-groot.png">
+                </div>
+            </div>
+        </div>
+        </div>
+    
+</div>
+
+    </div>
+    <div class="medium-4 xlarge-3 columns item-home end">
+        <div class="item-date">
+            Donderdag 01 Februari 2018
+        </div>
+
+        <h1 class="item-title">
+            Hij is weer uit: onze gloednieuwe product catalogus!
+        </h1>
+
+        <div class="item-text">
+             Niet &eacute;&eacute;n, maar drie dit jaar: een algemene catalogus, een speciaal voor de educatie branche en een voor de verhuur. 
+
+ Download  onze catalogi &nbsp;of haal een exemplaar op gedurende de ISE 2018: 
+RAI Amsterdam, 6-9 februari 2018, hal 11 stand F130. 
+
+  registreer GRATIS  
+
+
+            <a class="read-more" href="/nieuws/i195/hij-is-weer-uit-onze-gloednieuwe-product-catalogus">
+                Lees meer
+            </a>
+        </div>
+
+        <div class="light-gallery">
+
+
+    <div class="item-image-square">
+        <div class="item-image"
+                style="background-image: url('/u/news/img_8177-fullscreen.jpg');"
+        data-src="/u/news/img_8177-fullscreen.jpg"
+                >
+        </div>
+    </div>
+    
+</div>
+
+    </div>
+</div>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="container gray-bg footer">
+        <div class="row" data-equalizer>
+            <div class="medium-6 large-3 columns" data-equalizer-watch>
+                <h1>Contact</h1>
+
+                <div class="text-block ">
+    <p>SmartMetals Mounting Solutions B.V.<br />
+Vlietskade 8016<br />
+4241&nbsp;WS&nbsp; ARKEL<br />
+The Netherlands<br />
+T&nbsp;+31 (0)88 70 60 100<br />
+E <a href="mailto:info@smartmetals.nl">info@smartmetals.nl</a></p>
+
+<p>All rights reserved<br />
+&copy; SMARTMETALS</p>
+
+</div>
+
+            </div>
+            <div class="medium-6 large-3 columns" data-equalizer-watch>
+                <h1>Route</h1>
+
+                <a href="/contact">
+                    <img src="/assets/images/maps.png">
+                </a>
+            </div>
+            <div class="medium-6 large-3 columns" data-equalizer-watch>
+                <h1>Sitemap</h1>
+
+                
+    
+        
+    
+        
+        
+            
+                
+            
+        
+        
+        
+
+        
+            
+                
+            
+            
+        
+        
+
+    
+    
+
+
+
+
+
+<div class="sitemap">
+    <ul class="level-1">
+    <li >
+        <a href="#">Home</a>
+                    <ul class="level-2">
+
+                <li><a href="/home">Home</a></li>
+
+                                    <li class=""><a href="/smart-selector-occassions-123">Occasions</a></li>
+                            </ul>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="#">Over</a>
+                    <ul class="level-2">
+
+                <li><a href="/over">Over</a></li>
+
+                                    <li class=""><a href="/over/smartmetalsnu">SmartMetalsNu</a></li>
+                                    <li class=""><a href="/over/missie-visie">Missie&Visie</a></li>
+                                    <li class=""><a href="/over/waarom-smartmetals">Waarom SmartMetals</a></li>
+                            </ul>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="/smart-selector">Smart Selector</a>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="/producten">Producten</a>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="#">Nieuws</a>
+                    <ul class="level-2">
+
+                <li><a href="/nieuws">Nieuws</a></li>
+
+                                    <li class=""><a href="/nieuws/nieuwsarchief">Nieuwsarchief</a></li>
+                            </ul>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="#">Projecten</a>
+                    <ul class="level-2">
+
+                <li><a href="/projecten">Projecten</a></li>
+
+                                    <li class=""><a href="/projecten/projectarchief">Projectarchief</a></li>
+                                    <li class=""><a href="/projecten/ontwerp-traject">Ontwerp Traject</a></li>
+                            </ul>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="/downloads">Downloads</a>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="#">Support</a>
+                    <ul class="level-2">
+
+                <li><a href="/support">Support</a></li>
+
+                                    <li class=""><a href="/support/f.a.q.">F.A.Q.</a></li>
+                            </ul>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="#">Contact</a>
+                    <ul class="level-2">
+
+                <li><a href="/contact">Contact</a></li>
+
+                                    <li class=""><a href="/contact/distributeurs">Distributeurs</a></li>
+                                    <li class=""><a href="/contact/bel-me">Bel me</a></li>
+                            </ul>
+            </li>
+    </ul>
+    <ul class="level-1">
+    <li >
+        <a href="/vacatures">Vacatures</a>
+            </li>
+    </ul>
+</div>
+
+
+
+            </div>
+            <div class="medium-6 large-3 columns" data-equalizer-watch>
+                <h1>Assortiment</h1>
+
+                <div class="sitemap">
+    <ul class="level-1">
+        <li>
+            <a href="/smart-selector?basiskeuze=wandoplossing&wat-ga-ik-installeren=flatscreen">
+                Flat panel - Wandoplossingen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector/56/vaste-installatie/liftsystemen/handmatig-elektrisch/">
+                Flat panel - Liftsystemen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?basiskeuze=plafondoplossing&wat-ga-ik-installeren=flatscreen">
+                Flat panel - PlafondOplossingen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?basiskeuze=vloeroplossing&wat-ga-ik-installeren=flatscreen">
+                Flat panel - Vloeroplossingen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector/61/vaste-installatie/flatscreen-vloerkolommen/vloer-plafond-wandkolommen/">
+                Flat panel - Vloerkolommen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector/37/vaste-installatie/flatscreen-videoconferencing/videoconference-statieven-en-meubelen/">
+                Flat panel - Videoconferencing
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector/73/vaste-installatie/liftsystemen/in-cabinet-gemonteerde-elektrische-lift-systemen/">
+                Flat panel - Cabinetliften
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?wat-ga-ik-installeren=flatscreen&eigenschappen=kiosk">
+                Flat panel - Kiosken
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?wat-ga-ik-installeren=flatscreen&eigenschappen=behuizing">
+                Flat panel - Behuizingen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?eigenschappen=videowall-oplossingen">
+                VideoWall oplossingen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?wat-ga-ik-installeren=flatscreen&installatietype=verhuur-installatie">
+                Flat panel - Deelbarestatieven
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?installatieoppervlak=truss">
+                Trussoplossingen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?basiskeuze=plafondoplossing&wat-ga-ik-installeren=projector">
+                Projector - Plafondoplossingen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector?basiskeuze=wandoplossing&wat-ga-ik-installeren=projector">
+                Projector - Wandoplossingen
+            </a>
+        </li>
+        <li>
+            <a href="/smart-selector/68/vaste-installatie/whiteboard-montage-voorzieningen/interactive-whiteboard-liftsystemen/">
+                Whiteboard - Montagevoorzieningen
+            </a>
+        </li>
+        <li>
+            <a href="/projecten">
+                Projecten
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer>
+            <div class="row">
+                <div class="medium-6 columns left">
+                    <a href="/">
+                        &copy; SmartMetals
+                    </a>
+                    <a href="/disclaimer">
+                        Disclaimer
+                    </a>
+                    <a href="/u/files/algemene%20voorwaarden%20-%20smartmetals%20mounting%20solutions%20b.v..pdf" target="_blank">
+                        Algemene voorwaarden
+                    </a>
+                    <a href="/privacyverklaring" target="_blank">
+                        Privacyverklaring
+                    </a>
+                    <a href="/cookies" target="_blank">
+                        Cookies
+                    </a>
+                </div>
+                <div class="medium-6 columns text-right">
+                    <a href="http://www.creativecreation.nl" target="_blank">
+                        CreativeCreation Webdesign
+                    </a>
+                    &amp;
+                    <a href="http://www.noutdesign.nl" target="_blank">
+                        Nout design
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+<script src="//cdn.jsdelivr.net/g/jquery@1,underscorejs@1,angularjs@1.3(angular.min.js+angular-resource.min.js),angular.translate@2,foundation@5(js/foundation/foundation.js+js/foundation/foundation.topbar.js+js/foundation/foundation.accordion.js+js/foundation/foundation.equalizer.js),jquery.scrollto@1,store@2,jquery.ui@1,jquery.slick@1"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script> 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script> 
+    <script src="/assets/lightgallery/js/lightgallery.min.js"></script> 
+    <script src="/rest/setting/frontend"></script>
+    <script src="/rest/translate/nl_NL"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry"></script>
+    <script src="/assets/compiled/all.js?1458803912"></script>
+    
+
+    <div id="cookie-notifier">
+    <div>
+        <p>
+            De website van SmartMetals maakt gebruik van functionele en analytische cookies. Deze vorm van cookies heeft geen impact op uw privacy.
+            <a href="/cookies" target="_blank">
+                <br  />Lees hier het cookiebeleid.
+            </a>
+        </p>
+        <div id="cookie-button" onclick="dismiss()">
+            <button>Ik heb het begrepen</button>
+        </div>
+    </div>
+</div>
+<style type="text/css">
+    body.has-cookie-notifier #cookie-notifier {
+        display: block;
+    }
+    body.has-cookie-notifier .newsletter-subscribe {
+        transform: translateY(-35px);
+    }
+    #cookie-notifier {
+        position: fixed;
+        display: none;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .9);
+        z-index: 1000;
+        padding: 0 0 0 8px;
+        color: white;
+    }
+    #cookie-notifier > div {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+    #cookie-notifier p {
+        flex: 1;
+        color: white;
+        font-size: 12px;
+        line-height: 1.2;
+        padding: 5px 0;
+        margin: 0;
+    }
+    #cookie-button {
+        height: 100%;
+        padding: 10px 5px;
+    }
+    #cookie-button button {
+        background-color: white;
+        color: black;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 2px;
+        cursor: pointer;
+        line-height: 1;
+        margin: 0;
+        display: block;
+    }
+    @media screen and (max-width: 600px) {
+        #cookie-notifier {
+            padding: 5px;
+            padding-bottom: 0;
+        }
+        #cookie-notifier > div {
+            display: block;
+        }
+        #cookie-notifier p {
+            padding: 0;
+            text-align: justify;
+            font-size: 11px;
+        }
+        #cookie-button {
+            padding: 5px 0;
+        }
+    }
+</style>
+<script type="text/javascript">
+(function() {
+    if (window.localStorage.getItem('cookie-dismissed')) {
+        return;
+    }
+    document.body.classList.add('has-cookie-notifier');
+    window.dismiss = function() {
+        window.localStorage.setItem('cookie-dismissed', 1);
+        document.body.classList.remove('has-cookie-notifier');
+    }
+})();
+</script>
+
+</body>
+</html>

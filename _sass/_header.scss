@@ -99,7 +99,7 @@ margin: auto;
 		padding: 0.5rem 1.5rem;
 		background: white;
 		&:first-of-type {
-			border-top:  1px solid #e8ebeb;
+			border-top:  1px solid #e4e4e4;
 			padding-top: 15px;
 		}
 		&:last-of-type {
@@ -127,10 +127,10 @@ margin: auto;
 	left: 310px;
 	background: white;
 	li {
-		border: 1px solid #e8ebeb;
+		border: 1px solid #e4e4e4;
 		border-bottom: none;
 		&:last-of-type {
-			border-bottom: 1px solid #e8ebeb;
+			border-bottom: 1px solid #e4e4e4;
 		}
 	}
 }
@@ -382,13 +382,13 @@ input {
 	font-size: 80%;
 	font-family: 'Open Sans';
 	text-transform: uppercase;
-	border-bottom: 1px solid #e8ebeb;
+	border-bottom: 1px solid #e4e4e4;
 }
 
 .login {
 	padding: 0px 30px;
 	margin: 3px 0px;
-	border-left: 1px solid #e8ebeb;
+	border-left: 1px solid #e4e4e4;
 	font-size: 12px;
 	color: black;
 	a {
@@ -405,7 +405,7 @@ input {
 	font-size: 12px;
 	color: black;
 	&:nth-of-type(2) {
-		border-left: 1px solid #e8ebeb;
+		border-left: 1px solid #e4e4e4;
 	}
 	a {
 		color: black;

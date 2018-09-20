@@ -6,10 +6,10 @@
 			Digitale technologie voor scholen & bedrijven
 		</h1>
 		<h2 id="hero-text-subheading" class="center">
-			Laat teams altijd en overal samenwerken
+			Uw added value partner
 		</h2>
 		<a id="hero-text-link" href='/producten/' class="btn">
-			Bekijk producten
+			Bekijk merken
 		</a>
 	</div>
 </div>
@@ -44,7 +44,7 @@
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
 				I3-technologies is een van de toonaangevende fabrikanten ter wereld van interactieve technologieën voor groepssamenwerking.
 			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="http://lmsdistribution.nl/producten/i3-technologies/">
 				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>
 		</div>
@@ -60,7 +60,7 @@
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
 				LeftClick biedt hard- en software voor narrowcasting die het fundament vormen van uw bedrijfscommunicatie. Plug & play of volledig op maat.
 			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="http://lmsdistribution.nl/producten/leftclick/">
 				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>
 		</div>
@@ -76,7 +76,7 @@
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
 				SmartMetals biedt een compleet assortiment aan slimme vloer-, wand- en plafondmontage oplossingen, standaard en op maat, voor flat panels en projectoren.
 			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="http://lmsdistribution.nl/producten/smart-metals/">
 				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>
 		</div>
@@ -92,7 +92,7 @@
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
 				Improve presentations, enhance learning and get instant feedback with our easy-to-use interactive technology.
 			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="#">
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="http://lmsdistribution.nl/producten/turning-technologies/">
 				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>		
 		</div>
@@ -101,25 +101,25 @@
 
 <div class="button">
 <a class="btn3" href="http://localhost/lms/producten/">
-			Bekijk alle producten >
+			Bekijk alle merken >
 </a>
 </div>
 
 <div id="frontusp">
 		<div id="usp">
-			<div id="usp-img"><img src="/lms/wp-content/uploads/2018/08/icon_whiteboard_170x170blue.png" alt="whiteboard" width="" height="">
+			<div id="usp-img"><img src="/wp-content/uploads/2018/09/ICON_WHITEBOARD_170x170blue-1.png" alt="whiteboard" width="" height="">
 			</div>
 			<div id="usp-text">Bestaande infrastructuur benutten
 			</div>
 		</div>
 		<div id="usp">
-			<div id="usp-img"><img src="/lms/wp-content/uploads/2018/08/icon_share_170x170blue.png" alt="whiteboard" width="" height="">
+			<div id="usp-img"><img src="/wp-content/uploads/2018/09/ICON_SHARE_170x170blue.png" alt="whiteboard" width="" height="">
 			</div>
 			<div id="usp-text">Creëren en delen, altijd en overal
 			</div>
 		</div>
 		<div id="usp">
-			<div id="usp-img"><img src="/lms/wp-content/uploads/2018/08/icon_bridge_analog_digital_170x170blue.png" alt="whiteboard" width="" height="">
+			<div id="usp-img"><img src="/wp-content/uploads/2018/09/ICON_BRIDGE_ANALOG_DIGITAL_170x170blue.png" alt="whiteboard" width="" height="">
 			</div>
 			<div id="usp-text">De analoge en digitale werelden overbruggen
 			</div>

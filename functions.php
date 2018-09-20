@@ -10,7 +10,7 @@ function LMS_resources() {
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), 1.0, true);
 	wp_enqueue_script( 'ajax-script',get_template_directory_uri() . '/js/ajax-script.js', array('jquery') );
 	wp_enqueue_script( 'backstretch',get_template_directory_uri() . '/js/backstretch.js', array('jquery') );
-	
+
 
 }
 

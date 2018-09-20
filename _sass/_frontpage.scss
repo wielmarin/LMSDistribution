@@ -57,6 +57,7 @@
 	font-family: inherit;
 	text-align: left;
 	margin-right: 20px;
+	color: #2E3D50;
 }
 
 .underline {
@@ -71,6 +72,10 @@
 	font-size: 18px;
 	 font-family: 'Open Sans Light';
 	 margin-bottom: 20px;
+	 h2 {
+	 margin-bottom: 10px;
+	 color: #2E3D50;
+	 }
 }
 
 
@@ -187,7 +192,7 @@
 	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	background-color: #e8ebeb;
+	background-color: #e4e4e4;
 	margin-top: 70px;
 }
 
@@ -289,6 +294,9 @@
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin: auto;
+	}
+	h2 {
+		color: #2E3D50
 	}
 }
 

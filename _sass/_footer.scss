@@ -2,6 +2,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	h3 {
+		color: #2E3D50
+	}
 }
 
 #connectedrow {
@@ -9,8 +12,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 40px 0px;
-	border-bottom: 1px solid #e8ebeb;
-	Background: #e8ebeb;
+	border-bottom: 1px solid #e4e4e4;
+	Background: #e4e4e4;
 	align-content: start;
 	box-sizing: border-box;
 	&-social {
@@ -55,7 +58,7 @@
 	align-items: start;
 	justify-content: center;
 	padding: 20px;
-	border-bottom: 1px solid #e8ebeb;
+	border-bottom: 1px solid #e4e4e4;
 	overflow: hidden;
 	margin: auto;
 }
@@ -101,7 +104,7 @@ margin-top: 4px;
 .wpcf7-form-control {
 padding: 10px;
 background-color: #fff;
-border: 1px solid #e8ebeb;
+border: 1px solid #e4e4e4;
 }
 
 .wpcf7-text, .wpcf7-textarea {

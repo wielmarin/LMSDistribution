@@ -4,13 +4,13 @@
 
 <?php get_header(); 
 
-$logo = "/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg";
+$logo = "<?php the_field('logo_merk'); ?>";
 ?>
 
 <div id="hero-sub">
 	<div id="hero-sub-text" class="center">
 		<h1 id="hero-sub-text-heading" class="center">
-			Producten I3-technologies
+			Producten <?php the_title(); ?>
 		</h1>
 		<div id="border-subpage"></div>
 	</div>
@@ -20,11 +20,17 @@ $logo = "/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jp
 
 	<div class="pitch-title-box">
 		<h2 id="pitch-title" class="center">
-		<img src="/lms/wp-content/uploads/2018/09/Logo-i3technologies.png" alt="I3 Technologies" width="350px" height="100%">
+		<img src="<?php the_field('logo_merk'); ?>" alt="I3 Technologies" width="320px" height="100%">
 		</h2>
 	</div>
 	<div id="pitch-text" class="center">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<!-- THE LOOP --><?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+	?>
+		<?php the_content(); ?>
+	<?php
+	endwhile; else: ?>
+	<p></p>
+	<?php endif; ?> <!-- END LOOP -->
 	</div>
 	
 </div>
@@ -59,7 +65,7 @@ $logo = "/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jp
 			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
 					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
 				<?php } else { ?>
-					style="background-image: url(<?php echo $logo ?>); background-size: contain;"
+					style="background-image: url(<?php echo $logo ?>); background-size: cover;"
 				<?php } ?>>
 			</div>
 			<div id="frontproducts-1-text" class="frontproduct-text center">
@@ -67,14 +73,29 @@ $logo = "/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jp
 					<?php the_title(); ?>
 				</h3>
 				<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_permalink(); ?>">
-					Take a look <i class="fas fa-angle-right"></i>
+					Bekijk product <i class="fas fa-angle-right"></i>
 				</a>
 			</div>
 	</div>
+
 	
 <?php endwhile;
 else: ?>
-	<p id="merk-coming"><?php the_title(); ?> products coming soon!</p>
+	<p id="merk-coming">De producten van <?php the_title(); ?> gaan binnenkort live</p>
+	<div id="advies-background">
+	<div id="advies">
+		<div id="advies-tekst">
+			<h2 class="advies-titel">Alvast een demo ontvangen?
+			<div id="advies-border"></div>
+			</h2>
+			<p>Laat uw gegevens achter en wij nemen zo spoedig mogelijk contact met u op. U kunt ons ook telefonisch bereiken via <a href="tel:085-0703058">085-0703058</a>.</p>
+		</div>
+
+		<div id="advies-contact">
+			<?php echo do_shortcode('[contact-form-7 id="104" title="Contactformulier 1"]'); ?>
+		</div>
+	</div>
+</div>
 <?php endif; ?>	
 	
 </div>
@@ -84,20 +105,42 @@ else: ?>
     jQuery('.frontproduct-text').css('border-top','0.7rem solid #ffa300');
 	jQuery('.frontproduct-text').css('background','none');
 	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
-	jQuery('#merklogo').attr('src', '/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg');
+	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg');
 	jQuery('#border-subpage').css('border-bottom','2px solid #ffa300')
 	
 </script>
 
 <?php elseif (is_page('turning-technologies')) : ?>
 <script>
-    jQuery('.frontproduct-text').css('border-top','0.7rem solid #ffa300');
+    jQuery('.frontproduct-text').css('border-top','0.7rem solid #FFEF52');
 	jQuery('.frontproduct-text').css('background','none');
 	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
-	jQuery('#merklogo').attr('src', '/lms/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg');
-	jQuery('#border-subpage').css('border-bottom','2px solid blue')
+	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
+	jQuery('#border-subpage').css('border-bottom','2px solid #FFEF52')
 	
 </script>
+
+<?php elseif (is_page('smart-metals')) : ?>
+<script>
+    jQuery('.frontproduct-text').css('border-top','0.7rem solid #003F79');
+	jQuery('.frontproduct-text').css('background','none');
+	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
+	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
+	jQuery('#border-subpage').css('border-bottom','2px solid #003F79')
+	
+</script>
+
+<?php elseif (is_page('leftclick')) : ?>
+<script>
+    jQuery('.frontproduct-text').css('border-top','0.7rem solid #86AA42');
+	jQuery('.frontproduct-text').css('background','none');
+	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
+	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
+	jQuery('#border-subpage').css('border-bottom','2px solid #86AA42')
+	
+</script>
+
+
 <?php
 endif; ?>
 

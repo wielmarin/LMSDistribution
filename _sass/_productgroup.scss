@@ -1,9 +1,9 @@
 #productgroup-container {
-	width: calc(100% - 90px);
 	display: flex;
 	flex-wrap: wrap;
 	margin: auto;
 	justify-content: space-evenly;
+	margin-top: 30px;
 	h3 {
 		width: calc(100% - 5px);
 		margin: auto;
@@ -83,5 +83,8 @@
 	width: 100%;
 	text-align: center;
 	font-size: 200%;
-	padding: 30px 0px;
+	margin-top: -40px;
+	margin-bottom: 50px;
+	color: #2E3D50;
+	font-weight: bold;
 }

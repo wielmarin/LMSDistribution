@@ -87,10 +87,10 @@ margin: auto;
 
 .site-nav ul li ul {
 	position: absolute;
-	left: -100px;
+	left: -70px;
 	padding-top: 38px;
 	display:none;
-	width: 310px;
+	width: auto;
 	
 	box-sizing: border-box;
 	li {
@@ -121,10 +121,10 @@ margin: auto;
 .site-nav ul li ul li ul {
 	display: none;
 	position: absolute;
-	top: 0px;
+	top: -1px;
 	padding-top: 0px;
 	display:none;
-	left: 310px;
+	left: 100%;
 	background: white;
 	li {
 		border: 1px solid #e4e4e4;

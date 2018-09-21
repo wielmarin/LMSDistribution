@@ -80,8 +80,7 @@ jQuery('.nav-arrow').css('margin-left', arrowPosition);
 	});
 	
 	// Append arrow
-	jQuery('.menunolink > a').append(' <i class="fas fa-caret-right"></i>');
-	jQuery('.menu-item-object-category').append(' <i class="fas fa-caret-right"></i>');
+	jQuery('.site-nav ul li .menu-item-has-children').append(' <i class="fas fa-caret-right"></i>');
 	
 	// Show up arrow
 	jQuery('#menu-item-141').hover(function() {

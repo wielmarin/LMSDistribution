@@ -6,7 +6,7 @@ get_header();
 <div id="hero-sub">
 	<div id="hero-sub-text" class="center">
 		<h1 id="hero-sub-text-heading" class="center">
-			Nieuws
+			Zoek Resultaten voor <?php the_search_query(); ?>
 		</h1>
 		<div id="border-subpage"></div>
 	</div>
@@ -30,7 +30,7 @@ get_header();
 			</div>
 		   
 			<div id="flex3" class="excerpttext">
-				<div id="aboutomschrijving1" class="flexomschrijving"><p><?php echo get_the_excerpt(); ?> ...</p></div><a href="<?php the_permalink(); ?>" class="readmorelink">Lees artikel</a>
+				<div id="aboutomschrijving1" class="flexomschrijving"><p><?php echo get_the_excerpt(); ?> ...</p></div><a href="<?php the_permalink(); ?>" class="readmorelink">Bekijken</a>
 			</div>
 		</div>
 		<div id="nieuws-border"></div>
@@ -38,7 +38,7 @@ get_header();
 
 <?php
     endwhile; else: ?>
-    <p>Sorry, no posts matched your criteria.</p>
+    <p>Sorry, geen resultaten gevonden.</p>
 <?php endif; ?>
 </div>
 

@@ -242,7 +242,7 @@
 						<?php the_title(); ?>
 					</h3>
 					<a id="individual-related-block-text-link" href="<?php the_permalink(); ?>">
-						Take a look <i class="fas fa-angle-right"></i>
+						Bekijk product <i class="fas fa-angle-right"></i>
 					</a>
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 <div id="hero-sub">
 	<div id="hero-sub-text" class="center">
 		<h1 id="hero-sub-text-heading" class="center">
-			<?php the_title(); ?>
+			Merken
 		</h1>
 		<div id="border-subpage"></div>
 	</div>
@@ -28,12 +28,12 @@
 					style="background-image: url(/lms/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: contain;"
 				<?php } ?>>
 			</div>
-			<div id="frontproducts-1-text" class="frontproduct-text center">
+			<div id="frontproducts-1-text" class="frontproduct-text center" style="border-color: <?php the_field('merk_kleur'); ?>;">
 				<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
 					<?php the_title(); ?>
 				</h3>
 				<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_permalink(); ?>">
-					Take a look <i class="fas fa-angle-right"></i>
+					Bekijk producten <i class="fas fa-angle-right"></i>
 				</a>
 			</div>
 		</div>

@@ -9,7 +9,7 @@
 			Uw added value partner
 		</h2>
 		<a id="hero-text-link" href='/producten/' class="btn">
-			Bekijk merken
+			Bekijk onze merken
 		</a>
 	</div>
 </div>

@@ -7,12 +7,12 @@
 $logo = "<?php the_field('logo_merk'); ?>";
 ?>
 
-<div id="hero-sub">
+<div id="hero-sub" style="background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.4) 0%, rgba(0, 0, 5, 0.4) 20%, rgba(0, 0, 5, 0.4) 40%, rgba(0, 0, 5, 0.4) 100%), url('/lms/wp-content/uploads/2018/08/Banner-image.jpg');">
 	<div id="hero-sub-text" class="center">
 		<h1 id="hero-sub-text-heading" class="center">
 			Producten <?php the_title(); ?>
 		</h1>
-		<div id="border-subpage"></div>
+		<div id="border-subpage" style="border-bottom: 2px solid <?php the_field('merk_kleur'); ?>"></div>
 	</div>
 </div>
 
@@ -61,14 +61,14 @@ $logo = "<?php the_field('logo_merk'); ?>";
 
 
 
-	<div id="frontproducts-1" class="frontproduct">
+	<div id="frontproducts-1" class="frontproduct" style="border: 1px solid rgba(0, 0, 0, 0.125);">
 			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
 					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
 				<?php } else { ?>
-					style="background-image: url(<?php echo $logo ?>); background-size: cover;"
+					style="background-image: url(<?php the_field('logo_merk', $post->post_parent); ?>); background-size: cover;"
 				<?php } ?>>
 			</div>
-			<div id="frontproducts-1-text" class="frontproduct-text center">
+			<div id="frontproducts-1-text" class="frontproduct-text center" style="border-top: 0.7rem solid <?php the_field('merk_kleur', $post->post_parent); ?>; background: none;">
 				<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
 					<?php the_title(); ?>
 				</h3>
@@ -106,7 +106,7 @@ else: ?>
 	jQuery('.frontproduct-text').css('background','none');
 	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
 	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg');
-	jQuery('#border-subpage').css('border-bottom','2px solid #ffa300')
+	//jQuery('#border-subpage').css('border-bottom','2px solid #ffa300')
 	
 </script>
 
@@ -116,7 +116,7 @@ else: ?>
 	jQuery('.frontproduct-text').css('background','none');
 	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
 	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
-	jQuery('#border-subpage').css('border-bottom','2px solid #FFEF52')
+	//jQuery('#border-subpage').css('border-bottom','2px solid #FFEF52')
 	
 </script>
 
@@ -126,7 +126,7 @@ else: ?>
 	jQuery('.frontproduct-text').css('background','none');
 	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
 	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
-	jQuery('#border-subpage').css('border-bottom','2px solid #003F79')
+	//jQuery('#border-subpage').css('border-bottom','2px solid #003F79')
 	
 </script>
 
@@ -136,7 +136,7 @@ else: ?>
 	jQuery('.frontproduct-text').css('background','none');
 	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
 	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
-	jQuery('#border-subpage').css('border-bottom','2px solid #86AA42')
+	//jQuery('#border-subpage').css('border-bottom','2px solid #86AA42')
 	
 </script>
 

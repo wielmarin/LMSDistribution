@@ -24,23 +24,23 @@
 	
 	while ( $my_query->have_posts() ) : $my_query->the_post(); 
 ?>
-
-	<div id="frontproducts-1" class="frontproduct">
+<?php $grandparentPage = wp_get_post_parent_id($post->post_parent); ?>
+	<div id="frontproducts-1" class="frontproduct" style="border: 1px solid rgba(0, 0, 0, 0.125);">
 			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
 					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
 				<?php } else { ?>
-					style="background-image: url(/lms/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: contain;"
+					style="background-image: url(<?php the_field('logo_merk', $grandparentPage); ?>); background-size: cover;"
 				<?php } ?>>
 			</div>
-			<div id="frontproducts-1-text" class="frontproduct-text center">
+			<div id="frontproducts-1-text" class="frontproduct-text center" style="border-top: 0.7rem solid <?php the_field('merk_kleur', $grandparentPage); ?>; background: none;">
 				<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
 					<?php the_title(); ?>
 				</h3>
 				<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_permalink(); ?>">
-					Take a look <i class="fas fa-angle-right"></i>
+					Bekijk product <i class="fas fa-angle-right"></i>
 				</a>
 			</div>
-		</div>
+	</div>
 	
 <?php endwhile; ?>	
 	

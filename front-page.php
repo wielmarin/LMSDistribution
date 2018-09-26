@@ -31,72 +31,40 @@
 	
 </div>
 
-<div id="frontproducts" class="itemcont">
+<div id="frontproducts" class="itemcont homepageproducts">
 
+<?php
+
+		// check if the repeater field has rows of data
+		if( have_rows('home_merken') ):
+			// loop through the rows of data
+			while ( have_rows('home_merken') ) : the_row();
+?>
 	<div id="frontproducts-1" class="frontproduct">
-		<div id="frontproducts-1-img" class="frontproduct-img">
+		<div id="frontproducts-1-img" class="frontproduct-img" style="background-image:url(<?php the_sub_field('home_merk_image'); ?>);">
 		
 		</div>
 		<div id="frontproducts-1-text" class="frontproduct-text center">
 			<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
-				I3-technologies
+				<?php the_sub_field('home_merk_titel'); ?>
 			</h3>
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				I3-technologies is een van de toonaangevende fabrikanten ter wereld van interactieve technologieën voor groepssamenwerking.
+				<?php the_sub_field('home_merk_tekst'); ?>
 			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="http://lmsdistribution.nl/producten/i3-technologies/">
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_sub_field('home_merk_page'); ?>">
 				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>
 		</div>
 	</div>
-	<div id="frontproducts-2" class="frontproduct">
-		<div id="frontproducts-2-img" class="frontproduct-img">
-		
-		</div>
-		<div id="frontproducts-2-text" class="frontproduct-text center">
-			<h3 id="frontproducts-2-text-title" class="frontproduct-text-title">
-				LeftClick
-			</h3>
-			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				LeftClick biedt hard- en software voor narrowcasting die het fundament vormen van uw bedrijfscommunicatie. Plug & play of volledig op maat.
-			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="http://lmsdistribution.nl/producten/leftclick/">
-				Bekijk producten <i class="fas fa-angle-right"></i>
-			</a>
-		</div>
-	</div>
-	<div id="frontproducts-3" class="frontproduct">
-		<div id="frontproducts-3-img" class="frontproduct-img" class="frontproduct-img">
-		
-		</div>
-		<div id="frontproducts-3-text" class="frontproduct-text center">
-			<h3 id="frontproducts-3-text-title" class="frontproduct-text-title">
-				Smart Metals 
-			</h3>
-			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				SmartMetals biedt een compleet assortiment aan slimme vloer-, wand- en plafondmontage oplossingen, standaard en op maat, voor flat panels en projectoren.
-			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="http://lmsdistribution.nl/producten/smart-metals/">
-				Bekijk producten <i class="fas fa-angle-right"></i>
-			</a>
-		</div>
-	</div>
-	<div id="frontproducts-4" class="frontproduct">
-		<div id="frontproducts-4-img" class="frontproduct-img">
-		
-		</div>
-		<div id="frontproducts-4-text" class="frontproduct-text center">
-			<h3 id="frontproducts-4-text-title" class="frontproduct-text-title">
-				Turning Technologies
-			</h3>
-			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
-				Improve presentations, enhance learning and get instant feedback with our easy-to-use interactive technology.
-			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="http://lmsdistribution.nl/producten/turning-technologies/">
-				Bekijk producten <i class="fas fa-angle-right"></i>
-			</a>		
-		</div>
-	</div>
+<?php
+			endwhile;
+		else :
+?>
+		<p>Case Studies komen snel</p>
+<?php
+		endif;
+?>
+
 </div>
 
 <div class="button">

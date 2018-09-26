@@ -71,8 +71,7 @@ function enable_extended_upload ( $mime_types =array() ) {
 
 add_filter('upload_mimes', 'enable_extended_upload');
 
-// For CMB2
-require_once ( get_template_directory() . '/fields-functions.php' );
+
 
 
 

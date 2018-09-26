@@ -46,17 +46,17 @@
 }
 
 .buttonp1 a {
-		background: #488e7f;
+		background: #eb9221;
 		color: white;
 		padding: 10px 10px;
 		display: inline;
-		border: 1px solid #488e7f;
+		border: 1px solid #eb9221;
 		margin-right: 20px;
 	}
 	
 .buttonp2 a {
-		border: 1px solid #488e7f;
-		color: #488e7f;
+		border: 1px solid #eb9221;
+		color: #eb9221;
 		padding: 10px 20px;
 		display: inline;
 	}
@@ -123,7 +123,7 @@
 			&:after {
 				content: "";
 				width: 50px;
-				border-bottom: 2px solid $btncolor;
+				border-bottom: 2px solid #eb9221;
 				position: absolute;
 				left: 0;
 				display: block;
@@ -267,7 +267,7 @@
 		position: relative;
 	}
 	&-border { 
-			border-bottom: 2px solid #488e7f;
+			border-bottom: 2px solid #eb9221;
 			width: 50px;
 			display: block;
 			position: absolute;
@@ -280,6 +280,7 @@
 		height: 320px;
 		margin: 40px auto 0px auto;
 		position: relative;
+		border: 1px solid rgba(0, 0, 0, 0.125)
 	}
 	&-block:hover {
 		bottom: 3px;
@@ -294,9 +295,9 @@
 	&-block-text {
 		position: relative;
 		height: 80px;
-		background: #94A2A2;
-		color: white;
+		color: #7a7979;
 		text-align: center;
+		border-top: 0.7rem solid #eb9221;
 	}
 	&-block-text-title {
 		font-size: 16px;
@@ -312,7 +313,7 @@
 		text-align: center;
 		bottom: 5px;
 		left:0;
-		color: white;
+		color: #7a7979;
 		font-weight: bold;
 	}
 	&-block-text-link:hover {

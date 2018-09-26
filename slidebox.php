@@ -18,7 +18,7 @@
                        <p>i3-Technologies stelde 250 iMO-LEARN’s ter beschikking aan Flanders Synergy om te tonen hoe scholen zich op een flexibele manier kunnen organiseren die ook ergonomisch en dynamisch is.</p>
                   
                     <span class="fronttestimonial-slider--name">
-                        Bekijk case study >
+                        <a href="http://lmsdistribution.nl/case-study-flanders-synergie/">Bekijk case study ></a>
                     </span>
                 </div>
             </div>

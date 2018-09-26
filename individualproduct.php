@@ -21,7 +21,7 @@
 	
 	<div id="individual-right">
 		<div id="individual-right-text">
-			<h2><?php the_title(); ?></h2>
+			<h2>i3 Technologies <?php the_title(); ?></h2>
 			<h3><?php the_field('individual_product_subtitle'); ?></h3>
 			<p><?php the_field('individual_product_samenvatting'); ?></p>
 			<div class="buttonsp">

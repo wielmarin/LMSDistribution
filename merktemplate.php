@@ -7,7 +7,7 @@
 $logo = "<?php the_field('logo_merk'); ?>";
 ?>
 
-<div id="hero-sub" style="background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.4) 0%, rgba(0, 0, 5, 0.4) 20%, rgba(0, 0, 5, 0.4) 40%, rgba(0, 0, 5, 0.4) 100%), url('/lms/wp-content/uploads/2018/08/Banner-image.jpg');">
+<div id="hero-sub" style="background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.4) 0%, rgba(0, 0, 5, 0.4) 20%, rgba(0, 0, 5, 0.4) 40%, rgba(0, 0, 5, 0.4) 100%), url(<?php the_post_thumbnail_url(); ?>);">
 	<div id="hero-sub-text" class="center">
 		<h1 id="hero-sub-text-heading" class="center">
 			Producten <?php the_title(); ?>

@@ -57,6 +57,7 @@ $logo = "<?php the_field('logo_merk'); ?>";
 	));
 	
 	if ( $my_query->have_posts() ) : while ( $my_query->have_posts() ) : $my_query->the_post(); 
+
 ?>
 
 
@@ -65,7 +66,7 @@ $logo = "<?php the_field('logo_merk'); ?>";
 			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
 					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
 				<?php } else { ?>
-					style="background-image: url(<?php the_field('logo_merk', $post->post_parent); ?>); background-size: cover;"
+					style="background-image: url(<?php the_field('logo_merk', $post->post_parent); ?>); background-size: 90%;"
 				<?php } ?>>
 			</div>
 			<div id="frontproducts-1-text" class="frontproduct-text center" style="border-top: 0.7rem solid <?php the_field('merk_kleur', $post->post_parent); ?>; background: none;">

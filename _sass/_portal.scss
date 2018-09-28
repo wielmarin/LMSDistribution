@@ -185,6 +185,7 @@
 	background-position: center;
 	display: flex;
 	justify-content: center;
+	cursor: pointer;
 	&:hover &-title {
 			border-top: 10px solid $btncolor;
 		}

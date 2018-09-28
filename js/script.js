@@ -122,7 +122,7 @@ jQuery('#portal-content-right-space').on("click", ".externalfile", function(even
 	return false;
 });
 
-// Action Portal breadcrumb
+// When click on "Portal"in breadcrumb menu in poortal, reload entire page
 jQuery('.breadcrumbportal').click(function() {
 	location.reload();
 });
@@ -192,8 +192,8 @@ jQuery('#portal-content-right-space').click(function(e) {
 	return false;
 });
 
-// Deactive links breadcrumb - CAREFUL WITH THIS!
-jQuery('#portal-content-right-space').touchstart(function(e) {
+// Deactive links tile menu mobile - CAREFUL WITH THIS!
+jQuery('#portal-content-right-space').on('touchstart', function(z) {
 	return false;
 });
 

@@ -23,9 +23,9 @@
 	<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 	   <div id="frontproducts-1" class="frontproduct" style="">
 			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
-					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
+					style="background-image: url(<?php echo get_field('logo_merk'); ?>)" 
 				<?php } else { ?>
-					style="background-image: url(/lms/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: contain;"
+					style="background-image: url(/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: contain;"
 				<?php } ?>>
 			</div>
 			<div id="frontproducts-1-text" class="frontproduct-text center" style="border-color: <?php the_field('merk_kleur'); ?>;">

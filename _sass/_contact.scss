@@ -19,3 +19,15 @@
 #maps {
 	margin-bottom: -5px;
 }
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.wpcf7-form-control {
+    padding: 10px;
+    background-color: #f8f9f9;
+    border: 1px solid #f8f9f9;
+}

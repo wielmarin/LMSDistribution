@@ -8,7 +8,7 @@
 		<h2 id="hero-text-subheading" class="center">
 			Uw added value partner
 		</h2>
-		<a id="hero-text-link" href='/producten/' class="btn">
+		<a id="hero-text-link" href='/merken/' class="btn">
 			Bekijk onze merken
 		</a>
 	</div>
@@ -24,7 +24,7 @@
 	</div>
 	<div id="pitch-text" class="center">
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<a id="hero-text-link" href='http://localhost/lms/contact/' class="btn2">
+		<a id="hero-text-link" href='/contact/' class="btn2">
 			Adviesgesprek aanvragen >
 		</a>
 	</div>

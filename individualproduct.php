@@ -36,10 +36,29 @@
 <div id="product-image-container">
 	<div id="product-image-1" class="product-image-block" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 	</div>
-	<div id="product-image-2" class="product-image-block" style="background-image: url('<?php the_field('individual_product_secondair_foto'); ?>');">
-	</div>
-	<div id="product-image-3" class="product-image-block" style="background-image: url('<?php the_field('individual_product_derde_foto'); ?>');">
-	</div>
+
+	
+<?php if( have_rows('productpagina_extra_fotos') ):
+	while( have_rows('productpagina_extra_fotos') ): the_row(); 
+?>
+			
+		<!-- File Display -->
+		<div id="product-image-4" class="product-image-block" style="background-image: url('<?php the_sub_field('extra_foto'); ?>');">
+		</div>
+		<!-- End File Display -->
+		
+	<?php endwhile; ?>
+<?php endif; ?>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </div>
 
 <div id="individual-content-background">

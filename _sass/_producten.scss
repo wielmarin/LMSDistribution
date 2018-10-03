@@ -172,20 +172,32 @@
 
 #wpcf7-f104-o1 .wpcf7-textarea {
 	width: 478px;
-	border: 1px solid #dddcdc;
 	margin-top: 10px;
 	font-family: 'Open Sans', sans-serif!important;
 	font-size: 70%;
+	background-color: white;
 }
 
 #wpcf7-f104-o1 input {
 	width: 225px;
-	border: 1px solid #dddcdc;
 	font-family: 'Open Sans', sans-serif!important;
 	font-size: 70%;
+	background-color: white;
 }
 
 #wpcf7-f104-o1 .wpcf7-submit {
 	margin: auto;
 	margin-top: 10px;
+	background-color: #488e7f;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+background-color: #488e7f;
+border: 1px solid #488e7f;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    width: 25px!important;
+    margin-right: 5px;
 }

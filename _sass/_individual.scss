@@ -85,10 +85,22 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: auto 5px;
+	margin: auto 5px 20px;
 	cursor: zoom-in;
 	&:first-of-type {
 		margin-left: 0;
+	}
+	&:nth-of-type(4) {
+		margin-left: 0;
+	}
+	&:nth-of-type(7) {
+		margin-left: 0;
+	}
+	&:nth-of-type(3) {
+		margin-right: 0;
+	}
+	&:nth-of-type(6) {
+		margin-right: 0;
 	}
 	&:last-of-type {
 		margin-right: 0;
@@ -129,6 +141,9 @@
 				display: block;
 				margin-top: 5px;
 			}
+		}
+		h3 {
+		margin: 20px 0px;
 		}
 	}
 }
@@ -218,16 +233,20 @@
 		display: block;
 		border-bottom: 1px solid $fontcolor;
 		border-top: none;
+		font-size: 85%;
 		&:last-of-type {
 			border-bottom: none;
 		}
 		p {
 			margin-left: 5px;
+			max-width: 230px;
+			overflow-x: hidden;
+			white-space: nowrap;
 		}
 
 	}
 	.filetype {
-		float: left;
+		float: right;
 		margin-left: 10px;
 		margin-right: auto;
 	}

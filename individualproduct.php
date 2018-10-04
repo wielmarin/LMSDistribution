@@ -197,6 +197,49 @@
 
 			</div> <!-- End Block -->
 		<?php endif; ?>
+		
+		<!------ 
+		Whitepapers -------->
+		<!-- Only show if there are uploads -->
+		<?php if( have_rows('individual_product_whitepapers') ): ?>	
+		<div id="individual-downloads-whitepapers" class="individual-downloads-item">
+			<div id="individual-downloads-whitepapers-button" class="download-button">
+				<p>Whitepapers</p>
+			</div>
+		<!--- Begin looping here --->	
+		<?php while( have_rows('individual_product_whitepapers') ): the_row(); 
+		// vars
+		$white = get_sub_field('product_whitepaper');
+		?>
+		
+			<!-- File Display -->
+				<a href="<?php echo $white['url']; ?>" id="filelink" class="individualdownload whitepaperfile">
+					<p>
+						<?php echo $white['title']; ?>
+					</p>
+					<span class="filetype">
+						<?php 
+							$url = $white['url'];
+							$ext = pathinfo($url, PATHINFO_EXTENSION); 
+							echo $ext;
+						?>
+					</span>
+					<span class="filesize">
+						<?php
+							$whitesize = filesize( get_attached_file( $white['id'] ) );
+							$white_size = size_format($whitesize, 2);
+							echo $white_size;
+						?>
+					</span>
+				</a>
+				
+				
+				<!-- End File Display -->
+				
+			<?php endwhile; ?>
+
+			</div> <!-- End Block -->
+		<?php endif; ?>
 	</div>
 </div>
 
@@ -207,13 +250,13 @@
 </div>
 
 <!--- Functie Overzicht ---->
-
+<?php if( have_rows('functieoverzicht') ): ?>
 <div id="functieoverzicht-background">
 <div id="functieoverzicht">
 	<h2>Functie Overzicht<span id="functieoverzicht-underline"></span></h2>
 	<div id="functieoverzicht-container">
 		
-			<?php if( have_rows('functieoverzicht') ): ?>
+			
 				<?php while( have_rows('functieoverzicht') ): the_row(); ?>
 					<div id="functieoverzicht-item">
 						<img id="functieoverzicht-icon" src="<?php the_sub_field('functie_icon'); ?>">
@@ -223,12 +266,12 @@
 						</div>
 					</div>
 				<?php endwhile; ?>
-			<?php endif; ?>
+			
 		
 	</div>
 </div>
 </div>
-
+<?php endif; ?>
 <!--- Downloads en Similar ---->
 <div id="individual-extras">
 	

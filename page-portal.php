@@ -66,9 +66,12 @@ get_header();
 			<?php
 
 			$args = array(
-				'post_type'      => 'page',
+				'post_type'      => 'page'
+				//'portal'
+				,
 				'posts_per_page' => -1,
 				'post_parent'    => $post->ID,
+				// 'cat'    => 81,
 				'order'          => 'ASC',
 				'orderby'        => 'menu_order'
 			 );

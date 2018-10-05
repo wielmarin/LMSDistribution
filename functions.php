@@ -73,6 +73,22 @@ add_filter('upload_mimes', 'enable_extended_upload');
 
 
 
+/* Add Portal Posts in Menu
+function custom_post_init() {
+    $args = array(
+      'public' => true,
+      'label'  => 'Portal Items',
+	  'taxonomies' => array( 'category' ),
+	  'hierarchical' => true,
+    );
+    register_post_type( 'portal', $args );
+}
+add_action( 'init', 'custom_post_init' );
+
+*/
+
+
+
 
 
 

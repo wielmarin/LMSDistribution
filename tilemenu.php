@@ -1,20 +1,12 @@
 <?php
 
 /* Template Name: Portal Tile Menu
-Template Post Type: page
+Template Post Type: page, portal
 */
 
 ?>
 
 <div id="breadcrumbtrail">
-							<!-- BACK BUTTON, PROBLEM WITH PORTAL LINK
-							<?php global $post;
-							   if ( $post->post_parent ) { ?>
-								<a href="<?php echo get_permalink( $post->post_parent ); ?>" >
-								Terug
-								</a>
-							<?php } 
-							wp_reset_query();?> --->
 							
 <span class="breadcrumbportal" onClick="window.location.reload()">Portal</span><p> / </p><?php
 breadcrumb_trail();
@@ -69,7 +61,9 @@ breadcrumb_trail();
 <?php
 
 $args = array(
-    'post_type'      => 'page',
+    'post_type'      => 'page'
+	//'portal'
+	,
     'posts_per_page' => -1,
     'post_parent'    => $post->ID,
     'order'          => 'ASC',

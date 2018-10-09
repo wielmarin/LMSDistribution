@@ -1,10 +1,4 @@
-<?php
 
-/* Template Name: Portal Tile Menu
-Template Post Type:  portal
-*/
-
-?>
 
 <div id="breadcrumbtrail">
 							
@@ -12,6 +6,19 @@ Template Post Type:  portal
 breadcrumb_trail();
 ?> 
 </div>
+
+<!---- BACK BUTTON --------->
+<div id="portal-back">
+	<?php global $post;
+	  if ( $post->post_parent ) { ?>
+		<a href="<?php echo get_permalink( $post->post_parent ); ?>" >
+		<i class="fas fa-arrow-left"></i> Terug
+		</a>
+	<?php } ?>
+</div>
+
+
+
 
 <div id="pdflist">
 

@@ -1,6 +1,6 @@
 #portal-hero {
 	height: 60vh;
-	background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url('/lms/wp-content/uploads/2018/08/portal-banner.jpg');
+	background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url('/wp-content/uploads/2018/08/portal-banner.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
@@ -87,10 +87,10 @@
 				display: block;
 				padding: 10px 27px;
 				list-style: none;
-				background: url(/lms/wp-content/uploads/2018/08/bulletgrey.png) no-repeat left 14px;
+				background: url(/wp-content/uploads/2018/08/bulletgrey.png) no-repeat left 14px;
 				cursor: pointer;
 				&:hover {
-					background-image: url(/lms/wp-content/uploads/2018/08/bulletblue.png);
+					background-image: url(/wp-content/uploads/2018/08/bulletblue.png);
 					color: black;
 				}
 				a {
@@ -106,7 +106,7 @@
 			// Changing side menu links
 			
 .portalcontentactive {
-	background-image: url(/lms/wp-content/uploads/2018/08/bulletblue.png)!important;
+	background-image: url(/wp-content/uploads/2018/08/bulletblue.png)!important;
 	a {
 		color: #2e3d50;
 	}
@@ -126,7 +126,7 @@
 		&-banner {
 			height: 200px;
 			width: 100%;
-			background: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url(/lms/wp-content/uploads/2018/08/Partner-Portal.jpg) no-repeat;
+			background: linear-gradient(to bottom, rgba(0, 0, 5, 0.3) 0%, rgba(0, 0, 5, 0.3) 20%, rgba(0, 0, 5, 0.3) 40%, rgba(0, 0, 5, 0.3) 100%), url(/wp-content/uploads/2018/08/Partner-Portal.jpg) no-repeat;
 			background-size: cover;
 			position:relative;
 		}
@@ -296,6 +296,7 @@
 		line-height: 60px;
 		margin-left: 50px;
 		color: $fontcolor;
+		white-space: nowrap;
 	}
 }
 
@@ -320,4 +321,10 @@
 		border: 1px solid black;
 		color: black;
 	}
+}
+
+#portal-back {
+	position: absolute;
+	left: 10px;
+	top: -30px;
 }

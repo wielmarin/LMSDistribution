@@ -65,7 +65,9 @@ function enable_extended_upload ( $mime_types =array() ) {
    // The MIME types listed here will be allowed in the media library.
    // You can add as many MIME types as you want.
    $mime_types['exe']  = 'application/vnd.microsoft.portable-executable'; 
-
+   $mimetypes['eps'] = 'application/postscript';
+   $mimetypes['ttf'] = 'application/octet-stream';  // Doesn't work yet??
+   
    return $mime_types;
 } 
 
@@ -73,9 +75,10 @@ add_filter('upload_mimes', 'enable_extended_upload');
 
 
 
-/* Add Portal Posts in Menu
+// Add Portal Posts in Menu
 function custom_post_init() {
     $args = array(
+	  'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
       'public' => true,
       'label'  => 'Portal Items',
 	  'taxonomies' => array( 'category' ),
@@ -85,7 +88,7 @@ function custom_post_init() {
 }
 add_action( 'init', 'custom_post_init' );
 
-*/
+
 
 
 

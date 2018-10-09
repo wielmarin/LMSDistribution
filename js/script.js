@@ -14,6 +14,9 @@ jQuery('#contactbutton').click(function() {
 //	jQuery('#contactbutton').toggleClass('contact-small', 400);
 });
 
+//// ATTEMPTED FIX WINDOWS HOVER MENU - MAYBE NEEDS TO BE ON LINK?
+jQuery('.menu-item-has-children').attr('aria-haspopup','true')
+
 // Mobile Menu
 jQuery('#mobile-menu-open').click(function() {
 	jQuery('.site-nav').toggle();

@@ -66,12 +66,10 @@ get_header();
 			<?php
 
 			$args = array(
-				'post_type'      => 'page'
-				//'portal'
-				,
+				'post_type'      => 'portal',
 				'posts_per_page' => -1,
-				'post_parent'    => $post->ID,
-				// 'cat'    => 81,
+			 	'post_parent'    => 0,
+			//	'cat'    => 81,
 				'order'          => 'ASC',
 				'orderby'        => 'menu_order'
 			 );
@@ -89,7 +87,7 @@ get_header();
 				<?php if (has_post_thumbnail() ) { ?> 
 					style="background-image: url(<?php the_post_thumbnail_url('portalbox-image'); ?>)" 
 				<?php } else { ?>
-					style="background-image: url(/lms/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: 95%;"
+					style="background-image: url(/wp-content/uploads/2018/08/SmallLogo.jpg); background-size: 95%;"
 				<?php } ?>>
 			</div>
 			<p class="portalbox-title"><?php the_title(); ?></p>
@@ -112,7 +110,7 @@ get_header();
 	</div>
 	<div id="advised-contact">
 		<div id="advised-contact-box-1" class="advised-contact-box">
-			<img src="/lms/wp-content/uploads/2018/08/shop-icon.png">
+			<img src="/wp-content/uploads/2018/08/shop-icon.png">
 			<div class="advised-contact-box-text">
 				<h3>
 					Marketing
@@ -126,7 +124,7 @@ get_header();
 			</div>
 		</div>
 		<div id="advised-contact-box-2" class="advised-contact-box">
-			<img src="/lms/wp-content/uploads/2018/08/shop-icon.png">
+			<img src="/wp-content/uploads/2018/08/shop-icon.png">
 			<div class="advised-contact-box-text">
 				<h3>
 					Branding

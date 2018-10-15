@@ -63,9 +63,10 @@
 	
 	<div id="bottomline">
 		<div class="copyright">
-			&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?>
+			
 		
-		| Privacy statement  | Algemene voorwaarden
+		<nobr><p>Privacy statement</p></nobr>  <span>|</span> <nobr><p>Algemene voorwaarden</p></nobr> <span>|</span> <nobr><p>&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?></p></nobr>
+		
 		</div>
 	</div>
 </div>

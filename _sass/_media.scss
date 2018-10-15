@@ -3,17 +3,21 @@
 
 #frontproducts {
 width: 95%;
+margin-bottom: 20px;
 }
+
+.page-id-12 .frontproduct {
+    min-height: 300px;
+	}
 
 .frontproduct, .page-id-12 .frontproduct  {
 	height: auto;
-	margin-bottom: 30px;
 	&-img {
 		width: 90%;
-		height: 280px;
+		height: 200px;
 	}
 	&-text {
-		width: 90%;
+		width: 100%;
 		height: calc(100% - 280px);
 		order: 3;
 		padding-bottom: 10px;
@@ -33,6 +37,28 @@ width: 95%;
 	}
 }
 
+#advies {
+	width: 90%;
+}
+#advies-tekst {
+	width: 300px;
+}
+
+#advies-contact {
+	width: 380px;
+}
+
+#wpcf7-f104-o1 input {
+    width: 90%;
+}
+
+#wpcf7-f104-o1 .wpcf7-textarea {
+    width: 90%;
+}
+
+span.wpcf7-list-item {
+	font-size: 16px;
+}
 
 
 /////////////////////////////////////
@@ -43,8 +69,11 @@ width: 95%;
 	/////////////////////////////////////
 		.page-id-12 #frontproducts {
 			grid-template-columns: repeat(2, 380px);
-			padding: 10px 0px;
+			padding: 50px 0px 50px 0px;
+			margin-bottom: 0px;
 		}
+		
+
 	/////////////////////////////////////
 	}
 	
@@ -67,18 +96,17 @@ width: 95%;
 				}
 				ul {
 					display: block;
-					padding-left: 30px;
 					li {
 						display: block;
 						padding:5px 0px;
+						border-bottom: 1px solid #e4e4e4;
 						
 						ul {
 							position: static;
 							width: 100%;
 							padding-top: 0;
-							margin-left: 20px;
-							li:first-of-type {	
-								border: none;
+							a {
+								margin-left: 20px;
 							}
 						}
 					}
@@ -93,15 +121,16 @@ width: 95%;
 			
 			.site-nav ul li ul li:last-of-type {
 				padding: 0;
+				border-bottom: none;
 			}
 			
 			.site-nav ul li ul li ul li {
 				padding:5px 0px;
+				margin-left: 20px;
 			}
 			
 			.site-nav ul li ul li ul {
 				padding: 0;
-				margin-left: 20px;
 			}
 			
 			.site-nav ul li ul li:first-of-type {
@@ -110,13 +139,18 @@ width: 95%;
 			
 			.site-nav ul li ul li ul li:last-of-type {
 				padding-bottom: 0;
+				border-bottom: none;
 			}
+			
+
 			
 			.site-nav ul li ul li ul {
 				position: static;
 				li {
+					margin-left: 20px;
 					border: none;
-					&:first-of-type, &:last-of-type {
+					border-bottom: 1px solid #e4e4e4;
+					&:last-of-type {
 						border: none;
 					}
 					a {
@@ -127,6 +161,7 @@ width: 95%;
 			
 			#menu-item-232, #menu-item-233 {
 				margin: 15px 0px;
+				border-bottom: none;
 			}
 			
 			#menu-item-485 {
@@ -159,9 +194,15 @@ width: 95%;
 				}
 			}
 			
+			.menu-primary-container {
+				padding: 30px;
+			}
+			
+			
 			.site-header i {
 				margin: auto 10px auto auto;
 			}
+			
 			
 			.logo {
 				margin-left: 30px;
@@ -185,6 +226,7 @@ width: 95%;
 				height: 60vh;
 			}
 			
+
 			#hero-text {
 				
 				top: 20%;
@@ -209,13 +251,19 @@ width: 95%;
 			
 			.frontproduct, .page-id-12 .frontproduct  {
 				&-img {
-					height: 240px;
+					height: 200px;
+					margin-bottom: 0px;
 				}
 				&-text {
 				height: calc(100% - 240px);
 				}
 			}
 			
+			.page-id-12 #frontproducts {
+				padding: 50px 0px 0px 20px 0px;
+			}
+			
+
 			
 		/////////////////////////////////////
 		}
@@ -300,13 +348,34 @@ width: 95%;
 				font-size: 24px;
 				
 				}
+				
+				.footerlist-item {
+				min-width: 200px;
+				}
+				
+				.footerlist-item a {
+				font-size: 16px;
+				}	
+
+				#advies-tekst p {
+					font-size: 16px;
+				}
+
 			/////////////////////////////////////
 			}
 
 	@media screen and (max-width: 900px) {
 	/////////////////////////////////////
 		.page-id-12 #frontproducts {
-			grid-template-columns: 380px;
+			grid-template-columns: repeat(2, 320px);
+		}
+		
+		.frontproduct-img, .page-id-12 .frontproduct-img {
+			height: 180px;
+		}
+		
+		.page-id-12 .frontproduct {
+			min-height: 280px;
 		}
 		
 		#functieoverzicht-item {
@@ -326,6 +395,11 @@ width: 95%;
 		#connectedrow-social {
 		
 			text-align: center;
+		}
+		
+		
+		#footerlist {
+			width: calc(100% - 250px);
 		}
 		
 		
@@ -350,53 +424,47 @@ width: 95%;
 	margin-bottom: 15px;
 	}
 	
-#frontproducts, .page-id-12 #frontproducts {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	padding: 0;
-	margin: 40px 0px 40px 0px;
-}
-
-.frontproduct, .page-id-12 .frontproduct  {
-	height: auto;
-	width: 90%;
-	margin-bottom: 10px;
-	&-img {
-		width: 50%;
-		height: 300px;
+	.page-id-12 #frontproducts {
+    grid-template-columns: repeat(2, 250px);
 	}
-	&-text {
-		width: 50%;
-		height: 300px;
-		order: 3;
-		padding: 0px;
-		
-		h3 {
-			font-size: 18px;
-			position: static;
-			padding-top: 10px;
-			margin-top: 20px;
-		}
-		p {
-			font-size: 16px;
-			position: static;
-		}
-		a {
-			position: static;
-			
-		}
+	
+	.page-id-12 .frontproduct {
+		min-height: 240px;
 	}
-}
-
-#frontusp {
-    padding: 40px 0px 40px 0px;
-    margin-top: 60px;
-}
+	
+	.frontproduct-img, .page-id-12 .frontproduct-img {
+    height: 140px;
+	}
+	
+	#frontusp {
+		padding: 40px 0px 40px 0px;
+		margin-top: 60px;
+	}
 
 	#usp {
 		width: 100%;
 	}
+	
+	#advies-tekst {
+		width: 95%;
+		margin: 40px auto 0px auto;
+		p {
+		max-width: 100%;
+		}
+	}
+
+	#advies-contact {
+	width: 95%;
+	padding: 10px 0px 40px 0px;
+}
+
+#wpcf7-f104-o1 input {
+    width: 90%;
+}
+
+#wpcf7-f104-o1 .wpcf7-textarea {
+    width: 90%;
+}
 	
 	/////////////////////////////////////
 	}
@@ -480,17 +548,67 @@ width: 95%;
 			}
 		}
 		
+	#footerlist {
+		width: calc(100% - 150px);
+	}
 	
 		
 		
 	/////////////////////////////////////
 	}
+
+@media screen and (max-width: 650px) {
+/////////////////////////////////////	
 	
+	.page-id-12 .frontproduct {
+    min-height: 300px;
+}
+
+	#frontproducts, .page-id-12 #frontproducts {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 0;
+	margin: 40px 0px 0px 0px;
+}
+
+.frontproduct, .page-id-12 .frontproduct  {
+	height: auto;
+	width: 80%;
+	margin-bottom: 35px;
+	&-img {
+		width: 75%;
+		height: 200px;
+	}
+	&-text {
+		width: 100%;
+		height: calc(100% - 300px);
+		order: 3;		
+		h3 {
+			font-size: 18px;
+			position: static;
+			padding-top: 5px;
+			margin-top: 20px;
+		}
+		p {
+			font-size: 16px;
+			position: static;
+			width: 80%;
+			margin: auto;
+		}
+		a {
+			position: static;
+			
+		}
+	}
+}
+
+/////////////////////////////////////
+}
 
 @media screen and (max-width: 590px) {
 /////////////////////////////////////
 .site-nav ul {
-	padding-left: 30px;
 	width: 100%;
 	overflow: hidden;
 	li {
@@ -536,7 +654,7 @@ width: 95%;
 	margin-right: 5px;
 }
 
-#hero {
+#hero, #hero-sub {
 	height: 50vh;
 }
 			
@@ -556,6 +674,10 @@ width: 95%;
 			font-size: 15px;
 		}
 	}
+	
+	#hero-sub-text-heading {
+		font-size: 200%;
+	}
 
 	.btn2 {
 		padding: 7px 15px;
@@ -566,46 +688,7 @@ width: 95%;
 		margin-bottom: 15px;
 	}
 	
-	#frontproducts, .page-id-12 #frontproducts {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	padding: 0;
-	margin: 40px 0px 0px 0px;
-}
-
-.frontproduct, .page-id-12 .frontproduct  {
-	height: auto;
-	width: 95%;
-	margin-bottom: 35px;
-	&-img {
-		width: 100%;
-		height: 250px;
-	}
-	&-text {
-		width: 100%;
-		height: calc(100% - 250px);
-		order: 3;
-		padding: 10px;
-		
-		h3 {
-			font-size: 18px;
-			position: static;
-			padding-top: 5px;
-			margin-top: 20px;
-		}
-		p {
-			font-size: 16px;
-			position: static;
-			width: 80%;
-			margin: auto;
-		}
-		a {
-			position: static;
-			
-		}
-	}
-}
+	
 
 	.btn3 {
 		padding: 10px 15px;
@@ -616,6 +699,10 @@ width: 95%;
 	
 	.slide {
 		padding: 25px 10px 35px;
+	}
+	
+	#footerlist {
+		width: calc(100% - 50px);
 	}
 
 
@@ -635,17 +722,43 @@ width: 95%;
 }
 */
 
-
-
-#hero {
-	height: 350px;
+.menu-primary-container {
+    padding: 10px;
 }
 
+#hero, #hero-sub {
+	height: 260px;
+}
+
+#hero-text {
+    top: 15%;
+	max-width: calc(100% - 40px);
+}
+
+#hero-sub-text {
+	top: 40%;
+}
+
+#hero-sub-text-heading {
+    font-size: 150%;
+}
 
 .btn2 {
 	padding: 7px 5px;
 }
 
+#hero-text h1 {
+    font-size: 120%;
+	margin-bottom: 20px;
+}
+
+#hero-text-subheading {
+    margin-bottom: 20px;
+}
+
+.slide {
+	padding: 25px 10px 45px;
+}
 
 #nieuws {
 	padding: 30px 45px;
@@ -773,6 +886,17 @@ width: 95%;
 	}
 	#filelink p {
 		margin: 0 5px;
+	}
+}
+
+.copyright {
+	margin: 10px;
+	span {
+		display: none;
+	}
+	p {
+		margin: 5px 0px;
+		line-height: 2.5em;
 	}
 }
 

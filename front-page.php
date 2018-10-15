@@ -68,7 +68,7 @@
 </div>
 
 <div class="button">
-<a class="btn3" href="http://localhost/lms/producten/">
+<a class="btn3" href="/lms/merken/">
 			Bekijk alle merken >
 </a>
 </div>

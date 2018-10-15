@@ -195,8 +195,9 @@ li {
 /////// Correct icon size in menu
 .site-nav .fas {
 	margin: 0 0 0 5px;
-	position: relative;
-	top: 3px;
+	position: absolute;
+	top: 5px;
+	right: 10px;
 }
 
 ////// Menu Buttons
@@ -306,7 +307,7 @@ a {
 }
 
 input {
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.8);
 	color: #fff;
 	border: none;
 	padding: 10px;

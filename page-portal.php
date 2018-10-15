@@ -22,7 +22,7 @@ get_header();
 	</div>
 	<div id="pitch-text" class="center">
 		<p>Welkom bij de partner portal van LMS Distribution. In de onderstaande sectie kunt u de content zien die voor u beschikbaar is. Kunt u iets niet vinden, of heeft u vragen? Neem dan contact met ons op. We helpen u graag verder.</p>
-		<a id="hero-text-link" href='#' class="btn2">
+		<a id="hero-text-link" href='/contact' class="btn2">
 			Contact opnemen >
 		</a>
 	</div>

@@ -5,12 +5,13 @@
 <?php get_header(); ?>
 
 <!----------------- Banner --------------->
-
+<?php $merkpage = get_field('merk'); ?>
 
 <!---- Product Info en Foto ----->
 
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 <div id="individual">	
 	<span id="individual-breadcrumb">
 		<?php
@@ -21,12 +22,12 @@
 	
 	<div id="individual-right">
 		<div id="individual-right-text">
-			<h2>i3 Technologies <?php the_title(); ?></h2>
+			<h2><?php echo get_the_title($merkpage); ?> <?php the_title(); ?></h2>
 			<h3><?php the_field('individual_product_subtitle'); ?></h3>
 			<p><?php the_field('individual_product_samenvatting'); ?></p>
 			<div class="buttonsp">
-				<div class="buttonp1"><a href="/lms/contact"><?php the_field('individual_product_cta'); ?></a></div>
-				<div class="buttonp2"><a href="/lms/contact">Vind dealer</a></div>
+				<div class="buttonp1"><a href="/lms/demo-aanvragen"><?php the_field('individual_product_cta'); ?></a></div>
+				<div class="buttonp2"><a href="/lms/waar-te-koop">Waar te koop? </a></div>
 			</div>
 		</div>
 	</div>
@@ -251,7 +252,8 @@
 
 <!--- Functie Overzicht ---->
 <?php if( have_rows('functieoverzicht') ): ?>
-<div id="functieoverzicht-background">
+<div id="functieoverzicht-background" style="background-image: linear-gradient(to bottom, rgba(0, 0, 5, 0.6) 0%, rgba(0, 0, 5, 0.6) 100%), url(<?php the_field('achtergrondafbeelding_functieoverzicht'); ?>); ">
+
 <div id="functieoverzicht">
 	<h2>Functie Overzicht<span id="functieoverzicht-underline"></span></h2>
 	<div id="functieoverzicht-container">
@@ -333,5 +335,11 @@
 		</div>
 	</div>
 </div>
+
+<script>
+	jQuery('#individual-related-border, #individual-related-block-text, .buttonp1 a, .buttonp2 a').css('border-color', '<?php the_field("merk_kleur", $merkpage); ?>');
+	jQuery('.buttonp1 a').css('background', '<?php the_field("merk_kleur", $merkpage); ?>');
+	jQuery('.buttonp2 a').css('color', '<?php the_field("merk_kleur", $merkpage); ?>');
+</script>
 
 <?php get_footer(); ?>

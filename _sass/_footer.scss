@@ -5,6 +5,10 @@
 	h3 {
 		color: #2E3D50
 	}
+	p {
+	display: inline;
+	margin: 5px;
+	}
 }
 
 #connectedrow {
@@ -65,7 +69,7 @@
 
 .footerlist-item {
 	width: 16%;
-	min-width: 300px;
+	min-width: 230px;
 	margin: 0px auto 10px auto ;
 	&-title {
 		width: 100%;

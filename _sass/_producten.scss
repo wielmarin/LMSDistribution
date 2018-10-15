@@ -28,6 +28,8 @@
 	grid-row-gap: 3rem;
 	margin: auto;
 	position:relative;
+	margin-bottom: 50px;
+	width: 90%;
 	&-1 {
 		display: block;
 		&-text {
@@ -82,6 +84,7 @@
 	min-height: 320px;
 	position: relative;
 	border: 1px solid rgba(0, 0, 0, 0.125);
+	
 		//&:hover {
 			//bottom: 3px;
 		//}
@@ -176,6 +179,7 @@
 	font-family: 'Open Sans', sans-serif!important;
 	font-size: 70%;
 	background-color: white;
+	height: 100px;
 }
 
 #wpcf7-f104-o1 input {

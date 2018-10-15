@@ -14,8 +14,9 @@ jQuery('#contactbutton').click(function() {
 //	jQuery('#contactbutton').toggleClass('contact-small', 400);
 });
 
+
 //// ATTEMPTED FIX WINDOWS HOVER MENU - MAYBE NEEDS TO BE ON LINK?
-jQuery('.menu-item-has-children').attr('aria-haspopup','true')
+jQuery('.menu-item-has-children').attr('aria-haspopup','true');
 
 // Mobile Menu
 jQuery('#mobile-menu-open').click(function() {
@@ -37,7 +38,7 @@ jQuery('#mobile-menu-open').click(function() {
 		
 		
 		// Append Arrows
-		jQuery('.menu-item-has-children > a').append('<i class="fas fa-angle-down fa-change"></i><i class="fas fa-angle-up fa-change"></i>');
+		jQuery('.menu-item-has-children').append('<i class="fas fa-angle-down fa-change"></i><i class="fas fa-angle-up fa-change"></i>');
 		
 		// Give space
 		jQuery('.fa-change').css('margin-left', '10px');
@@ -209,6 +210,8 @@ jQuery('#portal-content-right-space').click(function(e) {
 jQuery('#portal-content-right-space').on('touchstart', function(z) {
 	return false;
 });
+
+
 
 //END
 });

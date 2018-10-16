@@ -50,6 +50,11 @@ jQuery('#mobile-menu-open').click(function() {
 			jQuery(this).find('.fa-change').toggle();
 		});
 
+		// Get header height
+		var headerHeight = jQuery('.site-header').height();
+		// Apply to container
+		jQuery('.container').css('margin-top', headerHeight);
+
 	//// End media command
 	}
 	};
@@ -180,6 +185,38 @@ jQuery('#individual-downloads-whitepapers-button').click( function() {
 	});
 	
 
+//// Waar te koop page
+	// Alle Merken Button
+	jQuery('.all-merken-button').click( function() {
+		jQuery('.waar-item').show();
+		jQuery('#waar-coming').hide();
+	});
+	
+	// Other buttons
+	jQuery('.merk-button').click( function() {
+		// Turn data into variable
+		var merkPage = jQuery(this).attr('data-merk-id');
+		// Hide all blocks
+		jQuery('.waar-item').hide();
+		// Check if have items
+		var itemCheck = jQuery('.waar-item-merk-' + merkPage).length;
+		if (itemCheck > 0) {
+			// Show blocks from clicked merk if available
+			jQuery('.waar-item-merk-' + merkPage).show();
+			jQuery('#waar-coming').hide();
+		} else {
+			// if no items, show text
+			jQuery('#waar-coming').show();
+		}
+	});
+	
+	// Change button opacity on click
+	jQuery('.filter-button').click( function() {
+		// Change opacity all buttons to default
+		jQuery('.filter-button').removeClass('active-button');
+		// Add to clicked button
+		jQuery(this).addClass('active-button');
+	});
 
 
 ////// Text Membership Plugin aanpassen

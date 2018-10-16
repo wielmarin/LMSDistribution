@@ -10,7 +10,38 @@ margin-bottom: 20px;
     min-height: 300px;
 	}
 
-.frontproduct, .page-id-12 .frontproduct  {
+.homepageproducts .frontproduct {
+	height: auto;
+}
+
+.homepageproducts .frontproduct-img {
+	width: 100%;
+	height: 280px;
+}
+
+
+.homepageproducts .frontproduct-text {
+	width: 100%;
+	height: calc(100% - 280px);
+	order: 3;
+	padding-bottom: 10px;
+	h3 {
+		font-size: 18px;
+		position: static;
+		padding-top: 20px;
+	}
+	p {
+		font-size: 16px;
+		position: static;
+	}
+	a {
+		position: static;
+		
+	}
+}
+
+
+.page-id-12 .frontproduct  {
 	height: auto;
 	&-img {
 		width: 90%;
@@ -81,6 +112,8 @@ span.wpcf7-list-item {
 		/////////////////////////////////////
 			.site-header {
 				border-bottom: none;
+				position: fixed;
+				top: 0;
 			}
 			
 			.site-nav {
@@ -167,6 +200,13 @@ span.wpcf7-list-item {
 			#menu-item-485 {
 				display: block;
 			}
+			.header-right {
+				padding: 5px 0px;
+			}
+			
+			.login {
+				border-left: none;
+			}
 			
 			.partner:first-of-type {
 				display: none;
@@ -239,6 +279,11 @@ span.wpcf7-list-item {
 				.btn {
 					padding: 10px 22px;
 				}
+			}
+			
+			#hero-sub-text {
+				top: 53%!important;
+				font-size: 16px;
 			}
 			
 			#pitch-text {
@@ -402,6 +447,10 @@ span.wpcf7-list-item {
 			width: calc(100% - 250px);
 		}
 		
+		#productgroup-container {
+			width: calc(100% - 10px);
+			margin-top: 10px;
+		}
 		
 	/////////////////////////////////////
 	}
@@ -465,7 +514,9 @@ span.wpcf7-list-item {
 #wpcf7-f104-o1 .wpcf7-textarea {
     width: 90%;
 }
-	
+
+
+
 	/////////////////////////////////////
 	}
 	
@@ -559,12 +610,16 @@ span.wpcf7-list-item {
 
 @media screen and (max-width: 650px) {
 /////////////////////////////////////	
-	
-	.page-id-12 .frontproduct {
+.homepageproducts .frontproduct {
+	height: auto;
+}
+
+
+.page-id-12 .frontproduct {
     min-height: 300px;
 }
 
-	#frontproducts, .page-id-12 #frontproducts {
+#frontproducts, .page-id-12 #frontproducts {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -736,7 +791,7 @@ span.wpcf7-list-item {
 }
 
 #hero-sub-text {
-	top: 40%;
+	top: 55%!important;
 }
 
 #hero-sub-text-heading {

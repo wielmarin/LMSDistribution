@@ -29,6 +29,7 @@
 			h3 {
 				margin-top: 20px;
 				margin-bottom: 10px;
+				
 			}
 		}
 		p {
@@ -86,7 +87,6 @@
 	justify-content: space-between;
 	margin: 15px auto 50px;
 	border-top: 1px solid  #f8f8f8;
-	border-bottom: 1px solid  #f8f8f8;
 }
 
 .product-image-block {
@@ -95,7 +95,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin: auto 5px 0px;
+	margin: auto 0px 20px;
 	cursor: zoom-in;
 	&:first-of-type {
 		margin-left: 0;
@@ -131,7 +131,7 @@
 	flex-wrap: wrap;
 	width: calc(100% - 200px);
 	justify-content: space-between;
-	margin: 30px auto 0px auto;
+	margin: 10px auto 0px auto;
 	padding: 40px 0px;
 	&-text {
 		width: calc(100% - 500px);
@@ -139,6 +139,7 @@
 		margin-right: 20px;
 		p {
 		margin-top: 10px;
+		margin-bottom: 20px;
 		}
 		h2 {
 			font-weight: bold;
@@ -207,14 +208,14 @@
 			font-size: 90%;
 			color: white;
 			text-align: left;
-			padding: 20px;
+			padding: 20px 0px;
 		}
 	}
 	&-icon {
 		display: inline;
 		width: 70px;
 		height: 70px;
-		margin-right: 10px;
+		margin-right: 20px;
 		align-self: center;
 	}
 	&-info {
@@ -309,7 +310,7 @@
 			bottom: -10px;
 		}
 	&-block {
-		width: 360px;
+		width: 350px;
 		height: 320px;
 		margin: 40px auto 0px auto;
 		position: relative;
@@ -335,7 +336,7 @@
 	&-block-text-title {
 		font-size: 16px;
 		position: absolute;
-		top: 10px;
+		top: 20px;
 		text-align: center;
 		width: 100%;
 	}
@@ -344,7 +345,7 @@
 		width: 100%;
 		position: absolute;
 		text-align: center;
-		bottom: 5px;
+		bottom: 10px;
 		left:0;
 		color: #7a7979;
 		font-weight: bold;

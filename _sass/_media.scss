@@ -92,6 +92,21 @@ span.wpcf7-list-item {
 }
 
 
+#productgroup-container .frontproduct {
+		width: 300px;
+		min-height: 0;
+}
+
+#individual-related {
+&-block {
+	width: 290px;
+	height: 300px;
+	}
+&-block-text-title {
+top: 15px;
+}
+}
+
 /////////////////////////////////////
 }
 
@@ -103,6 +118,19 @@ span.wpcf7-list-item {
 			padding: 50px 0px 50px 0px;
 			margin-bottom: 0px;
 		}
+		
+		.page-id-14	#pitch-text {
+			max-width: 350px;
+		}
+		
+		#over-tekst {
+			width: 400px;
+		}		
+				
+		#over-foto {
+			width: 400px;
+		}		
+		
 		
 
 	/////////////////////////////////////
@@ -119,10 +147,12 @@ span.wpcf7-list-item {
 			.site-nav {
 				display: none;
 				position: absolute;
-				top: 125px;
+				top: 130px;
 				background: white;
 				z-index: 9999;
 				width: 100%;
+				height: calc(100vh - 137px);
+				overflow-y: scroll;
 				box-sizing: border-box;
 				.fa-caret-right {
 					display: none;
@@ -217,20 +247,23 @@ span.wpcf7-list-item {
 			}
 			
 			#mobile-menu-open {
-				display: block;
+				display: flex;
+				flex-wrap: wrap;
 				order: 8;
 				margin: auto 30px auto 20px;
 				height: 37px;
-				width: 26px;
-				padding: 10px;
+				width: 45px;
+				padding: 10px 0px;
+				align-content: center;
 				i {
-					margin-left: 0px;
+					margin: auto;
 					font-size: 30px!important;
 				}
 				p {
 				font-size: 9px;
-				margin-left: 0px;
-				margin-right: 0px;
+				width: 100%;
+				text-align: center;
+				margin: auto;
 				}
 			}
 			
@@ -262,6 +295,11 @@ span.wpcf7-list-item {
 				}
 			}
 			
+			/// Container under header for fixed position
+			.container {
+				margin-top: 137px;
+			}
+			
 			#hero {
 				height: 60vh;
 			}
@@ -287,12 +325,13 @@ span.wpcf7-list-item {
 			}
 			
 			#pitch-text {
-				max-width: 400px;
+				max-width: 350px;
 			}
 			
 			.pitch-title-box {
-				max-width: 400px;
+				max-width: 350px;
 			}
+		
 			
 			.frontproduct, .page-id-12 .frontproduct  {
 				&-img {
@@ -306,6 +345,10 @@ span.wpcf7-list-item {
 			
 			.page-id-12 #frontproducts {
 				padding: 50px 0px 0px 20px 0px;
+			}
+			
+			#individual {
+			margin: 120px auto 60px auto;
 			}
 			
 
@@ -333,6 +376,17 @@ span.wpcf7-list-item {
 				#individual-right-text {
 					width: 100%;
 				}
+				#individual-right h2 {
+					font-size: 24px;
+				}
+				
+				#individual-right-text h3 {
+					font-size: 17px;
+				}
+				
+				#individual-right p {
+					font-size: 17px;
+				}
 				
 				#individual-left {
 					width: calc(50% - 20px);
@@ -346,15 +400,33 @@ span.wpcf7-list-item {
 					width:100%;
 				}
 				
+				#individual-content-text h2 {
+					font-size: 24px;
+				}
+				
+				#individual-content-text p {
+					font-size: 16px;
+				}
+				
 				#individual-downloads {
 					width: 100%;
 					max-width: 500px;
-					margin: auto;
+				}
+				
+				
+				.download-button p {
+				font-size: 16px;
+				}
+				
+				#functieoverzicht-item p {
+					font-size: 16px;
 				}
 				
 				#portal-content-side {
 					display: none;
 				}
+				
+				
 				
 				#portal-content-right {
 					width: 100%;
@@ -405,6 +477,24 @@ span.wpcf7-list-item {
 				#advies-tekst p {
 					font-size: 16px;
 				}
+				
+				#individual-related-block {
+					width: 220px;
+					height: 250px;
+				}
+				
+			#over-tekst {
+			p {
+				font-size: 16px;
+				}
+			h2 {
+				font-size: 24px;
+				}
+			}
+			
+			#over-foto {
+				width: 260px;
+			}
 
 			/////////////////////////////////////
 			}
@@ -450,6 +540,14 @@ span.wpcf7-list-item {
 		#productgroup-container {
 			width: calc(100% - 10px);
 			margin-top: 10px;
+		}
+		
+		.pitch-title-box {
+			max-width: 300px;
+		}
+		
+		#over-tekst {
+			width: 300px;
 		}
 		
 	/////////////////////////////////////
@@ -516,7 +614,50 @@ span.wpcf7-list-item {
 }
 
 
+#productgroup-container .frontproduct {
+    width: 500px;
+    height: 450px;
+}
 
+#productgroup-container .frontproduct-img {
+	height: 80%;
+}
+
+#productgroup-container .frontproduct-text {
+	height: 20%;
+}
+
+#productgroup-container .frontproduct-text-link {
+    top: 25px;
+}
+
+#productgroup-container .frontproduct-text-title {
+    top: 10px;
+}
+
+#individual-related {
+&-block {
+    width: 500px;
+    height: 450px;
+}
+&-block-img {
+		height: 80%;
+}
+
+}
+
+	.page-id-14 .itemcont {
+	display: block;
+	padding-top: 40px;
+	}
+	.pitch-title-box {
+		max-width: 100%;
+	}
+	.page-id-14 #pitch-text {
+		max-width: 95%;
+	}
+
+	
 	/////////////////////////////////////
 	}
 	
@@ -529,7 +670,6 @@ span.wpcf7-list-item {
 			margin: 20px auto;
 			&-breadcrumb {
 				font-size: 14px;
-				margin: 10px 0px;
 			}
 		}
 	
@@ -603,6 +743,12 @@ span.wpcf7-list-item {
 		width: calc(100% - 150px);
 	}
 	
+	#individual-breadcrumb {
+		font-size: 14px;
+		margin: 0px 0px 20px;
+	}
+
+
 		
 		
 	/////////////////////////////////////
@@ -656,6 +802,16 @@ span.wpcf7-list-item {
 			
 		}
 	}
+}
+
+#productgroup-container .frontproduct-text-link {
+    top: 40px !important;
+    position: relative;
+}
+
+#productgroup-container .frontproduct-text h3 {
+    top: 10px!important;
+    position: absolute;
 }
 
 /////////////////////////////////////
@@ -760,6 +916,30 @@ span.wpcf7-list-item {
 		width: calc(100% - 50px);
 	}
 
+	#productgroup-container .frontproduct {
+		width: 90%;
+		height: auto;
+	}
+	
+	#productgroup-container .frontproduct-img {
+		width: 100%;
+		height: 280px;
+		background-size: cover;
+	}
+
+	#productgroup-container .frontproduct-text {
+		height: 80px;
+	}
+	
+	#over-foto {
+    width: 100%;
+    text-align: center;
+    height: 300px;
+}
+
+	#over-tekst {
+		width: 85%;
+	}
 
 /////////////////////////////////////
 }
@@ -811,12 +991,16 @@ span.wpcf7-list-item {
     margin-bottom: 20px;
 }
 
+#pitch {
+    width: 90%;
+	}
+
 .slide {
 	padding: 25px 10px 45px;
 }
 
 #nieuws {
-	padding: 30px 45px;
+	padding: 30px 30px;
 	box-sizing: border-box;
 }
 
@@ -824,8 +1008,12 @@ span.wpcf7-list-item {
 	flex-wrap: wrap;
 }
 
+#functieoverzicht-container {
+    width: 90%;
+}
+
 #functieoverzicht-icon {
-	margin-left: 10%;
+	margin: 0px auto 20px auto;
 }
 
 #functieoverzicht-info {
@@ -835,13 +1023,31 @@ span.wpcf7-list-item {
 	}
 }
 
+#individual {
+    width: 90%;
+	}
+
 #individual-left {
 	display: none;
+}
+
+#product-image-container {
+	border-top: none;
+	border-bottom: none;
+	width: 90%;
 }
 
 .product-image-block {
 	width: 100%;
 	cursor: initial;
+}
+
+#product-image-4 {
+	display: none;
+}
+
+#individual-content {
+   width: 90%;
 }
 
 #individual-content-text {

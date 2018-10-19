@@ -58,7 +58,7 @@
 	
 		<div class="login">
 			<?php if(!SwpmMemberUtils::is_member_logged_in()) { ?>
-			<a href="/lms/membership-login/">Inloggen Portal</a>
+			<a href="/membership-login/">Inloggen Portal</a>
 			<?php } ?>
 			<?php if(SwpmMemberUtils::is_member_logged_in()) { ?>
 			<a href="/lms?swpm-logout=true">Uitloggen</a>
@@ -72,32 +72,31 @@
 	<!--- Logo --->
 	
 	<a class="logo" href="<?php echo get_home_url(); ?>">
-		<img src="/lms/wp-content/uploads/2018/08/SmallLogo.jpg" width="150px" height="true" alt="LMS Distribution">
+		<img src="/wp-content/uploads/2018/08/SmallLogo.jpg" width="150px" height="true" alt="LMS Distribution">
 	</a>
-	
-	<!--- Logo --->
 
 	<!--- Primary navigation --->
-	<nav class="site-nav">
+		<nav class="site-nav">
 
-			<?php
-				$args = array(
-				'theme_location' => 'primary'
-				);
-			?>
-			
-			<?php wp_nav_menu( $args ); ?>	
+				<?php
+					$args = array(
+					'theme_location' => 'primary'
+					);
+				?>
 				
-			<div class="nav-arrow"><i class="fas fa-caret-up"></i></div>
-	</nav>
+				<?php wp_nav_menu( $args ); ?>	
+					
+				<div class="nav-arrow"><i class="fas fa-caret-up"></i></div>
+		</nav>
 	
 	<!--- Search --->
 	<i class="fas fa-search"></i>
 	<?php get_search_form(); ?>
 	
 	<div id="mobile-menu-open">
-		<i class="fas fa-bars fa-lg"></i><p>Menu</p>
+		<i class="fas fa-bars fa-lg"></i><i class="fas fa-times"></i><p id="mobile-show">Menu</p><p id="mobile-hide">Sluiten</p>
 	</div>
+	
 	
 	</div>	
 	

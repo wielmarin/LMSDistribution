@@ -34,7 +34,7 @@ get_header();
 			</div>
 		   
 			<div id="flex3" class="excerpttext">
-				<div id="aboutomschrijving1" class="flexomschrijving"><p><?php echo get_the_excerpt(); ?> ...</p></div><a href="<?php the_permalink(); ?>" class="readmorelink">Bekijken</a>
+				<div id="aboutomschrijving1" class="flexomschrijving"><p><?php echo get_the_excerpt(); ?> </p></div><a href="<?php the_permalink(); ?>" class="readmorelink">Bekijken</a>
 			</div>
 		</div>
 		<div id="nieuws-border"></div>

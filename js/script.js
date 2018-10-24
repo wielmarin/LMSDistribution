@@ -34,8 +34,6 @@ jQuery('#mobile-menu-open').click(function() {
 		var merkBoxWidth = jQuery('#productgroup-container .frontproduct').width();
 		// Get ratio for height
 		var merkBoxHeight = merkBoxWidth * 0.73 + 'px';
-		// console.log('Box Width =' + merkBoxWidth);
-		// console.log('Box Height =' + merkBoxHeight);
 		// Apply height to the img
 		jQuery('#productgroup-container .frontproduct-img').css('height', merkBoxHeight);
 		
@@ -225,6 +223,22 @@ jQuery('#individual-downloads-whitepapers-button').click( function() {
 		jQuery('#individual-left').css('background-image', image);
 		
 	});
+	
+	// Change layout when only 1 image
+	if (jQuery('.product-image-block').length < 2) { 
+		jQuery('#product-image-container').hide();  
+	};
+	
+	// Change layout when only 2 images
+	if (jQuery('.product-image-block').length === 2) { 
+		jQuery('#product-image-container').css('justify-content','left'); 
+		jQuery('.product-image-block').css('margin-right','20px') 
+	};
+	
+	// Allow 5 per line
+	if (jQuery('.product-image-block').length === 5) { 
+		jQuery('.product-image-block').css('width','18%') 
+	}
 	
 
 //// Waar te koop page

@@ -83,6 +83,7 @@ function custom_post_init() {
       'label'  => 'Portal Items',
 	  'taxonomies' => array( 'category' ),
 	  'hierarchical' => true,
+	  'exclude_from_search' => true
     );
     register_post_type( 'portal', $args );
 }
@@ -90,7 +91,10 @@ add_action( 'init', 'custom_post_init' );
 
 
 
-
+/// ACF Options page
+if( function_exists('acf_add_options_page') ) {	
+	acf_add_options_page();
+};
 
 
 

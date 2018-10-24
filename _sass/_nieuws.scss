@@ -74,7 +74,7 @@
 		padding: 20px 0px;
 	}
 	h1 {
-	text-transform: none;
+	font-size: 26px;
 	}
 }
 
@@ -100,17 +100,21 @@
 	width: 28%;
 	padding: 0px 30px;
 	margin-bottom: 20px;
+	min-width: 340px;
 	&-titel {
 	padding-bottom:20px;
 	margin-top: 10px;
 	border-bottom: 1px solid #e4e4e4;
-	font-size: 80%;
+	font-size: 60%;
 	}
 	&-titelcontact {
 	padding-bottom:20px;
 	margin-top: 30px;
 	border-bottom: 1px solid #e4e4e4;
 	font-size: 80%;
+	}
+	span {
+		font-size: 80%;
 	}
 }
 

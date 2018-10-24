@@ -336,10 +336,16 @@
 	</div>
 </div>
 
+<style>
+	<!----- CSS FOR STRIPE COLOURS UNDER H2 ----->
+	.<?php the_field("merk_code", $merkpage); ?>stripe::after { border-bottom: 2px solid <?php the_field("merk_kleur", $merkpage) ?>!important };
+</style>
 <script>
 	jQuery('#individual-related-border, #individual-related-block-text, .buttonp1 a, .buttonp2 a').css('border-color', '<?php the_field("merk_kleur", $merkpage); ?>');
 	jQuery('.buttonp1 a').css('background', '<?php the_field("merk_kleur", $merkpage); ?>');
 	jQuery('.buttonp2 a').css('color', '<?php the_field("merk_kleur", $merkpage); ?>');
+	<!----- ADD CLASS FOR STRIPE COLOURS UNDER H2 ----->
+	jQuery('#individual-content-text h2').addClass('<?php the_field("merk_code", $merkpage); ?>stripe');
 </script>
 
 <?php get_footer(); ?>

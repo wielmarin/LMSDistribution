@@ -328,3 +328,74 @@
 	left: 10px;
 	top: -30px;
 }
+
+// Loginpage portal
+
+#loginpage-background {
+background-color: #f8f9f9;
+}
+
+#loginpage {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 80%;
+	margin: auto;	
+	justify-content: space-between;
+}
+
+#loginpage-aanvragen {
+	width: 40%;
+	padding: 50px 40px;
+	p {
+	padding: 25px 0px 40px 0px;
+	}
+}
+
+.btnportal {
+    padding: 12px 32px;
+    background: #488e7f;
+    color: #fff !important;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+h2#loginpage-titel {
+	font-weight: bold;
+}
+
+h3#loginpage-titel {
+	margin-top: 5px;
+}
+
+.swpm-login-widget-form {
+    width: 200px;
+    margin-left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+#maintext {
+    margin: 0;
+}
+
+#maintext input {
+    width: 100%;
+	border: 1px solid #f8f9f9;
+}
+
+.swpm-login-widget-form {
+    width: 300px;
+}
+
+.swpm-login-form-submit {
+	border: 1px solid #488e7f!important;
+    padding: 8px!important;
+    color: white!important;
+    background: #488e7f!important;
+	cursor: pointer;
+	width: 200px!important;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: 'Open Sans Light', sans-serif;
+}

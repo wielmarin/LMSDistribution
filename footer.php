@@ -43,7 +43,7 @@
 			<h3 id="footerlist-3-title" class="footerlist-item-title">
 			Partners
 			</h3>
-			<a href="/portal">Partner portal</a><br>
+			<a href="/membership-login">Partner portal</a><br>
 			<a href="/dealer-worden">Dealer worden</a><br>
 			<a href="/demo-aanvragen">Demo aanvragen</a>
 			
@@ -53,8 +53,8 @@
 				LMS Distribution
 			</h3>
 			T: <a href="tel:085-0703058">085-0703058</a><br>
-			E: <a href="mailto:Info@lmsdistribution.nl">Info@lmsdistribution.nl</a><br>
-			<a href="https://www.google.com/maps/place/Toepadweg+10,+5301+KA+Zaltbommel,+Nederland/@51.8093832,5.2660447,17z/data=!4m5!3m4!1s0x47c6f3f2b1420c0b:0x5d4d2ef48537dec3!8m2!3d51.8093832!4d5.2682334"><p>Toepadweg 10<br>
+			E: <a href="mailto:info@lmsdistribution.nl">info@lmsdistribution.nl</a><br>
+			<a href="https://www.google.com/maps/place/Toepadweg+10,+5301+KA+Zaltbommel,+Nederland/@51.8093832,5.2660447,17z/data=!4m5!3m4!1s0x47c6f3f2b1420c0b:0x5d4d2ef48537dec3!8m2!3d51.8093832!4d5.2682334" target="_blank"><p>Toepadweg 10<br>
 			5301 KA Zaltbommel</a><br>
 			<a href="/over-ons">Over Ons</a>
 			

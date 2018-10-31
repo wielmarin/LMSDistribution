@@ -74,7 +74,13 @@ $logo = "<?php the_field('logo_merk'); ?>";
 					<?php the_title(); ?>
 				</h3>
 				<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_permalink(); ?>">
+				<?php $totalchildren = get_pages( array( 'child_of' => $post->ID, 'post_type' => 'page'));
+				$count = count($totalchildren);
+				if ($count < 2) { ?>
 					Bekijk product <i class="fas fa-angle-right"></i>
+				<? } else { ?>
+					Bekijk categorie <i class="fas fa-angle-right"></i>
+				<?php } ?>
 				</a>
 			</div>
 	</div>
@@ -83,7 +89,12 @@ $logo = "<?php the_field('logo_merk'); ?>";
 <?php endwhile;
 else: ?>
 	<p id="merk-coming">De producten van <?php the_title(); ?> gaan binnenkort live</p>
-	<div id="advies-background">
+
+<?php endif; ?>	
+	
+</div>
+
+<div id="advies-background">
 	<div id="advies">
 		<div id="advies-tekst">
 			<h2 class="advies-titel">Alvast een demo ontvangen?
@@ -96,9 +107,6 @@ else: ?>
 			<?php echo do_shortcode('[contact-form-7 id="104" title="Contactformulier 1"]'); ?>
 		</div>
 	</div>
-</div>
-<?php endif; ?>	
-	
 </div>
 
 <?php if (is_page('i3-technologies')) : ?>

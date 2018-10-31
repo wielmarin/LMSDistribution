@@ -22,7 +22,14 @@
 	
 	<div id="individual-right">
 		<div id="individual-right-text">
-			<h2><?php echo get_the_title($merkpage); ?> <?php the_title(); ?></h2>
+			<h2>
+				<?php if( get_field('alternatief_merk_titel')) :
+					the_field('alternatief_merk_titel');
+				else :
+					echo get_the_title($merkpage); 
+				endif; ?> 
+
+			<?php the_title(); ?></h2>
 			<h3><?php the_field('individual_product_subtitle'); ?></h3>
 			<p><?php the_field('individual_product_samenvatting'); ?></p>
 			<div class="buttonsp">
@@ -336,8 +343,9 @@
 	</div>
 </div>
 
+<!----- CSS FOR STRIPE COLOURS UNDER H2 ----->
 <style>
-	<!----- CSS FOR STRIPE COLOURS UNDER H2 ----->
+	
 	.<?php the_field("merk_code", $merkpage); ?>stripe::after { border-bottom: 2px solid <?php the_field("merk_kleur", $merkpage) ?>!important };
 </style>
 <script>

@@ -14,6 +14,13 @@ jQuery('#contactbutton').click(function() {
 //	jQuery('#contactbutton').toggleClass('contact-small', 400);
 });
 
+// Functie overzicht - align laatste item links, in line met andere
+function funcOverAlign() {
+	var foML = jQuery('#functieoverzicht-item:first-of-type').css('margin-left');
+	var LastML = '20px auto 20px ' + foML;
+	jQuery('#functieoverzicht-item:last-of-type').css('margin', LastML);
+};
+funcOverAlign();  /// RUN
 
 //// ATTEMPTED FIX WINDOWS HOVER MENU - MAYBE NEEDS TO BE ON LINK?
 jQuery('.menu-item-has-children').attr('aria-haspopup','true');
@@ -111,6 +118,9 @@ jQuery(window).on('resize', function(e) {
 
 	// Position Nav Up Arrow
 	navUpArrow();	
+	
+	// Function Overzicht last item alignment
+	funcOverAlign();
 	
 	// Hide open menu
 	jQuery('.site-nav ul li ul').hide();

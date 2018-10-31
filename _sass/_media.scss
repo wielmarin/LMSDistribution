@@ -111,6 +111,10 @@ top: 15px;
 	width: 250px;
 }
 
+#loginpage {
+	max-width: 90%;
+}
+
 /////////////////////////////////////
 }
 
@@ -562,6 +566,13 @@ top: 15px;
 					width: 260px;
 				}
 				
+				#loginpage {
+				font-size: 16px;
+				}
+				
+				#loginpage-aanvragen {
+					padding: 50px 20px;
+				}
 				
 
 			/////////////////////////////////////
@@ -746,6 +757,15 @@ top: 15px;
 	padding: 0px 30px;
 }
 
+#loginpage-aanvragen {
+	width: 95%;
+	margin: 0px auto 0px auto;
+	padding: 0px;
+}
+
+#loginpage {
+    padding: 40px 0px 40px;
+}
 	
 	/////////////////////////////////////
 	}
@@ -1280,6 +1300,10 @@ top: 15px;
     max-width: 90%;
 }
 
+#wpcf7-f104-o1 input {
+	display: inline;
+}
+
 #container-nieuwsbericht {
     padding: 0px;
     width: calc(100% - 40px);
@@ -1293,22 +1317,16 @@ top: 15px;
     height: 150px;
 }
 
+
+
 	/////Member login
-	.swpm-login-widget-form {
-		transform: translateX(0);
-		width: 200px;
-		max-width: 100%;
-		margin: auto;
-		box-sizing: border-box;
-	}
-	
-	#maintext {
-		width: calc(100% - 90px);
-		min-width: 0;
-	}
 	
 	#contactbutton {
 		display: none;
+	}
+	
+	#loginpage-aanvragen {
+		width: 100%;
 	}
 /////////////////////////////////////
 }
@@ -1316,6 +1334,9 @@ top: 15px;
 @media screen and (max-width: 380px) {
 /////////////////////////////////////
 
+.swpm-login-widget-form {
+    width: 250px;
+}
 
 .logo {
 	margin-left: 5px;

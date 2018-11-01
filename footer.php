@@ -65,7 +65,7 @@
 		<div class="copyright">
 			
 		
-		<nobr><p>Privacy statement</p></nobr>  <span>|</span> <nobr><p>Algemene voorwaarden</p></nobr> <span>|</span> <nobr><p>&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?></p></nobr>
+		<nobr><p><a href="http://lmsdistribution.nl/privacy-en-cookieverklaring/">Privacy statement</a></p></nobr>  <span>|</span> <nobr><p><a href="/wp-content/uploads/2018/11/Algemene-voorwaarden-LMS-Distribution.pdf">Algemene voorwaarden</a></p></nobr> <span>|</span> <nobr><p>&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?></p></nobr>
 		
 		</div>
 	</div>

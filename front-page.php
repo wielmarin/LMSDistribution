@@ -3,13 +3,13 @@
 <div id="hero">
 	<div id="hero-text" class="center">
 		<h1 id="hero-text-heading" class="center">
-			Digitale technologie voor scholen & bedrijven
+			<?php the_field('titel'); ?>
 		</h1>
 		<h2 id="hero-text-subheading" class="center">
-			Uw added value partner
+			<?php the_field('subtitel'); ?>
 		</h2>
-		<a id="hero-text-link" href='/merken/' class="btn">
-			Bekijk onze merken
+		<a id="hero-text-link" href='<?php the_field('banner_cta_link'); ?>' class="btn">
+			<?php the_field('cta_tekst'); ?>
 		</a>
 	</div>
 </div>
@@ -18,14 +18,14 @@
 
 	<div class="pitch-title-box">
 		<h2 id="pitch-title" class="center">
-		Over LMS Distribution
+		<?php the_field('pitch_titel'); ?>
 		</h2>
 		<div class="underline"></div>
 	</div>
 	<div id="pitch-text" class="center">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-		<a id="hero-text-link" href='/contact/' class="btn2">
-			Adviesgesprek aanvragen >
+			<p><?php the_field('pitch_tekst'); ?></p>
+		<a id="hero-text-link" href='<?php the_field('pitch_cta_link'); ?>' class="btn2">
+			<?php the_field('pitch_cta_tekst'); ?> >
 		</a>
 	</div>
 	
@@ -137,6 +137,26 @@ while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 
 	</div>
 </div>
+
+<!----- 
+Homepage Banner Slideshow
+Change images in options tab
+----->
+<?php
+	if( have_rows('homepage_banner', 'option') ):
+?>
+<script>
+jQuery("#hero").backstretch([
+<?php while ( have_rows('homepage_banner', 'option') ) : the_row(); 
+?>
+	"<?php the_sub_field('banner_beeld'); ?>",
+<?php endwhile; ?>
+	],
+	{transitionDuration: 800},
+	);
+</script>
+<? endif; ?>
+
 
 
 

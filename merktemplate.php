@@ -45,53 +45,76 @@ $logo = "<?php the_field('logo_merk'); ?>";
 	</span>
 	
 	-->
-
-<?php
-
-	$my_query = new WP_Query( array(
-		'post_type'      => 'page',
-		'posts_per_page' => -1,
-		'post_parent'    => $post->ID,
-		'order'          => 'ASC',
-		'orderby'        => 'menu_order'
-	));
-	
-	if ( $my_query->have_posts() ) : while ( $my_query->have_posts() ) : $my_query->the_post(); 
-
-?>
-
-
-
-	<div id="frontproducts-1" class="frontproduct" style="border: 1px solid rgba(0, 0, 0, 0.125);">
-			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
-					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
-				<?php } else { ?>
-					style="background-image: url(<?php the_field('logo_merk', $post->post_parent); ?>); background-size: 90%;"
-				<?php } ?>>
+<?php if( get_field('link_out')) : ?> <!--- Check if prefer to link to outside product pages, eg bij SmartMetals ---->
+		<!---- Begin loop voor blocks met links naar andere site ---->
+		<?php
+		if( have_rows('product_groep') ):
+		?>
+		<?php while ( have_rows('product_groep') ) : the_row(); 
+		?>		
+			<div id="frontproducts-1" class="frontproduct" style="border: 1px solid rgba(0, 0, 0, 0.125);">
+				<div id="frontproducts-1-img" class="frontproduct-img" style="background-image: url(<?php the_sub_field('beeld'); ?>)" >
+				</div>
+				<div id="frontproducts-1-text" class="frontproduct-text center" style="border-top: 0.7rem solid <?php the_field('merk_kleur'); ?>; background: none;">
+					<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
+						<?php the_sub_field('titel'); ?>
+					</h3>
+					<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_sub_field('link'); ?>" target="_blank">
+						Bekijk producten <i class="fas fa-angle-right"></i>
+					</a>
+				</div>
 			</div>
-			<div id="frontproducts-1-text" class="frontproduct-text center" style="border-top: 0.7rem solid <?php the_field('merk_kleur', $post->post_parent); ?>; background: none;">
-				<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
-					<?php the_title(); ?>
-				</h3>
-				<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_permalink(); ?>">
-				<?php $totalchildren = get_pages( array( 'child_of' => $post->ID, 'post_type' => 'page'));
-				$count = count($totalchildren);
-				if ($count < 2) { ?>
-					Bekijk product <i class="fas fa-angle-right"></i>
-				<? } else { ?>
-					Bekijk categorie <i class="fas fa-angle-right"></i>
-				<?php } ?>
-				</a>
-			</div>
-	</div>
+		
+		
+		<?php endwhile; ?>
+		<? endif; ?> <!----- Eind loop voor blocks met links naar andere site ---->
+<?php else : ?> <!---- Defaults action for when product pages are on the site ---->
+			<?php
 
-	
-<?php endwhile;
-else: ?>
-	<p id="merk-coming">De producten van <?php the_title(); ?> gaan binnenkort live</p>
+				$my_query = new WP_Query( array(
+					'post_type'      => 'page',
+					'posts_per_page' => -1,
+					'post_parent'    => $post->ID,
+					'order'          => 'ASC',
+					'orderby'        => 'menu_order'
+				));
+				
+				if ( $my_query->have_posts() ) : while ( $my_query->have_posts() ) : $my_query->the_post(); 
 
-<?php endif; ?>	
-	
+			?> 
+			<!----- Loop for product blocks own site --->
+
+
+				<div id="frontproducts-1" class="frontproduct" style="border: 1px solid rgba(0, 0, 0, 0.125);">
+						<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
+								style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
+							<?php } else { ?>
+								style="background-image: url(<?php the_field('logo_merk', $post->post_parent); ?>); background-size: 90%;"
+							<?php } ?>>
+						</div>
+						<div id="frontproducts-1-text" class="frontproduct-text center" style="border-top: 0.7rem solid <?php the_field('merk_kleur', $post->post_parent); ?>; background: none;">
+							<h3 id="frontproducts-1-text-title" class="frontproduct-text-title">
+								<?php the_title(); ?>
+							</h3>
+							<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_permalink(); ?>">
+							<?php $totalchildren = get_pages( array( 'child_of' => $post->ID, 'post_type' => 'page'));
+							$count = count($totalchildren);
+							if ($count < 2) { ?>
+								Bekijk product <i class="fas fa-angle-right"></i>
+							<? } else { ?>
+								Bekijk categorie <i class="fas fa-angle-right"></i>
+							<?php } ?>
+							</a>
+						</div>
+				</div>
+
+				
+			<?php endwhile;
+			else: ?> <!-- If staying 'on site' but no product pages exist ---->
+				<p id="merk-coming">De producten van <?php the_title(); ?> gaan binnenkort live</p>
+
+			<?php endif; ?>	<!---- End WP Query loop --->
+<?php endif; ?>	<!--- End outside link check ----->
 </div>
 
 <div id="advies-background">
@@ -109,48 +132,8 @@ else: ?>
 	</div>
 </div>
 
-<?php if (is_page('i3-technologies')) : ?>
-<script>
-    jQuery('.frontproduct-text').css('border-top','0.7rem solid #ffa300');
-	jQuery('.frontproduct-text').css('background','none');
-	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
-	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/08/portal-video-poster-1-e1535286490910.jpg');
-	//jQuery('#border-subpage').css('border-bottom','2px solid #ffa300')
-	
-</script>
-
-<?php elseif (is_page('turning-technologies')) : ?>
-<script>
-    jQuery('.frontproduct-text').css('border-top','0.7rem solid #FFEF52');
-	jQuery('.frontproduct-text').css('background','none');
-	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
-	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
-	//jQuery('#border-subpage').css('border-bottom','2px solid #FFEF52')
-	
-</script>
-
-<?php elseif (is_page('smart-metals')) : ?>
-<script>
-    jQuery('.frontproduct-text').css('border-top','0.7rem solid #003F79');
-	jQuery('.frontproduct-text').css('background','none');
-	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
-	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
-	//jQuery('#border-subpage').css('border-bottom','2px solid #003F79')
-	
-</script>
-
-<?php elseif (is_page('leftclick')) : ?>
-<script>
-    jQuery('.frontproduct-text').css('border-top','0.7rem solid #86AA42');
-	jQuery('.frontproduct-text').css('background','none');
-	jQuery('.frontproduct').css('border','1px solid rgba(0, 0, 0, 0.125)');
-	jQuery('#merklogo').attr('src', '/wp-content/uploads/2018/09/TurningTechlogo.png');
-	//jQuery('#border-subpage').css('border-bottom','2px solid #86AA42')
-	
-</script>
 
 
-<?php
-endif; ?>
+
 
 <?php get_footer(); ?>

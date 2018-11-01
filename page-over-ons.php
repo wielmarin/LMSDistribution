@@ -18,7 +18,15 @@
 		<div class="underline"></div>
 	</div>
 	<div id="pitch-text" class="center">
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		<!-- THE LOOP -->
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+			?>
+				<?php the_content(); ?>
+			<?php
+			endwhile; else: ?>
+			<p></p>
+			<?php endif; ?> 
+		<!-- END LOOP -->
 		<a id="hero-text-link" href='#' class="btn2">
 			Gesprek aanvragen >
 		</a>
@@ -30,10 +38,7 @@
 	<div id="over">
 		
 		<div id="over-tekst">
-			<h2>Digitale technologie voor scholen & bedrijven </h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<h3>Subtitel</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<?php the_field('tekst_over_ons'); ?>
 		</div>
 		<div id="over-foto">
 			<img src="/wp-content/uploads/2018/08/Over-LMS-Distribution.jpg" alt="whiteboard" width="450px" height="true">

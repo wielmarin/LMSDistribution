@@ -192,19 +192,6 @@ jQuery('.breadcrumbportal').click(function() {
 	location.reload();
 });
 
-
-
-//////// Slideshow homepage header with Backstretch
-
-jQuery("#hero").backstretch([
-	"/wp-content/uploads/2018/08/Banner-image.jpg",
-	"/wp-content/uploads/2018/08/hero-snap.jpg",
-	"/wp-content/uploads/2018/08/man_lidner_huddle_-1.jpg",
-	],
-	{transitionDuration: 800},
-	);
-	
-
 	
 ///////// Individual product page
 

@@ -26,7 +26,7 @@
 			}
 		&-link {
 			position: relative;
-			top: 30px;
+			top: 25px;
 			text-align: center;
 		}
 	}
@@ -46,6 +46,9 @@
 
 #pitch {
 	width: 85%;
+	p {
+	margin-bottom: 15px;
+	}
 }
 .pitch-title-box {
 	max-width: 450px;
@@ -233,6 +236,7 @@
 
 .slide-text {
 	height: auto;
+	padding-bottom: 20px;
 }
 //* Nieuws en Twitter //
 

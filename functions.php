@@ -86,6 +86,14 @@ function custom_post_init() {
 	  'exclude_from_search' => true
     );
     register_post_type( 'portal', $args );
+	  $caseargs = array(
+	  'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
+      'public' => true,
+      'label'  => 'Case Studies',
+	  'taxonomies' => array( 'category' ),
+	  'hierarchical' => true,
+    );
+    register_post_type( 'case', $caseargs );
 }
 add_action( 'init', 'custom_post_init' );
 

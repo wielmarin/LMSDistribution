@@ -345,7 +345,7 @@ input {
 	color: #fff;
 	display: flex;
 	cursor: pointer;
-	right: -200px;
+	right: -253px;
 	padding: 20px 0px;
 	&-label {
 	margin-left: -10px;
@@ -364,15 +364,18 @@ input {
 			position:relative;
 			top: 1px;
 		}
+		a {
+			color: white;
+		}
 	}
 	&-phone {
 		display:block;
 		padding-bottom: 5px;
-		width: 130px;
+		width: 155px;
 	}
 	&-mail {
 		display:block;
-		width: 171px;
+		width: 226px;
 	}
 }
 

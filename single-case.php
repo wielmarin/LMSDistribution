@@ -1,7 +1,3 @@
-<?php /* Template Name: case study template
-* Template Post Type: post, page, case
-*/ ?>
-
 <?php
 
 get_header();

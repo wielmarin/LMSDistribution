@@ -22,6 +22,21 @@ function funcOverAlign() {
 };
 funcOverAlign();  /// RUN
 
+
+/* Change text/link layout on product group boxes when the text breaks into 2 lines
+var twoLines = jQuery('#productgroup-container .frontproduct-text h3').height();
+function twoLineLayout() {
+	if(twoLines > 40) {
+		jQuery('#productgroup-container .frontproduct-text h3').css('top','0px');
+		jQuery('#productgroup-container .frontproduct-text-link').css('top','50px');
+	} else {
+		jQuery('#productgroup-container .frontproduct-text h3').css('top','10px');
+		jQuery('#productgroup-container .frontproduct-text-link').css('top','40px');
+	};
+};
+twoLineLayout();
+*/
+
 //// ATTEMPTED FIX WINDOWS HOVER MENU - MAYBE NEEDS TO BE ON LINK?
 jQuery('.menu-item-has-children').attr('aria-haspopup','true');
 
@@ -122,8 +137,12 @@ jQuery(window).on('resize', function(e) {
 	// Function Overzicht last item alignment
 	funcOverAlign();
 	
+	/* Change text position product boxes
+	twoLineLayout();
+	*/
+	
 	// Hide open menu
-	jQuery('.site-nav ul li ul').hide();
+	// jQuery('.site-nav ul li ul').hide();
 
   }, 250); // Resize timeout time to prevent over-activation
 

@@ -35,11 +35,11 @@
 	</p>
 	<div id="contactbutton-info">
 		<span id="contactbutton-phone">
-			<i class="fas fa-phone"></i> 987 654 321
+			<i class="fas fa-phone"></i> <a href="tel:085-0703058">085-0703058</a><br>
 		</span>
 		<span id="contactbutton-mail">
-			<i class="far fa-envelope"></i> mail@adres.com
-		</span>
+			<i class="far fa-envelope"></i> <a href="mailto:info@lmsdistribution.nl">info@lmsdistribution.nl</a>
+			</span>
 		<i id="contactx" class="far fa-window-close"></i>
 	</div>
 </div>			

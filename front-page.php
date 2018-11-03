@@ -115,7 +115,7 @@ while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 			 <div id="excerptcontainer">
        
         
-        <div id="excerptimage" style="background-image:url(<?php the_post_thumbnail_url(); ?>)">
+        <div id="excerptimage" style="background-image:url(<?php the_post_thumbnail_url('thumbnail'); ?>)">
         </div>   
 		
 		<div id="excerptcontainer-content">

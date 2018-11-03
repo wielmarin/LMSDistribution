@@ -27,10 +27,20 @@
 			<h3 id="footerlist-1-title" class="footerlist-item-title">
 				Merken
 			</h3>
-				<a href="/producten/i3-technologies">i3-Technologies</a><br>
-				<a href="/producten/leftclick">Leftclick</a><br>
-				<a href="/producten/smart-metals">Smart metals</a><br>
-				<a href="/producten/turning-technologies">Turning Technologies</a>
+		<!---- Auto-generate merk links ---->
+		<?php
+			$my_query = new WP_Query( array(
+				'post_type'      => 'page',
+				'cat' => 4,
+				'posts_per_page' => -1,
+				'order'          => 'ASC',
+				'orderby'        => 'menu_order'
+			));
+			while ( $my_query->have_posts() ) : $my_query->the_post(); 
+		?>
+			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+		<?php endwhile; ?>
+				
 		</div>
 		<div id="footerlist-2" class="footerlist-item">
 			<h3 id="footerlist-2-title" class="footerlist-item-title">

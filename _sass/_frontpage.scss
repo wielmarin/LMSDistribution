@@ -118,6 +118,7 @@
 			margin: auto;
 			position: relative;
 			color: white;
+			box-sizing: border-box;
 			&-title {
 				position: relative;
 				top:30px;
@@ -132,14 +133,13 @@
 				
 			}
 			&-link {
-		//		position: absolute;
-		//		bottom: 30px;
-		//		left: 50%;
-		//		transform: translateX(-50%);
-				position: relative;
-				top: 40px;
 				font-weight: bold;
 				font-size: 16px;
+				top: auto;
+				bottom: 3px;
+				left: 0;
+				width: 100%;
+				position: absolute;
 			}
 			&-link:hover {
 				text-decoration: underline;
@@ -186,6 +186,11 @@
 
 .raisebox {
 	bottom: 5px;
+}
+
+// Special for link merk box
+.homepage-merk-link {
+	bottom: 20px;
 }
 
 #frontusp {

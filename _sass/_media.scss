@@ -367,7 +367,7 @@ top: 15px;
 			}
 			
 			#hero-sub-text {
-				top: 53%!important;
+				top: 42%!important;
 				font-size: 16px;
 			}
 			
@@ -619,6 +619,24 @@ top: 15px;
 					padding: 0px 15px;
 				}
 				
+				
+				 #container-standaardtemp {
+					width: calc(100% - 90px);
+					margin: 30px auto;
+					h1, h2 {
+						font-size: 24px;
+					}
+					p {
+						font-size: 16px;
+					}
+				}
+				#container-standaardtemp ul li {
+					font-size: 16px;
+				}
+				
+				#titel-search h2 {
+					font-size: 24px;
+				}
 
 			/////////////////////////////////////
 			}
@@ -754,17 +772,8 @@ top: 15px;
 	height: 80%;
 }
 
-#productgroup-container .frontproduct-text {
-	height: 20%;
-}
 
-#productgroup-container .frontproduct-text-link {
-    top: 25px;
-}
 
-#productgroup-container .frontproduct-text-title {
-    top: 10px;
-}
 
 #individual-related {
 &-block {
@@ -953,7 +962,7 @@ top: 15px;
 		order: 3;		
 		h3 {
 			font-size: 18px;
-			position: static;
+			
 			padding-top: 5px;
 			margin-top: 20px;
 		}
@@ -970,15 +979,32 @@ top: 15px;
 	}
 }
 
-#productgroup-container .frontproduct-text-link {
-    top: 40px;
-    position: relative;
-}
-
-#productgroup-container .frontproduct-text h3 {
-    top: 10px;
-    position: absolute;
-}
+		//// Waar te koop page
+			// Filter buttons
+			.waar-pitch {
+				padding-bottom: 0;
+			}
+			
+			#mobile-filter {
+				display: block;
+				width: 250px;
+				max-width: calc(100% - 60px);
+				margin: 0px auto;
+			}
+			
+			#waar-filter {
+				width: 250px;
+				max-width: calc(100% - 60px);
+				margin: 0px auto;	
+			}
+			
+			.filter-button {
+				display: none;
+				width: 250px;
+				max-width: calc(100% - 60px);
+				margin: 0px;
+				border-bottom: 1px solid white;
+			}
 
 
 
@@ -1068,9 +1094,6 @@ top: 15px;
 		background-size: cover;
 	}
 
-	#productgroup-container .frontproduct-text {
-		height: 80px;
-	}
 	
 	#over-foto {
     width: 100%;
@@ -1116,7 +1139,7 @@ top: 15px;
 }
 
 #hero-sub-text {
-	top: 55%!important;
+	top: 35%!important;
 }
 
 #hero-sub-text-heading {
@@ -1371,11 +1394,18 @@ top: 15px;
     height: 270px;
 }
 
-
-#waar-filter {	
-display: block;
+#container-standaardtemp {
+	width: calc(100% - 40px);
 }
 
+#titel-search {
+    margin: 40px 0px 0px 20px!important;
+}
+
+#excerptimagesearch {
+    margin-bottom: 0px!important;
+	height: 120px!important;
+}
 
 	/////Member login
 	

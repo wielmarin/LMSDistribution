@@ -15,7 +15,8 @@
 	</div>
 </div>
 
-<div id="container-algemeen">
+<div id="container-standaardtemp">
+<div id="introductie-standaardtemp">
 	<!-- THE LOOP --><?php if ( have_posts() ) : while ( have_posts() ) : the_post();
 	?>
 		<?php the_content(); ?>
@@ -23,6 +24,7 @@
 		endwhile; else: ?>
 	<p></p>
 	<?php endif; ?> <!-- END LOOP -->
+</div>
 </div>
 
 <?php get_footer(); ?>

@@ -143,6 +143,13 @@ margin: auto;
 	p {
 	margin: 5px 0px;
 	}
+	a {
+		text-decoration: underline;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #7a7979;
+	}
 }
 
 #container-standaardtemp ul {
@@ -158,3 +165,4 @@ margin: auto;
 #container-standaardtemp ul li {
     display: list-item;
 }
+

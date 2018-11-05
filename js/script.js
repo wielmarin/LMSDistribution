@@ -23,19 +23,23 @@ function funcOverAlign() {
 funcOverAlign();  /// RUN
 
 
-/* Change text/link layout on product group boxes when the text breaks into 2 lines
-var twoLines = jQuery('#productgroup-container .frontproduct-text h3').height();
+// Change text/link layout on product group boxes when the text breaks into 2 lines
 function twoLineLayout() {
-	if(twoLines > 40) {
-		jQuery('#productgroup-container .frontproduct-text h3').css('top','0px');
-		jQuery('#productgroup-container .frontproduct-text-link').css('top','50px');
-	} else {
-		jQuery('#productgroup-container .frontproduct-text h3').css('top','10px');
-		jQuery('#productgroup-container .frontproduct-text-link').css('top','40px');
-	};
+	var products = jQuery('.frontproduct').length;
+	var i;
+	var textHeight;
+		for (i = 1; i <= products; i++) {
+			textHeight = jQuery('.frontproduct-text-title-' + i).height();
+			if (textHeight > 35) {
+				jQuery('.frontproduct-text-title-' + i).css('top', '3px');
+				// jQuery('.frontproduct-text-link-' + i).css('top', '3px');
+			} else {
+				jQuery('.frontproduct-text-title-' + i).css('top', '10px');
+				// jQuery('.frontproduct-text-link-' + i).css('top', '15px');
+			}
+		} 
 };
 twoLineLayout();
-*/
 
 //// ATTEMPTED FIX WINDOWS HOVER MENU - MAYBE NEEDS TO BE ON LINK?
 jQuery('.menu-item-has-children').attr('aria-haspopup','true');
@@ -137,9 +141,9 @@ jQuery(window).on('resize', function(e) {
 	// Function Overzicht last item alignment
 	funcOverAlign();
 	
-	/* Change text position product boxes
+	// Change text position product boxes
 	twoLineLayout();
-	*/
+	
 	
 	// Hide open menu
 	// jQuery('.site-nav ul li ul').hide();
@@ -162,6 +166,7 @@ jQuery(window).on('resize', function(e) {
 	jQuery('.menunolink > a').click(function() {
 		return false;
 	});
+	
 	
 	// Append arrow
 	jQuery('.site-nav ul li .menu-item-has-children').append(' <i class="fas fa-caret-right"></i>');
@@ -288,6 +293,19 @@ jQuery('#individual-downloads-whitepapers-button').click( function() {
 		jQuery('.filter-button').removeClass('active-button');
 		// Add to clicked button
 		jQuery(this).addClass('active-button');
+	});
+	
+	// Mobile Filters open
+	jQuery('#mobile-filter').click(function() {
+		jQuery('#mobile-filter').hide();
+		jQuery('.filter-button').show();
+	});
+	
+	// Scroll to dealers on click
+	jQuery('.filter-button').click(function(){
+		jQuery([document.documentElement, document.body]).animate({
+			scrollTop: jQuery("#waar-container").offset().top-150
+		}, 500);
 	});
 
 

@@ -112,8 +112,11 @@
 			&-link {				
 				font-weight: bold;
 				font-size: 16px;
-				top: 25px;
-			
+				top: auto;
+				bottom: 3px;
+				left: 0;
+				width: 100%;
+				position: absolute;
 			}
 			&-link:hover {
 				text-decoration: underline;

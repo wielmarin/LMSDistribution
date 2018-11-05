@@ -9,7 +9,7 @@
 	</div>
 </div>
 
-<div id="pitch" class="itemcont center">
+<div id="pitch" class="waar-pitch itemcont center">
 
 	<div class="pitch-title-box">
 		<h2 id="pitch-title" class="center">
@@ -24,6 +24,9 @@
 </div>
 
 <div id="waar-filter">
+	<div id="mobile-filter">
+		<h4>Filter <i class="fas fa-caret-down"></i></i></h4>
+	</div>
 	<div class="filter-button all-merken-button">
 		<h4>Alle Merken</h4>
 	</div>

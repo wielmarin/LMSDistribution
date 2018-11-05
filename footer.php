@@ -64,7 +64,7 @@
 			</h3>
 			T: <a href="tel:085-0703058">085-0703058</a><br>
 			E: <a href="mailto:info@lmsdistribution.nl">info@lmsdistribution.nl</a><br>
-			<a href="https://www.google.com/maps/place/Toepadweg+10,+5301+KA+Zaltbommel,+Nederland/@51.8093832,5.2660447,17z/data=!4m5!3m4!1s0x47c6f3f2b1420c0b:0x5d4d2ef48537dec3!8m2!3d51.8093832!4d5.2682334" target="_blank"><p>Toepadweg 10<br>
+			<a href="https://www.google.com/maps/place/Toepadweg+10,+5301+KA+Zaltbommel,+Nederland/@51.8093832,5.2660447,17z/data=!4m5!3m4!1s0x47c6f3f2b1420c0b:0x5d4d2ef48537dec3!8m2!3d51.8093832!4d5.2682334" target="_blank">Toepadweg 10<br>
 			5301 KA Zaltbommel</a><br>
 			<a href="/over-ons">Over Ons</a>
 			
@@ -75,7 +75,7 @@
 		<div class="copyright">
 			
 		
-		<nobr><p><a href="http://lmsdistribution.nl/privacy-en-cookieverklaring/">Privacy statement</a></p></nobr>  <span>|</span> <nobr><p><a href="/wp-content/uploads/2018/11/Algemene-voorwaarden-LMS-Distribution.pdf">Algemene voorwaarden</a></p></nobr> <span>|</span> <nobr><p>&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?></p></nobr>
+		<nobr><p><a href="http://lmsdistribution.nl/privacy-en-cookieverklaring/">Privacy statement</a></p></nobr>  <span>|</span> <nobr><p><a href="/wp-content/uploads/2018/11/Algemene-voorwaarden-LMS-Distribution-2.pdf">Algemene voorwaarden</a></p></nobr> <span>|</span> <nobr><p>&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?></p></nobr>
 		
 		</div>
 	</div>

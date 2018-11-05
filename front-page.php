@@ -51,7 +51,7 @@
 			<p id="frontproducts-1-text-descr" class="frontproduct-text-descr">
 				<?php the_sub_field('home_merk_tekst'); ?>
 			</p>
-			<a id="frontproducts-1-text-link" class="frontproduct-text-link" href="<?php the_sub_field('home_merk_page'); ?>">
+			<a id="frontproducts-1-text-link" class="frontproduct-text-link homepage-merk-link" href="<?php the_sub_field('home_merk_page'); ?>">
 				Bekijk producten <i class="fas fa-angle-right"></i>
 			</a>
 		</div>
@@ -115,7 +115,7 @@ while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 			 <div id="excerptcontainer">
        
         
-        <div id="excerptimage" style="background-image:url(<?php the_post_thumbnail_url('thumbnail'); ?>)">
+        <div id="excerptimage" style="background-image:url(<?php the_post_thumbnail_url('excerpt-thumb'); ?>)">
         </div>   
 		
 		<div id="excerptcontainer-content">

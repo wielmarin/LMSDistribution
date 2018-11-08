@@ -167,10 +167,12 @@ li {
 	margin:0;
 }
 
-.site-nav li a:hover { 
-	text-decoration: none;
-	color:	#252727;
-	border-bottom: 1.5px solid $btncolor;
+@media screen and (min-width: 1021px) {
+	.site-nav li a:hover { 
+		text-decoration: none;
+		color:	#252727;
+		border-bottom: 1.5px solid $btncolor;
+	}
 }
 
 ///// Submenus 

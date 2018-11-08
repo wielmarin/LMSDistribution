@@ -37,7 +37,10 @@ function twoLineLayout() {
 				jQuery('.frontproduct-text-title-' + i).css('top', '10px');
 				// jQuery('.frontproduct-text-link-' + i).css('top', '15px');
 			}
-		} 
+		};
+	// Position link at bottom of homepage box
+	var frontHeight = jQuery('.frontproduct').height();
+	jQuery('.homepage-merk-link').css('top', frontHeight - 40 + 'px');
 };
 twoLineLayout();
 
@@ -97,7 +100,7 @@ function checkPosition() {
 		
 		// Change arrow on click
 		jQuery('.site-nav a').click( function() {
-			jQuery(this).find('.fa-change').toggle();
+			jQuery(this).parent().children('.fa-change').toggle();
 		});
 		
 		// Hide mobile menu on resize

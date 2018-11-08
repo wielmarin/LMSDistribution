@@ -125,7 +125,8 @@ while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 			</div>
 		   
 			<div id="flex3" class="excerpttext">
-				<div id="aboutomschrijving1" class="flexomschrijving"><p><?php echo get_the_excerpt(); ?> ...</p></div><a href="<?php the_permalink(); ?>" class="readmorelink">Lees artikel</a>
+				<div id="aboutomschrijving1" class="flexomschrijving"><p><?php echo get_the_excerpt(); ?> ...</p><a href="<?php the_permalink(); ?>" class="readmorelink">Lees artikel</a>
+				</div>
 			</div>
 		</div>
 		<div id="nieuws-border"></div>

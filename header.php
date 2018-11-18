@@ -4,7 +4,7 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 			<meta name="viewport" content="width=device-width">
 			<meta name="description" content="<!-- FILL THIS IN LATER! -->"/>
-			<title>LMS Distributions</title>
+			<title>LMS Distribution</title>
 			
 			<?php wp_head(); ?>
 			

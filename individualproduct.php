@@ -71,10 +71,23 @@
 
 <div id="individual-content-background">
 <div id="individual-content">
+<?php if ( !empty( get_the_content() ) ) { ?>
 	<div id="individual-content-text">
 		<?php the_content(); ?>
 	</div>
+<?php } ?>
+	
+	<!-- Space Right - inc video, downloads and/or logo --->
 	<div id="individual-downloads">
+	<!--- Video --->
+		<?php if(get_field('product_video')) { ?>
+			<div id="individual-content-video">
+				<?php the_field('product_video'); ?>
+			</div>
+		<?php } ?>
+	<!--- Logo if no downloads --->
+		<img id="downloads-logo" src="<?php the_field("logo_merk", $merkpage); ?>" width=100% height=true alt="<?php the_title($merkpage); ?> Logo">
+	<!-- Downloads -->
 		<h3>Downloads</h3>
 		
 		<!-- Only show if there are uploads -->

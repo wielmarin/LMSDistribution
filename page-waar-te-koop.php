@@ -27,7 +27,7 @@
 	<div id="mobile-filter">
 		<h4>Filter <i class="fas fa-caret-down"></i></i></h4>
 	</div>
-	<div class="filter-button all-merken-button">
+	<div class="filter-button all-merken-button active-button">
 		<h4>Alle Merken</h4>
 	</div>
 	<?php

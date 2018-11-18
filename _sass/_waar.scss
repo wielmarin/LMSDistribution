@@ -43,7 +43,7 @@
 }
 
 .filter-button {
-	max-width: 150px;
+	max-width: 160px;
 	height: 46px;
 	margin: 5px 10px;
 	background-color: #488e7f;
@@ -69,8 +69,13 @@
 	background-color: #61af9e; 
 }
 
-.active-button {
-	opacity: 1;
+.active-button, .active-button:hover {
+	border: 1px solid #488e7f;
+	background-color: #FFF;
+	h4 {
+		color: #488e7f;
+		font-weight: bold;
+	}
 }
 
 .waar-item {

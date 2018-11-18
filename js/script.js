@@ -106,10 +106,26 @@ function checkPosition() {
 		// Hide mobile menu on resize
 		jQuery('.site-nav').hide();
 
+		// Video on individual page sizing
+		var contentVideo = jQuery('#individual-content-video').length;
+		if (contentVideo > 0) {
+			jQuery('#individual-content').css('width','calc(100% - 90px)');
+			jQuery('#individual-content-text').css('width','100%');
+			jQuery('#individual-downloads').css('width','100%');
+		};
 
 	} else { ///////// LARGER SCREEN
 		jQuery('.fa-change').hide();
 		jQuery('.site-nav').show();
+		
+		// Video on individual page sizing
+		var contentVideo = jQuery('#individual-content-video').length;
+		if (contentVideo > 0) {
+			jQuery('#individual-content').css('width','calc(100% - 100px)');
+			jQuery('#individual-content-text').css('width','50%');
+			jQuery('#individual-downloads').css('width','calc(50% - 100px)');
+		};
+
 	
 		
 	} ///////////// END MEDIA COMMAND
@@ -223,7 +239,30 @@ jQuery('.breadcrumbportal').click(function() {
 ///////// Individual product page
 
 jQuery('.individualdownload').hide();
+jQuery('#downloads-logo').hide();
 
+// Hiding content when empty
+var downloadList = jQuery('.download-button').length;
+var contentList = jQuery('#individual-content-text').length;
+var contentVideo = jQuery('#individual-content-video').length;
+	// Hide block if no content
+	if (downloadList < 1 && contentList < 1 && contentVideo < 1) {
+		jQuery('#individual-content-background').hide();
+	};
+	
+	// Hide download title if only video 
+	if (downloadList < 1 && contentVideo >= 1) {
+		jQuery('#individual-downloads h3').hide();
+	};
+	
+	// Hide download div if no files
+	if (downloadList < 1 && contentVideo < 1 && contentList >= 1) {
+		jQuery('#individual-downloads h3').hide();
+		jQuery('#downloads-logo').show();
+	};
+
+
+// Download button function
 jQuery('#individual-downloads-manuals-button').click( function() {
 	jQuery('.manualfile').toggle();	
 });

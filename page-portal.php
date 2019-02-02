@@ -139,6 +139,8 @@ get_header();
 		</div>
 	</div>
 </div>
+
+ <!-- When not logged in : -->
 <?php } else { ?>
 <p>You must be a member to view Portal Content. Click <a href="#">here</a> to sign up or <a href="#">here</a> to log in.</p>
 

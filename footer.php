@@ -6,9 +6,9 @@
 				Volg LMS Distribution via:
 			</h3><br>
 			<span id="connectedrow-social-icons">
+				<a href="https://www.facebook.com/LMS-Distribution-345105256252700/"><img src="/wp-content/uploads/2018/08/if_facebook_square_107117.png" alt="Facebook" width="40px" height="true"></a>
 				<img src="/wp-content/uploads/2018/08/if_linkedin_square_color_107091.png" alt="linkedin" width="40px" height="true">
-				<img src="/wp-content/uploads/2018/08/if_twitter_square_107066.png" alt="twitter" width="40px" height="true">
-				<img src="/wp-content/uploads/2018/08/if_facebook_square_107117.png" alt="Facebook" width="40px" height="true">
+				
 				
 			</span>
 		</div>

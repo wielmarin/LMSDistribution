@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 			<meta name="viewport" content="width=device-width">
-			<meta name="description" content="<!-- FILL THIS IN LATER! -->"/>
-			<title>LMS Distribution</title>
+			<title>LMS Distribution - Digitale technologie voor scholen & bedrijven</title>
 			
 			<?php wp_head(); ?>
 			

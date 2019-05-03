@@ -106,6 +106,16 @@ if( function_exists('acf_add_options_page') ) {
 };
 
 
+// Allow draft/private pages as Hoofd in hierarchy
+
+add_filter('page_attributes_dropdown_pages_args', 'my_attributes_dropdown_pages_args', 1, 1);
+
+function my_attributes_dropdown_pages_args($dropdown_args) {
+    $dropdown_args['post_status'] = array('publish','draft','private');
+    return $dropdown_args;
+}
+
+
 
 
 ?>

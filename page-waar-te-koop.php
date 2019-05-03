@@ -35,6 +35,7 @@
 		'cat' => 4,
 		'order' => 'ASC',
 		'nopaging' => true,
+		'post__not_in' => array(3127), // HIDING VESTEL!
 		'post_type' =>'page'
 	);
 	$query = new WP_Query($args);

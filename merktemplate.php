@@ -20,7 +20,7 @@ $logo = "<?php the_field('logo_merk'); ?>";
 
 	<div class="pitch-title-box">
 		<h2 id="pitch-title" class="center">
-		<img src="<?php the_field('logo_merk'); ?>" alt="I3 Technologies" width="320px" height="100%">
+		<img src="<?php the_field('logo_merk'); ?>" alt="<?php the_title();?>" width="320px" height="100%">
 		</h2>
 	</div>
 	<div id="pitch-text" class="center">
@@ -86,7 +86,7 @@ $logo = "<?php the_field('logo_merk'); ?>";
 
 				<div id="frontproducts-1" class="frontproduct frontproduct-<?php echo get_row_index(); ?>" style="border: 1px solid rgba(0, 0, 0, 0.125);">
 						<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
-								style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
+								style="background-image: url(<?php the_post_thumbnail_url(); ?>);  <?php if(get_field('background_size') ):?>background-size: contain; <?php endif; ?>" 
 							<?php } else { ?>
 								style="background-image: url(<?php the_field('logo_merk', $post->post_parent); ?>); background-size: 90%;"
 							<?php } ?>>

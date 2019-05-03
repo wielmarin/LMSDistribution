@@ -28,9 +28,9 @@
 <?php $grandparentPage = wp_get_post_parent_id($post->post_parent); ?>
 	<div id="frontproducts-1" class="frontproduct frontproduct-<?php echo get_row_index(); ?>" style="border: 1px solid rgba(0, 0, 0, 0.125);">
 			<div id="frontproducts-1-img" class="frontproduct-img" <?php if (has_post_thumbnail() ) { ?> 
-					style="background-image: url(<?php the_post_thumbnail_url(); ?>)" 
+					style="background-image: url(<?php the_post_thumbnail_url(); ?>); <?php if(get_field('background_size') ):?>background-size: contain; <?php endif; ?>" 
 				<?php } else { ?>
-					style="background-image: url(<?php the_field('logo_merk', $merkpage); ?>); background-size: cover;"
+					style="background-image: url(<?php the_field('logo_merk', $merkpage); ?>); background-size: 90%;"
 				<?php } ?>>
 			</div>
 			<div id="frontproducts-1-text" class="frontproduct-text center" style="border-top: 0.7rem solid <?php the_field('merk_kleur', $merkpage); ?>; background: none;">

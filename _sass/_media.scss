@@ -1008,8 +1008,30 @@ top: 15px;
 				margin: 0px;
 				border-bottom: 1px solid white;
 			}
-
-
+			
+	//Portal calculator
+	#calculator-omschrijving {
+		font-size: 80%;
+	}
+	
+	.calculator-product-row {
+		width: calc(100% - 100px);
+		max-width: 550px;
+		margin-left: 10px;
+		a {
+			width: 120px;
+			font-size: 80%;
+		}
+		p {
+			width: 60px;
+			font-size: 80%;
+		}
+	}
+	#calculator-total, #calculator-termijn {
+		width: 100%;
+		font-size: 80%;
+		text-align: center;
+	}
 
 /////////////////////////////////////
 }
@@ -1235,6 +1257,13 @@ top: 15px;
 
 #filelink {
 	font-size: 12px;
+	img {
+		display: none;
+	}
+}
+
+.portal-icon-shift {
+	margin-left: 5px!important;
 }
 
 #advies-tekst {
@@ -1418,6 +1447,16 @@ top: 15px;
 	
 	#loginpage-aanvragen {
 		width: 100%;
+	}
+	
+	
+	///// Portal calculator 
+	.calculator-product-row {
+		width: calc(100% - 20px);
+		p {
+			width: 40px;
+			font-size: 75%;
+		}
 	}
 /////////////////////////////////////
 }

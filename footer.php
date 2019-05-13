@@ -34,7 +34,6 @@
 				'cat' => 4,
 				'posts_per_page' => -1,
 				'order'          => 'ASC',
-				'post__not_in' => array(3127), // HIDING VESTEL!
 				'orderby'        => 'menu_order'
 			));
 			while ( $my_query->have_posts() ) : $my_query->the_post(); 

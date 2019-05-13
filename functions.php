@@ -32,6 +32,7 @@ add_image_size( 'excerpt-thumb', 400, 400, true );
 add_image_size( 'portalbox-image', 277, 205, true );
 add_image_size( 'nieuws-banner', 625, 330, true );
 add_image_size( 'full-banner', 1800, 800, true );
+add_image_size( 'portal-thumbnail', 55, 55, true );
 
 
 // Categories and Tags for pages

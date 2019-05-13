@@ -112,7 +112,6 @@
 <?php
 $my_query = new WP_Query( array(
 	'showposts' => '4',
-	'post__not_in' => array(3127) // HIDING VESTEL!
 ));
 while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
 			 <div id="excerptcontainer">

@@ -14,6 +14,8 @@ jQuery('#portal-content-right-space').on("click touchstart","a", function() {
 });
 
 
+// Calculator 
+	
 
 
 

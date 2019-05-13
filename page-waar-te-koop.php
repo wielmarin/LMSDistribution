@@ -34,8 +34,8 @@
 	$args = array(
 		'cat' => 4,
 		'order' => 'ASC',
+		'orderby' => 'menu_order',
 		'nopaging' => true,
-		'post__not_in' => array(3127), // HIDING VESTEL!
 		'post_type' =>'page'
 	);
 	$query = new WP_Query($args);

@@ -33,12 +33,17 @@ breadcrumb_trail();
 
 				// vars
 				$fileDealer = get_sub_field('bestand_dealer');
+					// ID
+					$fileIDDealer = $file['ID'];
 				
 
 				?>
 
 				<div id="filelink" class="externalfile" url="<?php echo $fileDealer['url']; ?>">
-					<p>
+					<!--- thumbnail image, via ID due to sizing -->
+					<?php echo wp_get_attachment_image( $fileIDDealer, 'portal-thumbnail' ); ?>
+					<!-- File name, increased margin if icon/thumbnail --->
+					<p <?php if( $file['type'] == 'image' ) { ?>class="portal-icon-shift"<?php } ?>>
 						<?php echo $fileDealer['title']; ?>
 					</p>
 					<span class="filetype">
@@ -76,12 +81,17 @@ breadcrumb_trail();
 
 				// vars
 				$filePartner = get_sub_field('bestand_partner');
+					// ID
+					$fileIDPartner = $file['ID'];
 				
 
 				?>
 
 				<div id="filelink" class="externalfile" url="<?php echo $filePartner['url']; ?>">
-					<p>
+					<!--- thumbnail image, via ID due to sizing -->
+					<?php echo wp_get_attachment_image( $fileIDPartner, 'portal-thumbnail' ); ?>
+					<!-- File name, increased margin if icon/thumbnail --->
+					<p <?php if( $file['type'] == 'image' ) { ?>class="portal-icon-shift"<?php } ?>>
 						<?php echo $filePartner['title']; ?>
 					</p>
 					<span class="filetype">
@@ -116,12 +126,15 @@ breadcrumb_trail();
 
 			// vars
 			$file = get_sub_field('bestand');
-			
-
+				// ID
+					$fileID = $file['ID'];
 			?>
 
 			<div id="filelink" class="externalfile" url="<?php echo $file['url']; ?>">
-				<p>
+				<!--- thumbnail image, via ID due to sizing -->
+				<?php echo wp_get_attachment_image( $fileID, 'portal-thumbnail' ); ?>
+				<!-- File name, increased margin if icon/thumbnail --->
+				<p <?php if( $file['type'] == 'image' ) { ?>class="portal-icon-shift"<?php } ?>>
 					<?php echo $file['title']; ?>
 				</p>
 				<span class="filetype">

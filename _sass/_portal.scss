@@ -298,6 +298,15 @@
 		color: $fontcolor;
 		white-space: nowrap;
 	}
+	img {
+		float: left;
+		margin-left: 5px;
+		margin-top: 2px;
+	}
+}
+
+.portal-icon-shift {
+	margin-left: 10px!important;
 }
 
 .filetype {
@@ -412,3 +421,64 @@ h3#loginpage-titel {
 	font-weight: normal;
 	font-family: 'Open Sans Light', sans-serif;
 }
+
+
+// Calculator
+#calculator-omschrijving {
+	display: block;
+	width: calc(100% - 40px);
+	margin: auto;
+	text-align: center;
+}
+
+.calculator-product-row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 550px;
+	margin: auto;
+	justify-content: space-between;
+	a {
+		display: inline;
+		width: 200px;
+		text-align: left;
+		margin-left: 0;
+	}
+	p {
+		display: inline;
+		width: 100px;
+	}
+	input {
+		background: white;
+		color: black;
+		border: 1px solid black;
+		block-size: 22px;
+		width: 40px;
+		margin-top: 0;
+		margin-left: 0;
+		padding: 0 2px;
+	}
+}
+
+.calculator-subtotal-class {
+	text-align: right;
+}
+
+#calculator-total, #calculator-termijn {
+	width: 100%;
+	max-width: 550px;
+	margin: auto;
+	text-align: right;
+	font-weight: 700;
+	input {
+		background: white;
+		color: black;
+		border: 1px solid black;
+		block-size: 22px;
+		width: 40px;
+		margin-top: 0;
+		margin-left: 3px;
+		padding: 0 2px;
+	}
+}
+
